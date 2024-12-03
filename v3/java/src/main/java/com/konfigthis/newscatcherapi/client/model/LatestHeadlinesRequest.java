@@ -57,7 +57,7 @@ public class LatestHeadlinesRequest {
 
   public static final String SERIALIZED_NAME_BY_PARSE_DATE = "by_parse_date";
   @SerializedName(SERIALIZED_NAME_BY_PARSE_DATE)
-  private Boolean byParseDate = false;
+  private Object byParseDate = null;
 
   public static final String SERIALIZED_NAME_SORT_BY = "sort_by";
   @SerializedName(SERIALIZED_NAME_SORT_BY)
@@ -101,15 +101,15 @@ public class LatestHeadlinesRequest {
 
   public static final String SERIALIZED_NAME_IS_HEADLINE = "is_headline";
   @SerializedName(SERIALIZED_NAME_IS_HEADLINE)
-  private Boolean isHeadline;
+  private Object isHeadline = null;
 
   public static final String SERIALIZED_NAME_IS_OPINION = "is_opinion";
   @SerializedName(SERIALIZED_NAME_IS_OPINION)
-  private Boolean isOpinion;
+  private Object isOpinion = null;
 
   public static final String SERIALIZED_NAME_IS_PAID_CONTENT = "is_paid_content";
   @SerializedName(SERIALIZED_NAME_IS_PAID_CONTENT)
-  private Boolean isPaidContent;
+  private Object isPaidContent = null;
 
   public static final String SERIALIZED_NAME_PARENT_URL = "parent_url";
   @SerializedName(SERIALIZED_NAME_PARENT_URL)
@@ -125,19 +125,19 @@ public class LatestHeadlinesRequest {
 
   public static final String SERIALIZED_NAME_WORD_COUNT_MIN = "word_count_min";
   @SerializedName(SERIALIZED_NAME_WORD_COUNT_MIN)
-  private Integer wordCountMin;
+  private Object wordCountMin = null;
 
   public static final String SERIALIZED_NAME_WORD_COUNT_MAX = "word_count_max";
   @SerializedName(SERIALIZED_NAME_WORD_COUNT_MAX)
-  private Integer wordCountMax;
+  private Object wordCountMax = null;
 
   public static final String SERIALIZED_NAME_PAGE = "page";
   @SerializedName(SERIALIZED_NAME_PAGE)
-  private Integer page = 1;
+  private Object page = null;
 
   public static final String SERIALIZED_NAME_PAGE_SIZE = "page_size";
   @SerializedName(SERIALIZED_NAME_PAGE_SIZE)
-  private Integer pageSize = 100;
+  private Object pageSize = null;
 
   public static final String SERIALIZED_NAME_CLUSTERING_VARIABLE = "clustering_variable";
   @SerializedName(SERIALIZED_NAME_CLUSTERING_VARIABLE)
@@ -145,11 +145,11 @@ public class LatestHeadlinesRequest {
 
   public static final String SERIALIZED_NAME_CLUSTERING_ENABLED = "clustering_enabled";
   @SerializedName(SERIALIZED_NAME_CLUSTERING_ENABLED)
-  private Boolean clusteringEnabled;
+  private Object clusteringEnabled = null;
 
   public static final String SERIALIZED_NAME_CLUSTERING_THRESHOLD = "clustering_threshold";
   @SerializedName(SERIALIZED_NAME_CLUSTERING_THRESHOLD)
-  private Double clusteringThreshold;
+  private Object clusteringThreshold = null;
 
   public static final String SERIALIZED_NAME_INCLUDE_NLP_DATA = "include_nlp_data";
   @SerializedName(SERIALIZED_NAME_INCLUDE_NLP_DATA)
@@ -247,7 +247,7 @@ public class LatestHeadlinesRequest {
   }
 
 
-  public LatestHeadlinesRequest byParseDate(Boolean byParseDate) {
+  public LatestHeadlinesRequest byParseDate(Object byParseDate) {
     
     
     
@@ -261,14 +261,14 @@ public class LatestHeadlinesRequest {
    * @return byParseDate
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "false", value = "")
+  @ApiModelProperty(value = "")
 
-  public Boolean getByParseDate() {
+  public Object getByParseDate() {
     return byParseDate;
   }
 
 
-  public void setByParseDate(Boolean byParseDate) {
+  public void setByParseDate(Object byParseDate) {
     
     
     
@@ -566,7 +566,7 @@ public class LatestHeadlinesRequest {
   }
 
 
-  public LatestHeadlinesRequest isHeadline(Boolean isHeadline) {
+  public LatestHeadlinesRequest isHeadline(Object isHeadline) {
     
     
     
@@ -582,12 +582,12 @@ public class LatestHeadlinesRequest {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public Boolean getIsHeadline() {
+  public Object getIsHeadline() {
     return isHeadline;
   }
 
 
-  public void setIsHeadline(Boolean isHeadline) {
+  public void setIsHeadline(Object isHeadline) {
     
     
     
@@ -595,7 +595,7 @@ public class LatestHeadlinesRequest {
   }
 
 
-  public LatestHeadlinesRequest isOpinion(Boolean isOpinion) {
+  public LatestHeadlinesRequest isOpinion(Object isOpinion) {
     
     
     
@@ -611,12 +611,12 @@ public class LatestHeadlinesRequest {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public Boolean getIsOpinion() {
+  public Object getIsOpinion() {
     return isOpinion;
   }
 
 
-  public void setIsOpinion(Boolean isOpinion) {
+  public void setIsOpinion(Object isOpinion) {
     
     
     
@@ -624,7 +624,7 @@ public class LatestHeadlinesRequest {
   }
 
 
-  public LatestHeadlinesRequest isPaidContent(Boolean isPaidContent) {
+  public LatestHeadlinesRequest isPaidContent(Object isPaidContent) {
     
     
     
@@ -640,12 +640,12 @@ public class LatestHeadlinesRequest {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public Boolean getIsPaidContent() {
+  public Object getIsPaidContent() {
     return isPaidContent;
   }
 
 
-  public void setIsPaidContent(Boolean isPaidContent) {
+  public void setIsPaidContent(Object isPaidContent) {
     
     
     
@@ -740,10 +740,8 @@ public class LatestHeadlinesRequest {
   }
 
 
-  public LatestHeadlinesRequest wordCountMin(Integer wordCountMin) {
-    if (wordCountMin != null && wordCountMin < 0) {
-      throw new IllegalArgumentException("Invalid value for wordCountMin. Must be greater than or equal to 0.");
-    }
+  public LatestHeadlinesRequest wordCountMin(Object wordCountMin) {
+    
     
     
     
@@ -753,31 +751,26 @@ public class LatestHeadlinesRequest {
 
    /**
    * Get wordCountMin
-   * minimum: 0
    * @return wordCountMin
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public Integer getWordCountMin() {
+  public Object getWordCountMin() {
     return wordCountMin;
   }
 
 
-  public void setWordCountMin(Integer wordCountMin) {
-    if (wordCountMin != null && wordCountMin < 0) {
-      throw new IllegalArgumentException("Invalid value for wordCountMin. Must be greater than or equal to 0.");
-    }
+  public void setWordCountMin(Object wordCountMin) {
+    
     
     
     this.wordCountMin = wordCountMin;
   }
 
 
-  public LatestHeadlinesRequest wordCountMax(Integer wordCountMax) {
-    if (wordCountMax != null && wordCountMax < 0) {
-      throw new IllegalArgumentException("Invalid value for wordCountMax. Must be greater than or equal to 0.");
-    }
+  public LatestHeadlinesRequest wordCountMax(Object wordCountMax) {
+    
     
     
     
@@ -787,31 +780,26 @@ public class LatestHeadlinesRequest {
 
    /**
    * Get wordCountMax
-   * minimum: 0
    * @return wordCountMax
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public Integer getWordCountMax() {
+  public Object getWordCountMax() {
     return wordCountMax;
   }
 
 
-  public void setWordCountMax(Integer wordCountMax) {
-    if (wordCountMax != null && wordCountMax < 0) {
-      throw new IllegalArgumentException("Invalid value for wordCountMax. Must be greater than or equal to 0.");
-    }
+  public void setWordCountMax(Object wordCountMax) {
+    
     
     
     this.wordCountMax = wordCountMax;
   }
 
 
-  public LatestHeadlinesRequest page(Integer page) {
-    if (page != null && page < 0) {
-      throw new IllegalArgumentException("Invalid value for page. Must be greater than or equal to 0.");
-    }
+  public LatestHeadlinesRequest page(Object page) {
+    
     
     
     
@@ -821,31 +809,26 @@ public class LatestHeadlinesRequest {
 
    /**
    * Get page
-   * minimum: 0
    * @return page
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "1", value = "")
+  @ApiModelProperty(value = "")
 
-  public Integer getPage() {
+  public Object getPage() {
     return page;
   }
 
 
-  public void setPage(Integer page) {
-    if (page != null && page < 0) {
-      throw new IllegalArgumentException("Invalid value for page. Must be greater than or equal to 0.");
-    }
+  public void setPage(Object page) {
+    
     
     
     this.page = page;
   }
 
 
-  public LatestHeadlinesRequest pageSize(Integer pageSize) {
-    if (pageSize != null && pageSize < 0) {
-      throw new IllegalArgumentException("Invalid value for pageSize. Must be greater than or equal to 0.");
-    }
+  public LatestHeadlinesRequest pageSize(Object pageSize) {
+    
     
     
     
@@ -855,21 +838,18 @@ public class LatestHeadlinesRequest {
 
    /**
    * Get pageSize
-   * minimum: 0
    * @return pageSize
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(example = "100", value = "")
+  @ApiModelProperty(value = "")
 
-  public Integer getPageSize() {
+  public Object getPageSize() {
     return pageSize;
   }
 
 
-  public void setPageSize(Integer pageSize) {
-    if (pageSize != null && pageSize < 0) {
-      throw new IllegalArgumentException("Invalid value for pageSize. Must be greater than or equal to 0.");
-    }
+  public void setPageSize(Object pageSize) {
+    
     
     
     this.pageSize = pageSize;
@@ -905,7 +885,7 @@ public class LatestHeadlinesRequest {
   }
 
 
-  public LatestHeadlinesRequest clusteringEnabled(Boolean clusteringEnabled) {
+  public LatestHeadlinesRequest clusteringEnabled(Object clusteringEnabled) {
     
     
     
@@ -921,12 +901,12 @@ public class LatestHeadlinesRequest {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public Boolean getClusteringEnabled() {
+  public Object getClusteringEnabled() {
     return clusteringEnabled;
   }
 
 
-  public void setClusteringEnabled(Boolean clusteringEnabled) {
+  public void setClusteringEnabled(Object clusteringEnabled) {
     
     
     
@@ -934,21 +914,12 @@ public class LatestHeadlinesRequest {
   }
 
 
-  public LatestHeadlinesRequest clusteringThreshold(Double clusteringThreshold) {
+  public LatestHeadlinesRequest clusteringThreshold(Object clusteringThreshold) {
     
     
     
     
     this.clusteringThreshold = clusteringThreshold;
-    return this;
-  }
-
-  public LatestHeadlinesRequest clusteringThreshold(Integer clusteringThreshold) {
-    
-    
-    
-    
-    this.clusteringThreshold = clusteringThreshold.doubleValue();
     return this;
   }
 
@@ -959,12 +930,12 @@ public class LatestHeadlinesRequest {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public Double getClusteringThreshold() {
+  public Object getClusteringThreshold() {
     return clusteringThreshold;
   }
 
 
-  public void setClusteringThreshold(Double clusteringThreshold) {
+  public void setClusteringThreshold(Object clusteringThreshold) {
     
     
     

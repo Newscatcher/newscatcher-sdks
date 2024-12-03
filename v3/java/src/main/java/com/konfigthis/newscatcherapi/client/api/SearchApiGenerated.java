@@ -77,7 +77,7 @@ public class SearchApiGenerated {
         this.localCustomBaseUrl = customBaseUrl;
     }
 
-    private okhttp3.Call getCall(String q, String searchIn, Object predefinedSources, Object sources, Object notSources, Object lang, Object notLang, Object countries, Object notCountries, Object notAuthorName, String from, String to, String publishedDatePrecision, Boolean byParseDate, String sortBy, Object rankedOnly, Integer fromRank, Integer toRank, Boolean isHeadline, Boolean isOpinion, Boolean isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Integer wordCountMin, Integer wordCountMax, Integer page, Integer pageSize, String clusteringVariable, Boolean clusteringEnabled, Double clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object sourceName, Object iabTags, Object notIabTags, Boolean excludeDuplicates, Boolean additionalDomainInfo, Boolean isNewsDomain, Object newsDomainType, Object newsType, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getCall(String q, String searchIn, Object predefinedSources, Object sources, Object notSources, Object lang, Object notLang, Object countries, Object notCountries, Object notAuthorName, String from, String to, String publishedDatePrecision, Object byParseDate, String sortBy, Object rankedOnly, Object fromRank, Object toRank, Object isHeadline, Object isOpinion, Object isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Object wordCountMin, Object wordCountMax, Object page, Object pageSize, String clusteringVariable, Object clusteringEnabled, Object clusteringThreshold, Object includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object sourceName, Object iabTags, Object notIabTags, Boolean excludeDuplicates, Boolean additionalDomainInfo, Boolean isNewsDomain, Object newsDomainType, Object newsType, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -334,7 +334,7 @@ public class SearchApiGenerated {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getValidateBeforeCall(String q, String searchIn, Object predefinedSources, Object sources, Object notSources, Object lang, Object notLang, Object countries, Object notCountries, Object notAuthorName, String from, String to, String publishedDatePrecision, Boolean byParseDate, String sortBy, Object rankedOnly, Integer fromRank, Integer toRank, Boolean isHeadline, Boolean isOpinion, Boolean isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Integer wordCountMin, Integer wordCountMax, Integer page, Integer pageSize, String clusteringVariable, Boolean clusteringEnabled, Double clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object sourceName, Object iabTags, Object notIabTags, Boolean excludeDuplicates, Boolean additionalDomainInfo, Boolean isNewsDomain, Object newsDomainType, Object newsType, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getValidateBeforeCall(String q, String searchIn, Object predefinedSources, Object sources, Object notSources, Object lang, Object notLang, Object countries, Object notCountries, Object notAuthorName, String from, String to, String publishedDatePrecision, Object byParseDate, String sortBy, Object rankedOnly, Object fromRank, Object toRank, Object isHeadline, Object isOpinion, Object isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Object wordCountMin, Object wordCountMax, Object page, Object pageSize, String clusteringVariable, Object clusteringEnabled, Object clusteringThreshold, Object includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object sourceName, Object iabTags, Object notIabTags, Boolean excludeDuplicates, Boolean additionalDomainInfo, Boolean isNewsDomain, Object newsDomainType, Object newsType, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'q' is set
         if (q == null) {
             throw new ApiException("Missing the required parameter 'q' when calling get(Async)");
@@ -345,13 +345,13 @@ public class SearchApiGenerated {
     }
 
 
-    private ApiResponse<CSearchResponse> getWithHttpInfo(String q, String searchIn, Object predefinedSources, Object sources, Object notSources, Object lang, Object notLang, Object countries, Object notCountries, Object notAuthorName, String from, String to, String publishedDatePrecision, Boolean byParseDate, String sortBy, Object rankedOnly, Integer fromRank, Integer toRank, Boolean isHeadline, Boolean isOpinion, Boolean isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Integer wordCountMin, Integer wordCountMax, Integer page, Integer pageSize, String clusteringVariable, Boolean clusteringEnabled, Double clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object sourceName, Object iabTags, Object notIabTags, Boolean excludeDuplicates, Boolean additionalDomainInfo, Boolean isNewsDomain, Object newsDomainType, Object newsType) throws ApiException {
+    private ApiResponse<CSearchResponse> getWithHttpInfo(String q, String searchIn, Object predefinedSources, Object sources, Object notSources, Object lang, Object notLang, Object countries, Object notCountries, Object notAuthorName, String from, String to, String publishedDatePrecision, Object byParseDate, String sortBy, Object rankedOnly, Object fromRank, Object toRank, Object isHeadline, Object isOpinion, Object isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Object wordCountMin, Object wordCountMax, Object page, Object pageSize, String clusteringVariable, Object clusteringEnabled, Object clusteringThreshold, Object includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object sourceName, Object iabTags, Object notIabTags, Boolean excludeDuplicates, Boolean additionalDomainInfo, Boolean isNewsDomain, Object newsDomainType, Object newsType) throws ApiException {
         okhttp3.Call localVarCall = getValidateBeforeCall(q, searchIn, predefinedSources, sources, notSources, lang, notLang, countries, notCountries, notAuthorName, from, to, publishedDatePrecision, byParseDate, sortBy, rankedOnly, fromRank, toRank, isHeadline, isOpinion, isPaidContent, parentUrl, allLinks, allDomainLinks, wordCountMin, wordCountMax, page, pageSize, clusteringVariable, clusteringEnabled, clusteringThreshold, includeNlpData, hasNlp, theme, notTheme, orGEntityName, peREntityName, loCEntityName, miSCEntityName, titleSentimentMin, titleSentimentMax, contentSentimentMin, contentSentimentMax, iptcTags, notIptcTags, sourceName, iabTags, notIabTags, excludeDuplicates, additionalDomainInfo, isNewsDomain, newsDomainType, newsType, null);
         Type localVarReturnType = new TypeToken<CSearchResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    private okhttp3.Call getAsync(String q, String searchIn, Object predefinedSources, Object sources, Object notSources, Object lang, Object notLang, Object countries, Object notCountries, Object notAuthorName, String from, String to, String publishedDatePrecision, Boolean byParseDate, String sortBy, Object rankedOnly, Integer fromRank, Integer toRank, Boolean isHeadline, Boolean isOpinion, Boolean isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Integer wordCountMin, Integer wordCountMax, Integer page, Integer pageSize, String clusteringVariable, Boolean clusteringEnabled, Double clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object sourceName, Object iabTags, Object notIabTags, Boolean excludeDuplicates, Boolean additionalDomainInfo, Boolean isNewsDomain, Object newsDomainType, Object newsType, final ApiCallback<CSearchResponse> _callback) throws ApiException {
+    private okhttp3.Call getAsync(String q, String searchIn, Object predefinedSources, Object sources, Object notSources, Object lang, Object notLang, Object countries, Object notCountries, Object notAuthorName, String from, String to, String publishedDatePrecision, Object byParseDate, String sortBy, Object rankedOnly, Object fromRank, Object toRank, Object isHeadline, Object isOpinion, Object isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Object wordCountMin, Object wordCountMax, Object page, Object pageSize, String clusteringVariable, Object clusteringEnabled, Object clusteringThreshold, Object includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object sourceName, Object iabTags, Object notIabTags, Boolean excludeDuplicates, Boolean additionalDomainInfo, Boolean isNewsDomain, Object newsDomainType, Object newsType, final ApiCallback<CSearchResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getValidateBeforeCall(q, searchIn, predefinedSources, sources, notSources, lang, notLang, countries, notCountries, notAuthorName, from, to, publishedDatePrecision, byParseDate, sortBy, rankedOnly, fromRank, toRank, isHeadline, isOpinion, isPaidContent, parentUrl, allLinks, allDomainLinks, wordCountMin, wordCountMax, page, pageSize, clusteringVariable, clusteringEnabled, clusteringThreshold, includeNlpData, hasNlp, theme, notTheme, orGEntityName, peREntityName, loCEntityName, miSCEntityName, titleSentimentMin, titleSentimentMax, contentSentimentMin, contentSentimentMax, iptcTags, notIptcTags, sourceName, iabTags, notIabTags, excludeDuplicates, additionalDomainInfo, isNewsDomain, newsDomainType, newsType, _callback);
         Type localVarReturnType = new TypeToken<CSearchResponse>(){}.getType();
@@ -373,25 +373,25 @@ public class SearchApiGenerated {
         String from;
         String to;
         String publishedDatePrecision;
-        Boolean byParseDate;
+        Object byParseDate;
         String sortBy;
         Object rankedOnly;
-        Integer fromRank;
-        Integer toRank;
-        Boolean isHeadline;
-        Boolean isOpinion;
-        Boolean isPaidContent;
+        Object fromRank;
+        Object toRank;
+        Object isHeadline;
+        Object isOpinion;
+        Object isPaidContent;
         Object parentUrl;
         Object allLinks;
         Object allDomainLinks;
-        Integer wordCountMin;
-        Integer wordCountMax;
-        Integer page;
-        Integer pageSize;
+        Object wordCountMin;
+        Object wordCountMax;
+        Object page;
+        Object pageSize;
         String clusteringVariable;
-        Boolean clusteringEnabled;
-        Double clusteringThreshold;
-        Boolean includeNlpData;
+        Object clusteringEnabled;
+        Object clusteringThreshold;
+        Object includeNlpData;
         Boolean hasNlp;
         String theme;
         String notTheme;
@@ -540,10 +540,10 @@ public class SearchApiGenerated {
         
         /**
          * Set byParseDate
-         * @param byParseDate  (optional, default to false)
+         * @param byParseDate  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder byParseDate(Boolean byParseDate) {
+        public SearchApi.GetRequestBuilder byParseDate(Object byParseDate) {
             this.byParseDate = byParseDate;
             return (SearchApi.GetRequestBuilder) this;
         }
@@ -573,7 +573,7 @@ public class SearchApiGenerated {
          * @param fromRank  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder fromRank(Integer fromRank) {
+        public SearchApi.GetRequestBuilder fromRank(Object fromRank) {
             this.fromRank = fromRank;
             return (SearchApi.GetRequestBuilder) this;
         }
@@ -583,7 +583,7 @@ public class SearchApiGenerated {
          * @param toRank  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder toRank(Integer toRank) {
+        public SearchApi.GetRequestBuilder toRank(Object toRank) {
             this.toRank = toRank;
             return (SearchApi.GetRequestBuilder) this;
         }
@@ -593,7 +593,7 @@ public class SearchApiGenerated {
          * @param isHeadline  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder isHeadline(Boolean isHeadline) {
+        public SearchApi.GetRequestBuilder isHeadline(Object isHeadline) {
             this.isHeadline = isHeadline;
             return (SearchApi.GetRequestBuilder) this;
         }
@@ -603,7 +603,7 @@ public class SearchApiGenerated {
          * @param isOpinion  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder isOpinion(Boolean isOpinion) {
+        public SearchApi.GetRequestBuilder isOpinion(Object isOpinion) {
             this.isOpinion = isOpinion;
             return (SearchApi.GetRequestBuilder) this;
         }
@@ -613,7 +613,7 @@ public class SearchApiGenerated {
          * @param isPaidContent  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder isPaidContent(Boolean isPaidContent) {
+        public SearchApi.GetRequestBuilder isPaidContent(Object isPaidContent) {
             this.isPaidContent = isPaidContent;
             return (SearchApi.GetRequestBuilder) this;
         }
@@ -653,7 +653,7 @@ public class SearchApiGenerated {
          * @param wordCountMin  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder wordCountMin(Integer wordCountMin) {
+        public SearchApi.GetRequestBuilder wordCountMin(Object wordCountMin) {
             this.wordCountMin = wordCountMin;
             return (SearchApi.GetRequestBuilder) this;
         }
@@ -663,27 +663,27 @@ public class SearchApiGenerated {
          * @param wordCountMax  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder wordCountMax(Integer wordCountMax) {
+        public SearchApi.GetRequestBuilder wordCountMax(Object wordCountMax) {
             this.wordCountMax = wordCountMax;
             return (SearchApi.GetRequestBuilder) this;
         }
         
         /**
          * Set page
-         * @param page  (optional, default to 1)
+         * @param page  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder page(Integer page) {
+        public SearchApi.GetRequestBuilder page(Object page) {
             this.page = page;
             return (SearchApi.GetRequestBuilder) this;
         }
         
         /**
          * Set pageSize
-         * @param pageSize  (optional, default to 100)
+         * @param pageSize  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder pageSize(Integer pageSize) {
+        public SearchApi.GetRequestBuilder pageSize(Object pageSize) {
             this.pageSize = pageSize;
             return (SearchApi.GetRequestBuilder) this;
         }
@@ -703,7 +703,7 @@ public class SearchApiGenerated {
          * @param clusteringEnabled  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder clusteringEnabled(Boolean clusteringEnabled) {
+        public SearchApi.GetRequestBuilder clusteringEnabled(Object clusteringEnabled) {
             this.clusteringEnabled = clusteringEnabled;
             return (SearchApi.GetRequestBuilder) this;
         }
@@ -713,7 +713,7 @@ public class SearchApiGenerated {
          * @param clusteringThreshold  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder clusteringThreshold(Double clusteringThreshold) {
+        public SearchApi.GetRequestBuilder clusteringThreshold(Object clusteringThreshold) {
             this.clusteringThreshold = clusteringThreshold;
             return (SearchApi.GetRequestBuilder) this;
         }
@@ -723,7 +723,7 @@ public class SearchApiGenerated {
          * @param includeNlpData  (optional)
          * @return SearchApi.GetRequestBuilder
          */
-        public SearchApi.GetRequestBuilder includeNlpData(Boolean includeNlpData) {
+        public SearchApi.GetRequestBuilder includeNlpData(Object includeNlpData) {
             this.includeNlpData = includeNlpData;
             return (SearchApi.GetRequestBuilder) this;
         }
@@ -1101,25 +1101,25 @@ public class SearchApiGenerated {
         String from;
         String to;
         String publishedDatePrecision;
-        Boolean byParseDate;
+        Object byParseDate;
         String sortBy;
         Object rankedOnly;
-        Integer fromRank;
-        Integer toRank;
-        Boolean isHeadline;
-        Boolean isOpinion;
-        Boolean isPaidContent;
+        Object fromRank;
+        Object toRank;
+        Object isHeadline;
+        Object isOpinion;
+        Object isPaidContent;
         Object parentUrl;
         Object allLinks;
         Object allDomainLinks;
-        Integer wordCountMin;
-        Integer wordCountMax;
-        Integer page;
-        Integer pageSize;
+        Object wordCountMin;
+        Object wordCountMax;
+        Object page;
+        Object pageSize;
         String clusteringVariable;
-        Boolean clusteringEnabled;
-        Double clusteringThreshold;
-        Boolean includeNlpData;
+        Object clusteringEnabled;
+        Object clusteringThreshold;
+        Object includeNlpData;
         Boolean hasNlp;
         String theme;
         String notTheme;
@@ -1268,10 +1268,10 @@ public class SearchApiGenerated {
         
         /**
          * Set byParseDate
-         * @param byParseDate  (optional, default to false)
+         * @param byParseDate  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder byParseDate(Boolean byParseDate) {
+        public SearchApi.PostRequestBuilder byParseDate(Object byParseDate) {
             this.byParseDate = byParseDate;
             return (SearchApi.PostRequestBuilder) this;
         }
@@ -1301,7 +1301,7 @@ public class SearchApiGenerated {
          * @param fromRank  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder fromRank(Integer fromRank) {
+        public SearchApi.PostRequestBuilder fromRank(Object fromRank) {
             this.fromRank = fromRank;
             return (SearchApi.PostRequestBuilder) this;
         }
@@ -1311,7 +1311,7 @@ public class SearchApiGenerated {
          * @param toRank  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder toRank(Integer toRank) {
+        public SearchApi.PostRequestBuilder toRank(Object toRank) {
             this.toRank = toRank;
             return (SearchApi.PostRequestBuilder) this;
         }
@@ -1321,7 +1321,7 @@ public class SearchApiGenerated {
          * @param isHeadline  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder isHeadline(Boolean isHeadline) {
+        public SearchApi.PostRequestBuilder isHeadline(Object isHeadline) {
             this.isHeadline = isHeadline;
             return (SearchApi.PostRequestBuilder) this;
         }
@@ -1331,7 +1331,7 @@ public class SearchApiGenerated {
          * @param isOpinion  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder isOpinion(Boolean isOpinion) {
+        public SearchApi.PostRequestBuilder isOpinion(Object isOpinion) {
             this.isOpinion = isOpinion;
             return (SearchApi.PostRequestBuilder) this;
         }
@@ -1341,7 +1341,7 @@ public class SearchApiGenerated {
          * @param isPaidContent  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder isPaidContent(Boolean isPaidContent) {
+        public SearchApi.PostRequestBuilder isPaidContent(Object isPaidContent) {
             this.isPaidContent = isPaidContent;
             return (SearchApi.PostRequestBuilder) this;
         }
@@ -1381,7 +1381,7 @@ public class SearchApiGenerated {
          * @param wordCountMin  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder wordCountMin(Integer wordCountMin) {
+        public SearchApi.PostRequestBuilder wordCountMin(Object wordCountMin) {
             this.wordCountMin = wordCountMin;
             return (SearchApi.PostRequestBuilder) this;
         }
@@ -1391,27 +1391,27 @@ public class SearchApiGenerated {
          * @param wordCountMax  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder wordCountMax(Integer wordCountMax) {
+        public SearchApi.PostRequestBuilder wordCountMax(Object wordCountMax) {
             this.wordCountMax = wordCountMax;
             return (SearchApi.PostRequestBuilder) this;
         }
         
         /**
          * Set page
-         * @param page  (optional, default to 1)
+         * @param page  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder page(Integer page) {
+        public SearchApi.PostRequestBuilder page(Object page) {
             this.page = page;
             return (SearchApi.PostRequestBuilder) this;
         }
         
         /**
          * Set pageSize
-         * @param pageSize  (optional, default to 100)
+         * @param pageSize  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder pageSize(Integer pageSize) {
+        public SearchApi.PostRequestBuilder pageSize(Object pageSize) {
             this.pageSize = pageSize;
             return (SearchApi.PostRequestBuilder) this;
         }
@@ -1431,7 +1431,7 @@ public class SearchApiGenerated {
          * @param clusteringEnabled  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder clusteringEnabled(Boolean clusteringEnabled) {
+        public SearchApi.PostRequestBuilder clusteringEnabled(Object clusteringEnabled) {
             this.clusteringEnabled = clusteringEnabled;
             return (SearchApi.PostRequestBuilder) this;
         }
@@ -1441,7 +1441,7 @@ public class SearchApiGenerated {
          * @param clusteringThreshold  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder clusteringThreshold(Double clusteringThreshold) {
+        public SearchApi.PostRequestBuilder clusteringThreshold(Object clusteringThreshold) {
             this.clusteringThreshold = clusteringThreshold;
             return (SearchApi.PostRequestBuilder) this;
         }
@@ -1451,7 +1451,7 @@ public class SearchApiGenerated {
          * @param includeNlpData  (optional)
          * @return SearchApi.PostRequestBuilder
          */
-        public SearchApi.PostRequestBuilder includeNlpData(Boolean includeNlpData) {
+        public SearchApi.PostRequestBuilder includeNlpData(Object includeNlpData) {
             this.includeNlpData = includeNlpData;
             return (SearchApi.PostRequestBuilder) this;
         }

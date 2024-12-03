@@ -38,7 +38,7 @@ public class Example {
     configuration.apiKey  = "YOUR API KEY";
     Newscatcher client = new Newscatcher(configuration);
     String when = "7d";
-    Boolean byParseDate = false;
+    Object byParseDate = null;
     String sortBy = "relevancy";
     Object lang = null;
     Object notLang = null;
@@ -49,19 +49,19 @@ public class Example {
     Object notSources = null;
     Object notAuthorName = null;
     Object rankedOnly = null;
-    Boolean isHeadline = true;
-    Boolean isOpinion = true;
-    Boolean isPaidContent = true;
+    Object isHeadline = null;
+    Object isOpinion = null;
+    Object isPaidContent = null;
     Object parentUrl = null;
     Object allLinks = null;
     Object allDomainLinks = null;
-    Integer wordCountMin = 56;
-    Integer wordCountMax = 56;
-    Integer page = 1;
-    Integer pageSize = 100;
+    Object wordCountMin = null;
+    Object wordCountMax = null;
+    Object page = null;
+    Object pageSize = null;
     String clusteringVariable = "clusteringVariable_example";
-    Boolean clusteringEnabled = true;
-    Double clusteringThreshold = 3.4D;
+    Object clusteringEnabled = null;
+    Object clusteringThreshold = null;
     Boolean includeNlpData = true;
     Boolean hasNlp = true;
     String theme = "theme_example";
@@ -211,7 +211,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **when** | **String**|  | [optional] [default to 7d] |
-| **byParseDate** | **Boolean**|  | [optional] [default to false] |
+| **byParseDate** | [**Object**](.md)|  | [optional] |
 | **sortBy** | **String**|  | [optional] [default to relevancy] |
 | **lang** | [**Object**](.md)|  | [optional] |
 | **notLang** | [**Object**](.md)|  | [optional] |
@@ -222,19 +222,19 @@ public class Example {
 | **notSources** | [**Object**](.md)|  | [optional] |
 | **notAuthorName** | [**Object**](.md)|  | [optional] |
 | **rankedOnly** | [**Object**](.md)|  | [optional] |
-| **isHeadline** | **Boolean**|  | [optional] |
-| **isOpinion** | **Boolean**|  | [optional] |
-| **isPaidContent** | **Boolean**|  | [optional] |
+| **isHeadline** | [**Object**](.md)|  | [optional] |
+| **isOpinion** | [**Object**](.md)|  | [optional] |
+| **isPaidContent** | [**Object**](.md)|  | [optional] |
 | **parentUrl** | [**Object**](.md)|  | [optional] |
 | **allLinks** | [**Object**](.md)|  | [optional] |
 | **allDomainLinks** | [**Object**](.md)|  | [optional] |
-| **wordCountMin** | **Integer**|  | [optional] |
-| **wordCountMax** | **Integer**|  | [optional] |
-| **page** | **Integer**|  | [optional] [default to 1] |
-| **pageSize** | **Integer**|  | [optional] [default to 100] |
+| **wordCountMin** | [**Object**](.md)|  | [optional] |
+| **wordCountMax** | [**Object**](.md)|  | [optional] |
+| **page** | [**Object**](.md)|  | [optional] |
+| **pageSize** | [**Object**](.md)|  | [optional] |
 | **clusteringVariable** | **String**|  | [optional] |
-| **clusteringEnabled** | **Boolean**|  | [optional] |
-| **clusteringThreshold** | **Double**|  | [optional] |
+| **clusteringEnabled** | [**Object**](.md)|  | [optional] |
+| **clusteringThreshold** | [**Object**](.md)|  | [optional] |
 | **includeNlpData** | **Boolean**|  | [optional] |
 | **hasNlp** | **Boolean**|  | [optional] |
 | **theme** | **String**|  | [optional] |
@@ -300,7 +300,7 @@ public class Example {
     configuration.apiKey  = "YOUR API KEY";
     Newscatcher client = new Newscatcher(configuration);
     String when = "7d";
-    Boolean byParseDate = false;
+    Object byParseDate = null;
     String sortBy = "relevancy";
     Object lang = null;
     Object notLang = null;
@@ -311,19 +311,19 @@ public class Example {
     Object notSources = null;
     Object notAuthorName = null;
     Object rankedOnly = null;
-    Boolean isHeadline = true;
-    Boolean isOpinion = true;
-    Boolean isPaidContent = true;
+    Object isHeadline = null;
+    Object isOpinion = null;
+    Object isPaidContent = null;
     Object parentUrl = null;
     Object allLinks = null;
     Object allDomainLinks = null;
-    Integer wordCountMin = 56;
-    Integer wordCountMax = 56;
-    Integer page = 1;
-    Integer pageSize = 100;
+    Object wordCountMin = null;
+    Object wordCountMax = null;
+    Object page = null;
+    Object pageSize = null;
     String clusteringVariable = "clusteringVariable_example";
-    Boolean clusteringEnabled = true;
-    Double clusteringThreshold = 3.4D;
+    Object clusteringEnabled = null;
+    Object clusteringThreshold = null;
     Boolean includeNlpData = true;
     Boolean hasNlp = true;
     String theme = "theme_example";

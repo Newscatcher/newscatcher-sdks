@@ -35,7 +35,7 @@ namespace Newscatcherapi.Net.Api
         /// </remarks>
         /// <exception cref="Newscatcherapi.Net.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="when"> (optional, default to &quot;7d&quot;)</param>
-        /// <param name="byParseDate"> (optional, default to false)</param>
+        /// <param name="byParseDate"> (optional)</param>
         /// <param name="sortBy"> (optional, default to &quot;relevancy&quot;)</param>
         /// <param name="lang"> (optional)</param>
         /// <param name="notLang"> (optional)</param>
@@ -54,8 +54,8 @@ namespace Newscatcherapi.Net.Api
         /// <param name="allDomainLinks"> (optional)</param>
         /// <param name="wordCountMin"> (optional)</param>
         /// <param name="wordCountMax"> (optional)</param>
-        /// <param name="page"> (optional, default to 1)</param>
-        /// <param name="pageSize"> (optional, default to 100)</param>
+        /// <param name="page"> (optional)</param>
+        /// <param name="pageSize"> (optional)</param>
         /// <param name="clusteringVariable"> (optional)</param>
         /// <param name="clusteringEnabled"> (optional)</param>
         /// <param name="clusteringThreshold"> (optional)</param>
@@ -77,7 +77,7 @@ namespace Newscatcherapi.Net.Api
         /// <param name="notIabTags"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>LatestHeadlinesGetResponse</returns>
-        LatestHeadlinesGetResponse Get(string when = default(string), bool? byParseDate = default(bool?), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), bool? isHeadline = default(bool?), bool? isOpinion = default(bool?), bool? isPaidContent = default(bool?), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), int? wordCountMin = default(int?), int? wordCountMax = default(int?), int? page = default(int?), int? pageSize = default(int?), string clusteringVariable = default(string), bool? clusteringEnabled = default(bool?), double? clusteringThreshold = default(double?), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0);
+        LatestHeadlinesGetResponse Get(string when = default(string), ByParseDate byParseDate = default(ByParseDate), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), IsHeadline isHeadline = default(IsHeadline), IsOpinion isOpinion = default(IsOpinion), IsPaidContent isPaidContent = default(IsPaidContent), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), WordCountMin wordCountMin = default(WordCountMin), WordCountMax wordCountMax = default(WordCountMax), Page page = default(Page), PageSize pageSize = default(PageSize), string clusteringVariable = default(string), ClusteringEnabled clusteringEnabled = default(ClusteringEnabled), ClusteringThreshold clusteringThreshold = default(ClusteringThreshold), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0);
 
         /// <summary>
         /// [Get] Search For Latest Headlines Request
@@ -87,7 +87,7 @@ namespace Newscatcherapi.Net.Api
         /// </remarks>
         /// <exception cref="Newscatcherapi.Net.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="when"> (optional, default to &quot;7d&quot;)</param>
-        /// <param name="byParseDate"> (optional, default to false)</param>
+        /// <param name="byParseDate"> (optional)</param>
         /// <param name="sortBy"> (optional, default to &quot;relevancy&quot;)</param>
         /// <param name="lang"> (optional)</param>
         /// <param name="notLang"> (optional)</param>
@@ -106,8 +106,8 @@ namespace Newscatcherapi.Net.Api
         /// <param name="allDomainLinks"> (optional)</param>
         /// <param name="wordCountMin"> (optional)</param>
         /// <param name="wordCountMax"> (optional)</param>
-        /// <param name="page"> (optional, default to 1)</param>
-        /// <param name="pageSize"> (optional, default to 100)</param>
+        /// <param name="page"> (optional)</param>
+        /// <param name="pageSize"> (optional)</param>
         /// <param name="clusteringVariable"> (optional)</param>
         /// <param name="clusteringEnabled"> (optional)</param>
         /// <param name="clusteringThreshold"> (optional)</param>
@@ -129,7 +129,7 @@ namespace Newscatcherapi.Net.Api
         /// <param name="notIabTags"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of LatestHeadlinesGetResponse</returns>
-        ApiResponse<LatestHeadlinesGetResponse> GetWithHttpInfo(string when = default(string), bool? byParseDate = default(bool?), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), bool? isHeadline = default(bool?), bool? isOpinion = default(bool?), bool? isPaidContent = default(bool?), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), int? wordCountMin = default(int?), int? wordCountMax = default(int?), int? page = default(int?), int? pageSize = default(int?), string clusteringVariable = default(string), bool? clusteringEnabled = default(bool?), double? clusteringThreshold = default(double?), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0);
+        ApiResponse<LatestHeadlinesGetResponse> GetWithHttpInfo(string when = default(string), ByParseDate byParseDate = default(ByParseDate), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), IsHeadline isHeadline = default(IsHeadline), IsOpinion isOpinion = default(IsOpinion), IsPaidContent isPaidContent = default(IsPaidContent), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), WordCountMin wordCountMin = default(WordCountMin), WordCountMax wordCountMax = default(WordCountMax), Page page = default(Page), PageSize pageSize = default(PageSize), string clusteringVariable = default(string), ClusteringEnabled clusteringEnabled = default(ClusteringEnabled), ClusteringThreshold clusteringThreshold = default(ClusteringThreshold), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0);
         /// <summary>
         /// [Post] Search For Latest Headlines Request
         /// </summary>
@@ -170,7 +170,7 @@ namespace Newscatcherapi.Net.Api
         /// </remarks>
         /// <exception cref="Newscatcherapi.Net.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="when"> (optional, default to &quot;7d&quot;)</param>
-        /// <param name="byParseDate"> (optional, default to false)</param>
+        /// <param name="byParseDate"> (optional)</param>
         /// <param name="sortBy"> (optional, default to &quot;relevancy&quot;)</param>
         /// <param name="lang"> (optional)</param>
         /// <param name="notLang"> (optional)</param>
@@ -189,8 +189,8 @@ namespace Newscatcherapi.Net.Api
         /// <param name="allDomainLinks"> (optional)</param>
         /// <param name="wordCountMin"> (optional)</param>
         /// <param name="wordCountMax"> (optional)</param>
-        /// <param name="page"> (optional, default to 1)</param>
-        /// <param name="pageSize"> (optional, default to 100)</param>
+        /// <param name="page"> (optional)</param>
+        /// <param name="pageSize"> (optional)</param>
         /// <param name="clusteringVariable"> (optional)</param>
         /// <param name="clusteringEnabled"> (optional)</param>
         /// <param name="clusteringThreshold"> (optional)</param>
@@ -213,7 +213,7 @@ namespace Newscatcherapi.Net.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of LatestHeadlinesGetResponse</returns>
-        System.Threading.Tasks.Task<LatestHeadlinesGetResponse> GetAsync(string when = default(string), bool? byParseDate = default(bool?), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), bool? isHeadline = default(bool?), bool? isOpinion = default(bool?), bool? isPaidContent = default(bool?), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), int? wordCountMin = default(int?), int? wordCountMax = default(int?), int? page = default(int?), int? pageSize = default(int?), string clusteringVariable = default(string), bool? clusteringEnabled = default(bool?), double? clusteringThreshold = default(double?), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<LatestHeadlinesGetResponse> GetAsync(string when = default(string), ByParseDate byParseDate = default(ByParseDate), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), IsHeadline isHeadline = default(IsHeadline), IsOpinion isOpinion = default(IsOpinion), IsPaidContent isPaidContent = default(IsPaidContent), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), WordCountMin wordCountMin = default(WordCountMin), WordCountMax wordCountMax = default(WordCountMax), Page page = default(Page), PageSize pageSize = default(PageSize), string clusteringVariable = default(string), ClusteringEnabled clusteringEnabled = default(ClusteringEnabled), ClusteringThreshold clusteringThreshold = default(ClusteringThreshold), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// [Get] Search For Latest Headlines Request
@@ -223,7 +223,7 @@ namespace Newscatcherapi.Net.Api
         /// </remarks>
         /// <exception cref="Newscatcherapi.Net.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="when"> (optional, default to &quot;7d&quot;)</param>
-        /// <param name="byParseDate"> (optional, default to false)</param>
+        /// <param name="byParseDate"> (optional)</param>
         /// <param name="sortBy"> (optional, default to &quot;relevancy&quot;)</param>
         /// <param name="lang"> (optional)</param>
         /// <param name="notLang"> (optional)</param>
@@ -242,8 +242,8 @@ namespace Newscatcherapi.Net.Api
         /// <param name="allDomainLinks"> (optional)</param>
         /// <param name="wordCountMin"> (optional)</param>
         /// <param name="wordCountMax"> (optional)</param>
-        /// <param name="page"> (optional, default to 1)</param>
-        /// <param name="pageSize"> (optional, default to 100)</param>
+        /// <param name="page"> (optional)</param>
+        /// <param name="pageSize"> (optional)</param>
         /// <param name="clusteringVariable"> (optional)</param>
         /// <param name="clusteringEnabled"> (optional)</param>
         /// <param name="clusteringThreshold"> (optional)</param>
@@ -266,7 +266,7 @@ namespace Newscatcherapi.Net.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (LatestHeadlinesGetResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<LatestHeadlinesGetResponse>> GetWithHttpInfoAsync(string when = default(string), bool? byParseDate = default(bool?), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), bool? isHeadline = default(bool?), bool? isOpinion = default(bool?), bool? isPaidContent = default(bool?), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), int? wordCountMin = default(int?), int? wordCountMax = default(int?), int? page = default(int?), int? pageSize = default(int?), string clusteringVariable = default(string), bool? clusteringEnabled = default(bool?), double? clusteringThreshold = default(double?), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<LatestHeadlinesGetResponse>> GetWithHttpInfoAsync(string when = default(string), ByParseDate byParseDate = default(ByParseDate), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), IsHeadline isHeadline = default(IsHeadline), IsOpinion isOpinion = default(IsOpinion), IsPaidContent isPaidContent = default(IsPaidContent), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), WordCountMin wordCountMin = default(WordCountMin), WordCountMax wordCountMax = default(WordCountMax), Page page = default(Page), PageSize pageSize = default(PageSize), string clusteringVariable = default(string), ClusteringEnabled clusteringEnabled = default(ClusteringEnabled), ClusteringThreshold clusteringThreshold = default(ClusteringThreshold), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// [Post] Search For Latest Headlines Request
         /// </summary>
@@ -417,7 +417,7 @@ namespace Newscatcherapi.Net.Api
         /// </summary>
         /// <exception cref="Newscatcherapi.Net.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="when"> (optional, default to &quot;7d&quot;)</param>
-        /// <param name="byParseDate"> (optional, default to false)</param>
+        /// <param name="byParseDate"> (optional)</param>
         /// <param name="sortBy"> (optional, default to &quot;relevancy&quot;)</param>
         /// <param name="lang"> (optional)</param>
         /// <param name="notLang"> (optional)</param>
@@ -436,8 +436,8 @@ namespace Newscatcherapi.Net.Api
         /// <param name="allDomainLinks"> (optional)</param>
         /// <param name="wordCountMin"> (optional)</param>
         /// <param name="wordCountMax"> (optional)</param>
-        /// <param name="page"> (optional, default to 1)</param>
-        /// <param name="pageSize"> (optional, default to 100)</param>
+        /// <param name="page"> (optional)</param>
+        /// <param name="pageSize"> (optional)</param>
         /// <param name="clusteringVariable"> (optional)</param>
         /// <param name="clusteringEnabled"> (optional)</param>
         /// <param name="clusteringThreshold"> (optional)</param>
@@ -459,7 +459,7 @@ namespace Newscatcherapi.Net.Api
         /// <param name="notIabTags"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>LatestHeadlinesGetResponse</returns>
-        public LatestHeadlinesGetResponse Get(string when = default(string), bool? byParseDate = default(bool?), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), bool? isHeadline = default(bool?), bool? isOpinion = default(bool?), bool? isPaidContent = default(bool?), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), int? wordCountMin = default(int?), int? wordCountMax = default(int?), int? page = default(int?), int? pageSize = default(int?), string clusteringVariable = default(string), bool? clusteringEnabled = default(bool?), double? clusteringThreshold = default(double?), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0)
+        public LatestHeadlinesGetResponse Get(string when = default(string), ByParseDate byParseDate = default(ByParseDate), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), IsHeadline isHeadline = default(IsHeadline), IsOpinion isOpinion = default(IsOpinion), IsPaidContent isPaidContent = default(IsPaidContent), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), WordCountMin wordCountMin = default(WordCountMin), WordCountMax wordCountMax = default(WordCountMax), Page page = default(Page), PageSize pageSize = default(PageSize), string clusteringVariable = default(string), ClusteringEnabled clusteringEnabled = default(ClusteringEnabled), ClusteringThreshold clusteringThreshold = default(ClusteringThreshold), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0)
         {
             Newscatcherapi.Net.Client.ApiResponse<LatestHeadlinesGetResponse> localVarResponse = GetWithHttpInfo(when, byParseDate, sortBy, lang, notLang, countries, notCountries, sources, predefinedSources, notSources, notAuthorName, rankedOnly, isHeadline, isOpinion, isPaidContent, parentUrl, allLinks, allDomainLinks, wordCountMin, wordCountMax, page, pageSize, clusteringVariable, clusteringEnabled, clusteringThreshold, includeNlpData, hasNlp, theme, notTheme, oRGEntityName, pEREntityName, lOCEntityName, mISCEntityName, titleSentimentMin, titleSentimentMax, contentSentimentMin, contentSentimentMax, iptcTags, notIptcTags, iabTags, notIabTags);
             return localVarResponse.Data;
@@ -470,7 +470,7 @@ namespace Newscatcherapi.Net.Api
         /// </summary>
         /// <exception cref="Newscatcherapi.Net.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="when"> (optional, default to &quot;7d&quot;)</param>
-        /// <param name="byParseDate"> (optional, default to false)</param>
+        /// <param name="byParseDate"> (optional)</param>
         /// <param name="sortBy"> (optional, default to &quot;relevancy&quot;)</param>
         /// <param name="lang"> (optional)</param>
         /// <param name="notLang"> (optional)</param>
@@ -489,8 +489,8 @@ namespace Newscatcherapi.Net.Api
         /// <param name="allDomainLinks"> (optional)</param>
         /// <param name="wordCountMin"> (optional)</param>
         /// <param name="wordCountMax"> (optional)</param>
-        /// <param name="page"> (optional, default to 1)</param>
-        /// <param name="pageSize"> (optional, default to 100)</param>
+        /// <param name="page"> (optional)</param>
+        /// <param name="pageSize"> (optional)</param>
         /// <param name="clusteringVariable"> (optional)</param>
         /// <param name="clusteringEnabled"> (optional)</param>
         /// <param name="clusteringThreshold"> (optional)</param>
@@ -512,7 +512,7 @@ namespace Newscatcherapi.Net.Api
         /// <param name="notIabTags"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <returns>ApiResponse of LatestHeadlinesGetResponse</returns>
-        public Newscatcherapi.Net.Client.ApiResponse<LatestHeadlinesGetResponse> GetWithHttpInfo(string when = default(string), bool? byParseDate = default(bool?), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), bool? isHeadline = default(bool?), bool? isOpinion = default(bool?), bool? isPaidContent = default(bool?), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), int? wordCountMin = default(int?), int? wordCountMax = default(int?), int? page = default(int?), int? pageSize = default(int?), string clusteringVariable = default(string), bool? clusteringEnabled = default(bool?), double? clusteringThreshold = default(double?), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0)
+        public Newscatcherapi.Net.Client.ApiResponse<LatestHeadlinesGetResponse> GetWithHttpInfo(string when = default(string), ByParseDate byParseDate = default(ByParseDate), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), IsHeadline isHeadline = default(IsHeadline), IsOpinion isOpinion = default(IsOpinion), IsPaidContent isPaidContent = default(IsPaidContent), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), WordCountMin wordCountMin = default(WordCountMin), WordCountMax wordCountMax = default(WordCountMax), Page page = default(Page), PageSize pageSize = default(PageSize), string clusteringVariable = default(string), ClusteringEnabled clusteringEnabled = default(ClusteringEnabled), ClusteringThreshold clusteringThreshold = default(ClusteringThreshold), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0)
         {
             Newscatcherapi.Net.Client.RequestOptions localVarRequestOptions = new Newscatcherapi.Net.Client.RequestOptions();
 
@@ -729,7 +729,7 @@ namespace Newscatcherapi.Net.Api
         /// </summary>
         /// <exception cref="Newscatcherapi.Net.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="when"> (optional, default to &quot;7d&quot;)</param>
-        /// <param name="byParseDate"> (optional, default to false)</param>
+        /// <param name="byParseDate"> (optional)</param>
         /// <param name="sortBy"> (optional, default to &quot;relevancy&quot;)</param>
         /// <param name="lang"> (optional)</param>
         /// <param name="notLang"> (optional)</param>
@@ -748,8 +748,8 @@ namespace Newscatcherapi.Net.Api
         /// <param name="allDomainLinks"> (optional)</param>
         /// <param name="wordCountMin"> (optional)</param>
         /// <param name="wordCountMax"> (optional)</param>
-        /// <param name="page"> (optional, default to 1)</param>
-        /// <param name="pageSize"> (optional, default to 100)</param>
+        /// <param name="page"> (optional)</param>
+        /// <param name="pageSize"> (optional)</param>
         /// <param name="clusteringVariable"> (optional)</param>
         /// <param name="clusteringEnabled"> (optional)</param>
         /// <param name="clusteringThreshold"> (optional)</param>
@@ -772,7 +772,7 @@ namespace Newscatcherapi.Net.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of LatestHeadlinesGetResponse</returns>
-        public async System.Threading.Tasks.Task<LatestHeadlinesGetResponse> GetAsync(string when = default(string), bool? byParseDate = default(bool?), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), bool? isHeadline = default(bool?), bool? isOpinion = default(bool?), bool? isPaidContent = default(bool?), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), int? wordCountMin = default(int?), int? wordCountMax = default(int?), int? page = default(int?), int? pageSize = default(int?), string clusteringVariable = default(string), bool? clusteringEnabled = default(bool?), double? clusteringThreshold = default(double?), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<LatestHeadlinesGetResponse> GetAsync(string when = default(string), ByParseDate byParseDate = default(ByParseDate), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), IsHeadline isHeadline = default(IsHeadline), IsOpinion isOpinion = default(IsOpinion), IsPaidContent isPaidContent = default(IsPaidContent), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), WordCountMin wordCountMin = default(WordCountMin), WordCountMax wordCountMax = default(WordCountMax), Page page = default(Page), PageSize pageSize = default(PageSize), string clusteringVariable = default(string), ClusteringEnabled clusteringEnabled = default(ClusteringEnabled), ClusteringThreshold clusteringThreshold = default(ClusteringThreshold), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             Newscatcherapi.Net.Client.ApiResponse<LatestHeadlinesGetResponse> localVarResponse = await GetWithHttpInfoAsync(when, byParseDate, sortBy, lang, notLang, countries, notCountries, sources, predefinedSources, notSources, notAuthorName, rankedOnly, isHeadline, isOpinion, isPaidContent, parentUrl, allLinks, allDomainLinks, wordCountMin, wordCountMax, page, pageSize, clusteringVariable, clusteringEnabled, clusteringThreshold, includeNlpData, hasNlp, theme, notTheme, oRGEntityName, pEREntityName, lOCEntityName, mISCEntityName, titleSentimentMin, titleSentimentMax, contentSentimentMin, contentSentimentMax, iptcTags, notIptcTags, iabTags, notIabTags, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -783,7 +783,7 @@ namespace Newscatcherapi.Net.Api
         /// </summary>
         /// <exception cref="Newscatcherapi.Net.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="when"> (optional, default to &quot;7d&quot;)</param>
-        /// <param name="byParseDate"> (optional, default to false)</param>
+        /// <param name="byParseDate"> (optional)</param>
         /// <param name="sortBy"> (optional, default to &quot;relevancy&quot;)</param>
         /// <param name="lang"> (optional)</param>
         /// <param name="notLang"> (optional)</param>
@@ -802,8 +802,8 @@ namespace Newscatcherapi.Net.Api
         /// <param name="allDomainLinks"> (optional)</param>
         /// <param name="wordCountMin"> (optional)</param>
         /// <param name="wordCountMax"> (optional)</param>
-        /// <param name="page"> (optional, default to 1)</param>
-        /// <param name="pageSize"> (optional, default to 100)</param>
+        /// <param name="page"> (optional)</param>
+        /// <param name="pageSize"> (optional)</param>
         /// <param name="clusteringVariable"> (optional)</param>
         /// <param name="clusteringEnabled"> (optional)</param>
         /// <param name="clusteringThreshold"> (optional)</param>
@@ -826,7 +826,7 @@ namespace Newscatcherapi.Net.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (LatestHeadlinesGetResponse)</returns>
-        public virtual async System.Threading.Tasks.Task<Newscatcherapi.Net.Client.ApiResponse<LatestHeadlinesGetResponse>> GetWithHttpInfoAsync(string when = default(string), bool? byParseDate = default(bool?), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), bool? isHeadline = default(bool?), bool? isOpinion = default(bool?), bool? isPaidContent = default(bool?), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), int? wordCountMin = default(int?), int? wordCountMax = default(int?), int? page = default(int?), int? pageSize = default(int?), string clusteringVariable = default(string), bool? clusteringEnabled = default(bool?), double? clusteringThreshold = default(double?), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public virtual async System.Threading.Tasks.Task<Newscatcherapi.Net.Client.ApiResponse<LatestHeadlinesGetResponse>> GetWithHttpInfoAsync(string when = default(string), ByParseDate byParseDate = default(ByParseDate), string sortBy = default(string), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object sources = default(Object), Object predefinedSources = default(Object), Object notSources = default(Object), Object notAuthorName = default(Object), RankedOnly rankedOnly = default(RankedOnly), IsHeadline isHeadline = default(IsHeadline), IsOpinion isOpinion = default(IsOpinion), IsPaidContent isPaidContent = default(IsPaidContent), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), WordCountMin wordCountMin = default(WordCountMin), WordCountMax wordCountMax = default(WordCountMax), Page page = default(Page), PageSize pageSize = default(PageSize), string clusteringVariable = default(string), ClusteringEnabled clusteringEnabled = default(ClusteringEnabled), ClusteringThreshold clusteringThreshold = default(ClusteringThreshold), bool? includeNlpData = default(bool?), bool? hasNlp = default(bool?), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double? titleSentimentMin = default(double?), double? titleSentimentMax = default(double?), double? contentSentimentMin = default(double?), double? contentSentimentMax = default(double?), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Newscatcherapi.Net.Client.RequestOptions localVarRequestOptions = new Newscatcherapi.Net.Client.RequestOptions();

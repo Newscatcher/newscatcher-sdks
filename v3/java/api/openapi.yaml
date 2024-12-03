@@ -128,13 +128,7 @@ paths:
         in: query
         name: by_parse_date
         required: false
-        schema:
-          default: false
-          example: false
-          title: By Parse Date
-          type: boolean
-          x-konfig-original-example: false
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-search-get-parameters-13-schema
+        schema: {}
         style: form
       - explode: true
         in: query
@@ -158,41 +152,31 @@ paths:
         in: query
         name: from_rank
         required: false
-        schema:
-          title: From Rank
-          type: integer
+        schema: {}
         style: form
       - explode: true
         in: query
         name: to_rank
         required: false
-        schema:
-          title: To Rank
-          type: integer
+        schema: {}
         style: form
       - explode: true
         in: query
         name: is_headline
         required: false
-        schema:
-          title: Is Headline
-          type: boolean
+        schema: {}
         style: form
       - explode: true
         in: query
         name: is_opinion
         required: false
-        schema:
-          title: Is Opinion
-          type: boolean
+        schema: {}
         style: form
       - explode: true
         in: query
         name: is_paid_content
         required: false
-        schema:
-          title: Is Paid Content
-          type: boolean
+        schema: {}
         style: form
       - explode: true
         in: query
@@ -219,45 +203,25 @@ paths:
         in: query
         name: word_count_min
         required: false
-        schema:
-          minimum: 0
-          title: Word Count Min
-          type: integer
+        schema: {}
         style: form
       - explode: true
         in: query
         name: word_count_max
         required: false
-        schema:
-          minimum: 0
-          title: Word Count Max
-          type: integer
+        schema: {}
         style: form
       - explode: true
         in: query
         name: page
         required: false
-        schema:
-          default: 1
-          example: 1
-          minimum: 0
-          title: Page
-          type: integer
-          x-konfig-original-example: 1
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-search-get-parameters-26-schema
+        schema: {}
         style: form
       - explode: true
         in: query
         name: page_size
         required: false
-        schema:
-          default: 100
-          example: 100
-          minimum: 0
-          title: Page Size
-          type: integer
-          x-konfig-original-example: 100
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-search-get-parameters-27-schema
+        schema: {}
         style: form
       - explode: true
         in: query
@@ -271,25 +235,19 @@ paths:
         in: query
         name: clustering_enabled
         required: false
-        schema:
-          title: Clustering Enabled
-          type: boolean
+        schema: {}
         style: form
       - explode: true
         in: query
         name: clustering_threshold
         required: false
-        schema:
-          title: Clustering Threshold
-          type: number
+        schema: {}
         style: form
       - explode: true
         in: query
         name: include_nlp_data
         required: false
-        schema:
-          title: Include Nlp Data
-          type: boolean
+        schema: {}
         style: form
       - explode: true
         in: query
@@ -531,13 +489,7 @@ paths:
         in: query
         name: by_parse_date
         required: false
-        schema:
-          default: false
-          example: false
-          title: By Parse Date
-          type: boolean
-          x-konfig-original-example: false
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-latest_headlines-get-parameters-1-schema
+        schema: {}
         style: form
       - explode: true
         in: query
@@ -617,25 +569,19 @@ paths:
         in: query
         name: is_headline
         required: false
-        schema:
-          title: Is Headline
-          type: boolean
+        schema: {}
         style: form
       - explode: true
         in: query
         name: is_opinion
         required: false
-        schema:
-          title: Is Opinion
-          type: boolean
+        schema: {}
         style: form
       - explode: true
         in: query
         name: is_paid_content
         required: false
-        schema:
-          title: Is Paid Content
-          type: boolean
+        schema: {}
         style: form
       - explode: true
         in: query
@@ -662,45 +608,25 @@ paths:
         in: query
         name: word_count_min
         required: false
-        schema:
-          minimum: 0
-          title: Word Count Min
-          type: integer
+        schema: {}
         style: form
       - explode: true
         in: query
         name: word_count_max
         required: false
-        schema:
-          minimum: 0
-          title: Word Count Max
-          type: integer
+        schema: {}
         style: form
       - explode: true
         in: query
         name: page
         required: false
-        schema:
-          default: 1
-          example: 1
-          minimum: 0
-          title: Page
-          type: integer
-          x-konfig-original-example: 1
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-latest_headlines-get-parameters-20-schema
+        schema: {}
         style: form
       - explode: true
         in: query
         name: page_size
         required: false
-        schema:
-          default: 100
-          example: 100
-          minimum: 0
-          title: Page Size
-          type: integer
-          x-konfig-original-example: 100
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-latest_headlines-get-parameters-21-schema
+        schema: {}
         style: form
       - explode: true
         in: query
@@ -714,17 +640,13 @@ paths:
         in: query
         name: clustering_enabled
         required: false
-        schema:
-          title: Clustering Enabled
-          type: boolean
+        schema: {}
         style: form
       - explode: true
         in: query
         name: clustering_threshold
         required: false
-        schema:
-          title: Clustering Threshold
-          type: number
+        schema: {}
         style: form
       - explode: true
         in: query
@@ -2284,20 +2206,20 @@ components:
         ORG_entity_name: ORG_entity_name
         sort_by: relevancy
         all_domain_links: ""
-        clustering_threshold: 1.4658129805029452
+        clustering_threshold: ""
         when: 7d
-        word_count_max: 0
+        word_count_max: ""
         not_theme: not_theme
         all_links: ""
-        content_sentiment_max: 7.061401241503109
-        title_sentiment_max: 5.637376656633329
+        content_sentiment_max: 5.962133916683182
+        title_sentiment_max: 6.027456183070403
         theme: theme
         lang: ""
         not_countries: ""
-        word_count_min: 0
-        page_size: 100
-        by_parse_date: false
-        content_sentiment_min: 2.3021358869347655
+        word_count_min: ""
+        page_size: ""
+        by_parse_date: ""
+        content_sentiment_min: 1.4658129805029452
         LOC_entity_name: LOC_entity_name
         MISC_entity_name: MISC_entity_name
         not_sources: ""
@@ -2307,17 +2229,17 @@ components:
         not_lang: ""
         predefined_sources: ""
         not_author_name: ""
-        title_sentiment_min: 5.962133916683182
-        is_headline: true
+        title_sentiment_min: 0.8008281904610115
+        is_headline: ""
         not_iab_tags: ""
         parent_url: ""
-        clustering_enabled: true
-        is_opinion: true
+        clustering_enabled: ""
+        is_opinion: ""
         ranked_only: ""
         include_nlp_data: true
-        is_paid_content: true
+        is_paid_content: ""
         PER_entity_name: PER_entity_name
-        page: 1
+        page: ""
       properties:
         when:
           default: 7d
@@ -2326,13 +2248,7 @@ components:
           type: string
           x-konfig-original-example: 7d
           x-konfig-generated-schema: konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-when
-        by_parse_date:
-          default: false
-          example: false
-          title: By Parse Date
-          type: boolean
-          x-konfig-original-example: false
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-by_parse_date
+        by_parse_date: {}
         sort_by:
           default: relevancy
           example: relevancy
@@ -2357,54 +2273,24 @@ components:
         not_author_name:
           title: Not Author Name
         ranked_only: {}
-        is_headline:
-          title: Is Headline
-          type: boolean
-        is_opinion:
-          title: Is Opinion
-          type: boolean
-        is_paid_content:
-          title: Is Paid Content
-          type: boolean
+        is_headline: {}
+        is_opinion: {}
+        is_paid_content: {}
         parent_url:
           title: Parent Url
         all_links:
           title: All Links
         all_domain_links:
           title: All Domain Links
-        word_count_min:
-          minimum: 0
-          title: Word Count Min
-          type: integer
-        word_count_max:
-          minimum: 0
-          title: Word Count Max
-          type: integer
-        page:
-          default: 1
-          example: 1
-          minimum: 0
-          title: Page
-          type: integer
-          x-konfig-original-example: 1
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-page
-        page_size:
-          default: 100
-          example: 100
-          minimum: 0
-          title: Page Size
-          type: integer
-          x-konfig-original-example: 100
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-page_size
+        word_count_min: {}
+        word_count_max: {}
+        page: {}
+        page_size: {}
         clustering_variable:
           title: Clustering Variable
           type: string
-        clustering_enabled:
-          title: Clustering Enabled
-          type: boolean
-        clustering_threshold:
-          title: Clustering Threshold
-          type: number
+        clustering_enabled: {}
+        clustering_threshold: {}
         include_nlp_data:
           title: Include Nlp Data
           type: boolean
@@ -2685,13 +2571,13 @@ components:
         not_iptc_tags: ""
         ORG_entity_name: ORG_entity_name
         all_domain_links: ""
-        clustering_threshold: 5.637376656633329
-        word_count_max: 0
-        content_sentiment_max: 3.616076749251911
+        clustering_threshold: ""
+        word_count_max: ""
+        content_sentiment_max: 5.962133916683182
         not_countries: ""
-        word_count_min: 0
-        page_size: 100
-        by_parse_date: false
+        word_count_min: ""
+        page_size: ""
+        by_parse_date: ""
         from_: from_
         iptc_tags: ""
         countries: ""
@@ -2700,12 +2586,12 @@ components:
         not_lang: ""
         not_iab_tags: ""
         parent_url: ""
-        clustering_enabled: true
-        is_opinion: true
+        clustering_enabled: ""
+        is_opinion: ""
         ranked_only: ""
-        is_paid_content: true
+        is_paid_content: ""
         PER_entity_name: PER_entity_name
-        page: 1
+        page: ""
         news_domain_type: ""
         has_nlp: true
         is_news_domain: true
@@ -2716,25 +2602,25 @@ components:
         not_theme: not_theme
         news_type: ""
         all_links: ""
-        title_sentiment_max: 7.061401241503109
+        title_sentiment_max: 6.027456183070403
         theme: theme
         lang: ""
-        to_rank: 6
+        to_rank: ""
         exclude_duplicates: true
         source_name: ""
         search_in: title_content
-        content_sentiment_min: 9.301444243932576
+        content_sentiment_min: 1.4658129805029452
         LOC_entity_name: LOC_entity_name
         MISC_entity_name: MISC_entity_name
         not_sources: ""
         not_author_name: ""
-        from_rank: 0
-        title_sentiment_min: 2.3021358869347655
-        is_headline: true
+        from_rank: ""
+        title_sentiment_min: 0.8008281904610115
+        is_headline: ""
         additional_domain_info: true
         q: q
         published_date_precision: published_date_precision
-        include_nlp_data: true
+        include_nlp_data: ""
       properties:
         q:
           title: Q
@@ -2769,13 +2655,7 @@ components:
         published_date_precision:
           title: Published Date Precision
           type: string
-        by_parse_date:
-          default: false
-          example: false
-          title: By Parse Date
-          type: boolean
-          x-konfig-original-example: false
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-SearchRequest-properties-by_parse_date
+        by_parse_date: {}
         sort_by:
           default: relevancy
           example: relevancy
@@ -2784,63 +2664,27 @@ components:
           x-konfig-original-example: relevancy
           x-konfig-generated-schema: konfig-generated-schema-components-schemas-SearchRequest-properties-sort_by
         ranked_only: {}
-        from_rank:
-          title: From Rank
-          type: integer
-        to_rank:
-          title: To Rank
-          type: integer
-        is_headline:
-          title: Is Headline
-          type: boolean
-        is_opinion:
-          title: Is Opinion
-          type: boolean
-        is_paid_content:
-          title: Is Paid Content
-          type: boolean
+        from_rank: {}
+        to_rank: {}
+        is_headline: {}
+        is_opinion: {}
+        is_paid_content: {}
         parent_url:
           title: Parent Url
         all_links:
           title: All Links
         all_domain_links:
           title: All Domain Links
-        word_count_min:
-          minimum: 0
-          title: Word Count Min
-          type: integer
-        word_count_max:
-          minimum: 0
-          title: Word Count Max
-          type: integer
-        page:
-          default: 1
-          example: 1
-          minimum: 0
-          title: Page
-          type: integer
-          x-konfig-original-example: 1
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-SearchRequest-properties-page
-        page_size:
-          default: 100
-          example: 100
-          minimum: 0
-          title: Page Size
-          type: integer
-          x-konfig-original-example: 100
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-SearchRequest-properties-page_size
+        word_count_min: {}
+        word_count_max: {}
+        page: {}
+        page_size: {}
         clustering_variable:
           title: Clustering Variable
           type: string
-        clustering_enabled:
-          title: Clustering Enabled
-          type: boolean
-        clustering_threshold:
-          title: Clustering Threshold
-          type: number
-        include_nlp_data:
-          title: Include Nlp Data
-          type: boolean
+        clustering_enabled: {}
+        clustering_threshold: {}
+        include_nlp_data: {}
         has_nlp:
           title: Has Nlp
           type: boolean
@@ -3604,41 +3448,17 @@ components:
       example: title_content
       type: string
       x-do-not-generate: true
-    konfig-generated-schema-paths--api-search-get-parameters-13-schema:
-      example: false
-      type: boolean
-      x-do-not-generate: true
     konfig-generated-schema-paths--api-search-get-parameters-14-schema:
       example: relevancy
       type: string
-      x-do-not-generate: true
-    konfig-generated-schema-paths--api-search-get-parameters-26-schema:
-      example: 1
-      type: number
-      x-do-not-generate: true
-    konfig-generated-schema-paths--api-search-get-parameters-27-schema:
-      example: 100
-      type: number
       x-do-not-generate: true
     konfig-generated-schema-paths--api-latest_headlines-get-parameters-0-schema:
       example: 7d
       type: string
       x-do-not-generate: true
-    konfig-generated-schema-paths--api-latest_headlines-get-parameters-1-schema:
-      example: false
-      type: boolean
-      x-do-not-generate: true
     konfig-generated-schema-paths--api-latest_headlines-get-parameters-2-schema:
       example: relevancy
       type: string
-      x-do-not-generate: true
-    konfig-generated-schema-paths--api-latest_headlines-get-parameters-20-schema:
-      example: 1
-      type: number
-      x-do-not-generate: true
-    konfig-generated-schema-paths--api-latest_headlines-get-parameters-21-schema:
-      example: 100
-      type: number
       x-do-not-generate: true
     konfig-generated-schema-paths--api-authors-get-parameters-12-schema:
       example: false
@@ -3720,21 +3540,9 @@ components:
       example: 7d
       type: string
       x-do-not-generate: true
-    konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-by_parse_date:
-      example: false
-      type: boolean
-      x-do-not-generate: true
     konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-sort_by:
       example: relevancy
       type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-page:
-      example: 1
-      type: number
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-page_size:
-      example: 100
-      type: number
       x-do-not-generate: true
     konfig-generated-schema-components-schemas-LatestHeadlinesResponse-properties-status:
       example: ok
@@ -3776,21 +3584,9 @@ components:
       example: title_content
       type: string
       x-do-not-generate: true
-    konfig-generated-schema-components-schemas-SearchRequest-properties-by_parse_date:
-      example: false
-      type: boolean
-      x-do-not-generate: true
     konfig-generated-schema-components-schemas-SearchRequest-properties-sort_by:
       example: relevancy
       type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-SearchRequest-properties-page:
-      example: 1
-      type: number
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-SearchRequest-properties-page_size:
-      example: 100
-      type: number
       x-do-not-generate: true
     konfig-generated-schema-components-schemas-SearchURLRequest-properties-page:
       example: 1
@@ -3920,13 +3716,7 @@ components:
         published_date_precision:
           title: Published Date Precision
           type: string
-        by_parse_date:
-          default: false
-          example: false
-          title: By Parse Date
-          type: boolean
-          x-konfig-original-example: false
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-search-get-parameters-13-schema
+        by_parse_date: {}
         sort_by:
           default: relevancy
           example: relevancy
@@ -3935,63 +3725,27 @@ components:
           x-konfig-original-example: relevancy
           x-konfig-generated-schema: konfig-generated-schema-paths--api-search-get-parameters-14-schema
         ranked_only: {}
-        from_rank:
-          title: From Rank
-          type: integer
-        to_rank:
-          title: To Rank
-          type: integer
-        is_headline:
-          title: Is Headline
-          type: boolean
-        is_opinion:
-          title: Is Opinion
-          type: boolean
-        is_paid_content:
-          title: Is Paid Content
-          type: boolean
+        from_rank: {}
+        to_rank: {}
+        is_headline: {}
+        is_opinion: {}
+        is_paid_content: {}
         parent_url:
           title: Parent Url
         all_links:
           title: All Links
         all_domain_links:
           title: All Domain Links
-        word_count_min:
-          minimum: 0
-          title: Word Count Min
-          type: integer
-        word_count_max:
-          minimum: 0
-          title: Word Count Max
-          type: integer
-        page:
-          default: 1
-          example: 1
-          minimum: 0
-          title: Page
-          type: integer
-          x-konfig-original-example: 1
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-search-get-parameters-26-schema
-        page_size:
-          default: 100
-          example: 100
-          minimum: 0
-          title: Page Size
-          type: integer
-          x-konfig-original-example: 100
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-search-get-parameters-27-schema
+        word_count_min: {}
+        word_count_max: {}
+        page: {}
+        page_size: {}
         clustering_variable:
           title: Clustering Variable
           type: string
-        clustering_enabled:
-          title: Clustering Enabled
-          type: boolean
-        clustering_threshold:
-          title: Clustering Threshold
-          type: number
-        include_nlp_data:
-          title: Include Nlp Data
-          type: boolean
+        clustering_enabled: {}
+        clustering_threshold: {}
+        include_nlp_data: {}
         has_nlp:
           title: Has Nlp
           type: boolean
@@ -4141,13 +3895,7 @@ components:
         published_date_precision:
           title: Published Date Precision
           type: string
-        by_parse_date:
-          default: false
-          example: false
-          title: By Parse Date
-          type: boolean
-          x-konfig-original-example: false
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-SearchRequest-properties-by_parse_date
+        by_parse_date: {}
         sort_by:
           default: relevancy
           example: relevancy
@@ -4156,63 +3904,27 @@ components:
           x-konfig-original-example: relevancy
           x-konfig-generated-schema: konfig-generated-schema-components-schemas-SearchRequest-properties-sort_by
         ranked_only: {}
-        from_rank:
-          title: From Rank
-          type: integer
-        to_rank:
-          title: To Rank
-          type: integer
-        is_headline:
-          title: Is Headline
-          type: boolean
-        is_opinion:
-          title: Is Opinion
-          type: boolean
-        is_paid_content:
-          title: Is Paid Content
-          type: boolean
+        from_rank: {}
+        to_rank: {}
+        is_headline: {}
+        is_opinion: {}
+        is_paid_content: {}
         parent_url:
           title: Parent Url
         all_links:
           title: All Links
         all_domain_links:
           title: All Domain Links
-        word_count_min:
-          minimum: 0
-          title: Word Count Min
-          type: integer
-        word_count_max:
-          minimum: 0
-          title: Word Count Max
-          type: integer
-        page:
-          default: 1
-          example: 1
-          minimum: 0
-          title: Page
-          type: integer
-          x-konfig-original-example: 1
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-SearchRequest-properties-page
-        page_size:
-          default: 100
-          example: 100
-          minimum: 0
-          title: Page Size
-          type: integer
-          x-konfig-original-example: 100
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-SearchRequest-properties-page_size
+        word_count_min: {}
+        word_count_max: {}
+        page: {}
+        page_size: {}
         clustering_variable:
           title: Clustering Variable
           type: string
-        clustering_enabled:
-          title: Clustering Enabled
-          type: boolean
-        clustering_threshold:
-          title: Clustering Threshold
-          type: number
-        include_nlp_data:
-          title: Include Nlp Data
-          type: boolean
+        clustering_enabled: {}
+        clustering_threshold: {}
+        include_nlp_data: {}
         has_nlp:
           title: Has Nlp
           type: boolean
@@ -4283,13 +3995,7 @@ components:
           type: string
           x-konfig-original-example: 7d
           x-konfig-generated-schema: konfig-generated-schema-paths--api-latest_headlines-get-parameters-0-schema
-        by_parse_date:
-          default: false
-          example: false
-          title: By Parse Date
-          type: boolean
-          x-konfig-original-example: false
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-latest_headlines-get-parameters-1-schema
+        by_parse_date: {}
         sort_by:
           default: relevancy
           example: relevancy
@@ -4314,54 +4020,24 @@ components:
         not_author_name:
           title: Not Author Name
         ranked_only: {}
-        is_headline:
-          title: Is Headline
-          type: boolean
-        is_opinion:
-          title: Is Opinion
-          type: boolean
-        is_paid_content:
-          title: Is Paid Content
-          type: boolean
+        is_headline: {}
+        is_opinion: {}
+        is_paid_content: {}
         parent_url:
           title: Parent Url
         all_links:
           title: All Links
         all_domain_links:
           title: All Domain Links
-        word_count_min:
-          minimum: 0
-          title: Word Count Min
-          type: integer
-        word_count_max:
-          minimum: 0
-          title: Word Count Max
-          type: integer
-        page:
-          default: 1
-          example: 1
-          minimum: 0
-          title: Page
-          type: integer
-          x-konfig-original-example: 1
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-latest_headlines-get-parameters-20-schema
-        page_size:
-          default: 100
-          example: 100
-          minimum: 0
-          title: Page Size
-          type: integer
-          x-konfig-original-example: 100
-          x-konfig-generated-schema: konfig-generated-schema-paths--api-latest_headlines-get-parameters-21-schema
+        word_count_min: {}
+        word_count_max: {}
+        page: {}
+        page_size: {}
         clustering_variable:
           title: Clustering Variable
           type: string
-        clustering_enabled:
-          title: Clustering Enabled
-          type: boolean
-        clustering_threshold:
-          title: Clustering Threshold
-          type: number
+        clustering_enabled: {}
+        clustering_threshold: {}
         include_nlp_data:
           title: Include Nlp Data
           type: boolean
@@ -4459,13 +4135,7 @@ components:
           type: string
           x-konfig-original-example: 7d
           x-konfig-generated-schema: konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-when
-        by_parse_date:
-          default: false
-          example: false
-          title: By Parse Date
-          type: boolean
-          x-konfig-original-example: false
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-by_parse_date
+        by_parse_date: {}
         sort_by:
           default: relevancy
           example: relevancy
@@ -4490,54 +4160,24 @@ components:
         not_author_name:
           title: Not Author Name
         ranked_only: {}
-        is_headline:
-          title: Is Headline
-          type: boolean
-        is_opinion:
-          title: Is Opinion
-          type: boolean
-        is_paid_content:
-          title: Is Paid Content
-          type: boolean
+        is_headline: {}
+        is_opinion: {}
+        is_paid_content: {}
         parent_url:
           title: Parent Url
         all_links:
           title: All Links
         all_domain_links:
           title: All Domain Links
-        word_count_min:
-          minimum: 0
-          title: Word Count Min
-          type: integer
-        word_count_max:
-          minimum: 0
-          title: Word Count Max
-          type: integer
-        page:
-          default: 1
-          example: 1
-          minimum: 0
-          title: Page
-          type: integer
-          x-konfig-original-example: 1
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-page
-        page_size:
-          default: 100
-          example: 100
-          minimum: 0
-          title: Page Size
-          type: integer
-          x-konfig-original-example: 100
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-LatestHeadlinesRequest-properties-page_size
+        word_count_min: {}
+        word_count_max: {}
+        page: {}
+        page_size: {}
         clustering_variable:
           title: Clustering Variable
           type: string
-        clustering_enabled:
-          title: Clustering Enabled
-          type: boolean
-        clustering_threshold:
-          title: Clustering Threshold
-          type: number
+        clustering_enabled: {}
+        clustering_threshold: {}
         include_nlp_data:
           title: Include Nlp Data
           type: boolean

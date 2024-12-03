@@ -50,25 +50,25 @@ public class Example {
     String from = "from_example";
     String to = "to_example";
     String publishedDatePrecision = "publishedDatePrecision_example";
-    Boolean byParseDate = false;
+    Object byParseDate = null;
     String sortBy = "relevancy";
     Object rankedOnly = null;
-    Integer fromRank = 56;
-    Integer toRank = 56;
-    Boolean isHeadline = true;
-    Boolean isOpinion = true;
-    Boolean isPaidContent = true;
+    Object fromRank = null;
+    Object toRank = null;
+    Object isHeadline = null;
+    Object isOpinion = null;
+    Object isPaidContent = null;
     Object parentUrl = null;
     Object allLinks = null;
     Object allDomainLinks = null;
-    Integer wordCountMin = 56;
-    Integer wordCountMax = 56;
-    Integer page = 1;
-    Integer pageSize = 100;
+    Object wordCountMin = null;
+    Object wordCountMax = null;
+    Object page = null;
+    Object pageSize = null;
     String clusteringVariable = "clusteringVariable_example";
-    Boolean clusteringEnabled = true;
-    Double clusteringThreshold = 3.4D;
-    Boolean includeNlpData = true;
+    Object clusteringEnabled = null;
+    Object clusteringThreshold = null;
+    Object includeNlpData = null;
     Boolean hasNlp = true;
     String theme = "theme_example";
     String notTheme = "notTheme_example";
@@ -257,25 +257,25 @@ public class Example {
 | **from** | **String**|  | [optional] |
 | **to** | **String**|  | [optional] |
 | **publishedDatePrecision** | **String**|  | [optional] |
-| **byParseDate** | **Boolean**|  | [optional] [default to false] |
+| **byParseDate** | [**Object**](.md)|  | [optional] |
 | **sortBy** | **String**|  | [optional] [default to relevancy] |
 | **rankedOnly** | [**Object**](.md)|  | [optional] |
-| **fromRank** | **Integer**|  | [optional] |
-| **toRank** | **Integer**|  | [optional] |
-| **isHeadline** | **Boolean**|  | [optional] |
-| **isOpinion** | **Boolean**|  | [optional] |
-| **isPaidContent** | **Boolean**|  | [optional] |
+| **fromRank** | [**Object**](.md)|  | [optional] |
+| **toRank** | [**Object**](.md)|  | [optional] |
+| **isHeadline** | [**Object**](.md)|  | [optional] |
+| **isOpinion** | [**Object**](.md)|  | [optional] |
+| **isPaidContent** | [**Object**](.md)|  | [optional] |
 | **parentUrl** | [**Object**](.md)|  | [optional] |
 | **allLinks** | [**Object**](.md)|  | [optional] |
 | **allDomainLinks** | [**Object**](.md)|  | [optional] |
-| **wordCountMin** | **Integer**|  | [optional] |
-| **wordCountMax** | **Integer**|  | [optional] |
-| **page** | **Integer**|  | [optional] [default to 1] |
-| **pageSize** | **Integer**|  | [optional] [default to 100] |
+| **wordCountMin** | [**Object**](.md)|  | [optional] |
+| **wordCountMax** | [**Object**](.md)|  | [optional] |
+| **page** | [**Object**](.md)|  | [optional] |
+| **pageSize** | [**Object**](.md)|  | [optional] |
 | **clusteringVariable** | **String**|  | [optional] |
-| **clusteringEnabled** | **Boolean**|  | [optional] |
-| **clusteringThreshold** | **Double**|  | [optional] |
-| **includeNlpData** | **Boolean**|  | [optional] |
+| **clusteringEnabled** | [**Object**](.md)|  | [optional] |
+| **clusteringThreshold** | [**Object**](.md)|  | [optional] |
+| **includeNlpData** | [**Object**](.md)|  | [optional] |
 | **hasNlp** | **Boolean**|  | [optional] |
 | **theme** | **String**|  | [optional] |
 | **notTheme** | **String**|  | [optional] |
@@ -358,25 +358,25 @@ public class Example {
     String from = "from_example";
     String to = "to_example";
     String publishedDatePrecision = "publishedDatePrecision_example";
-    Boolean byParseDate = false;
+    Object byParseDate = null;
     String sortBy = "relevancy";
     Object rankedOnly = null;
-    Integer fromRank = 56;
-    Integer toRank = 56;
-    Boolean isHeadline = true;
-    Boolean isOpinion = true;
-    Boolean isPaidContent = true;
+    Object fromRank = null;
+    Object toRank = null;
+    Object isHeadline = null;
+    Object isOpinion = null;
+    Object isPaidContent = null;
     Object parentUrl = null;
     Object allLinks = null;
     Object allDomainLinks = null;
-    Integer wordCountMin = 56;
-    Integer wordCountMax = 56;
-    Integer page = 1;
-    Integer pageSize = 100;
+    Object wordCountMin = null;
+    Object wordCountMax = null;
+    Object page = null;
+    Object pageSize = null;
     String clusteringVariable = "clusteringVariable_example";
-    Boolean clusteringEnabled = true;
-    Double clusteringThreshold = 3.4D;
-    Boolean includeNlpData = true;
+    Object clusteringEnabled = null;
+    Object clusteringThreshold = null;
+    Object includeNlpData = null;
     Boolean hasNlp = true;
     String theme = "theme_example";
     String notTheme = "notTheme_example";

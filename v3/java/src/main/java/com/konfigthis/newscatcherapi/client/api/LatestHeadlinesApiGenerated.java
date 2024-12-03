@@ -77,7 +77,7 @@ public class LatestHeadlinesApiGenerated {
         this.localCustomBaseUrl = customBaseUrl;
     }
 
-    private okhttp3.Call getCall(String when, Boolean byParseDate, String sortBy, Object lang, Object notLang, Object countries, Object notCountries, Object sources, Object predefinedSources, Object notSources, Object notAuthorName, Object rankedOnly, Boolean isHeadline, Boolean isOpinion, Boolean isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Integer wordCountMin, Integer wordCountMax, Integer page, Integer pageSize, String clusteringVariable, Boolean clusteringEnabled, Double clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object iabTags, Object notIabTags, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getCall(String when, Object byParseDate, String sortBy, Object lang, Object notLang, Object countries, Object notCountries, Object sources, Object predefinedSources, Object notSources, Object notAuthorName, Object rankedOnly, Object isHeadline, Object isOpinion, Object isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Object wordCountMin, Object wordCountMax, Object page, Object pageSize, String clusteringVariable, Object clusteringEnabled, Object clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object iabTags, Object notIabTags, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -286,19 +286,19 @@ public class LatestHeadlinesApiGenerated {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getValidateBeforeCall(String when, Boolean byParseDate, String sortBy, Object lang, Object notLang, Object countries, Object notCountries, Object sources, Object predefinedSources, Object notSources, Object notAuthorName, Object rankedOnly, Boolean isHeadline, Boolean isOpinion, Boolean isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Integer wordCountMin, Integer wordCountMax, Integer page, Integer pageSize, String clusteringVariable, Boolean clusteringEnabled, Double clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object iabTags, Object notIabTags, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getValidateBeforeCall(String when, Object byParseDate, String sortBy, Object lang, Object notLang, Object countries, Object notCountries, Object sources, Object predefinedSources, Object notSources, Object notAuthorName, Object rankedOnly, Object isHeadline, Object isOpinion, Object isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Object wordCountMin, Object wordCountMax, Object page, Object pageSize, String clusteringVariable, Object clusteringEnabled, Object clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object iabTags, Object notIabTags, final ApiCallback _callback) throws ApiException {
         return getCall(when, byParseDate, sortBy, lang, notLang, countries, notCountries, sources, predefinedSources, notSources, notAuthorName, rankedOnly, isHeadline, isOpinion, isPaidContent, parentUrl, allLinks, allDomainLinks, wordCountMin, wordCountMax, page, pageSize, clusteringVariable, clusteringEnabled, clusteringThreshold, includeNlpData, hasNlp, theme, notTheme, orGEntityName, peREntityName, loCEntityName, miSCEntityName, titleSentimentMin, titleSentimentMax, contentSentimentMin, contentSentimentMax, iptcTags, notIptcTags, iabTags, notIabTags, _callback);
 
     }
 
 
-    private ApiResponse<CSLHResponse> getWithHttpInfo(String when, Boolean byParseDate, String sortBy, Object lang, Object notLang, Object countries, Object notCountries, Object sources, Object predefinedSources, Object notSources, Object notAuthorName, Object rankedOnly, Boolean isHeadline, Boolean isOpinion, Boolean isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Integer wordCountMin, Integer wordCountMax, Integer page, Integer pageSize, String clusteringVariable, Boolean clusteringEnabled, Double clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object iabTags, Object notIabTags) throws ApiException {
+    private ApiResponse<CSLHResponse> getWithHttpInfo(String when, Object byParseDate, String sortBy, Object lang, Object notLang, Object countries, Object notCountries, Object sources, Object predefinedSources, Object notSources, Object notAuthorName, Object rankedOnly, Object isHeadline, Object isOpinion, Object isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Object wordCountMin, Object wordCountMax, Object page, Object pageSize, String clusteringVariable, Object clusteringEnabled, Object clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object iabTags, Object notIabTags) throws ApiException {
         okhttp3.Call localVarCall = getValidateBeforeCall(when, byParseDate, sortBy, lang, notLang, countries, notCountries, sources, predefinedSources, notSources, notAuthorName, rankedOnly, isHeadline, isOpinion, isPaidContent, parentUrl, allLinks, allDomainLinks, wordCountMin, wordCountMax, page, pageSize, clusteringVariable, clusteringEnabled, clusteringThreshold, includeNlpData, hasNlp, theme, notTheme, orGEntityName, peREntityName, loCEntityName, miSCEntityName, titleSentimentMin, titleSentimentMax, contentSentimentMin, contentSentimentMax, iptcTags, notIptcTags, iabTags, notIabTags, null);
         Type localVarReturnType = new TypeToken<CSLHResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
-    private okhttp3.Call getAsync(String when, Boolean byParseDate, String sortBy, Object lang, Object notLang, Object countries, Object notCountries, Object sources, Object predefinedSources, Object notSources, Object notAuthorName, Object rankedOnly, Boolean isHeadline, Boolean isOpinion, Boolean isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Integer wordCountMin, Integer wordCountMax, Integer page, Integer pageSize, String clusteringVariable, Boolean clusteringEnabled, Double clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object iabTags, Object notIabTags, final ApiCallback<CSLHResponse> _callback) throws ApiException {
+    private okhttp3.Call getAsync(String when, Object byParseDate, String sortBy, Object lang, Object notLang, Object countries, Object notCountries, Object sources, Object predefinedSources, Object notSources, Object notAuthorName, Object rankedOnly, Object isHeadline, Object isOpinion, Object isPaidContent, Object parentUrl, Object allLinks, Object allDomainLinks, Object wordCountMin, Object wordCountMax, Object page, Object pageSize, String clusteringVariable, Object clusteringEnabled, Object clusteringThreshold, Boolean includeNlpData, Boolean hasNlp, String theme, String notTheme, String orGEntityName, String peREntityName, String loCEntityName, String miSCEntityName, Double titleSentimentMin, Double titleSentimentMax, Double contentSentimentMin, Double contentSentimentMax, Object iptcTags, Object notIptcTags, Object iabTags, Object notIabTags, final ApiCallback<CSLHResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = getValidateBeforeCall(when, byParseDate, sortBy, lang, notLang, countries, notCountries, sources, predefinedSources, notSources, notAuthorName, rankedOnly, isHeadline, isOpinion, isPaidContent, parentUrl, allLinks, allDomainLinks, wordCountMin, wordCountMax, page, pageSize, clusteringVariable, clusteringEnabled, clusteringThreshold, includeNlpData, hasNlp, theme, notTheme, orGEntityName, peREntityName, loCEntityName, miSCEntityName, titleSentimentMin, titleSentimentMax, contentSentimentMin, contentSentimentMax, iptcTags, notIptcTags, iabTags, notIabTags, _callback);
         Type localVarReturnType = new TypeToken<CSLHResponse>(){}.getType();
@@ -308,7 +308,7 @@ public class LatestHeadlinesApiGenerated {
 
     public abstract class GetRequestBuilderGenerated {
         String when;
-        Boolean byParseDate;
+        Object byParseDate;
         String sortBy;
         Object lang;
         Object notLang;
@@ -319,19 +319,19 @@ public class LatestHeadlinesApiGenerated {
         Object notSources;
         Object notAuthorName;
         Object rankedOnly;
-        Boolean isHeadline;
-        Boolean isOpinion;
-        Boolean isPaidContent;
+        Object isHeadline;
+        Object isOpinion;
+        Object isPaidContent;
         Object parentUrl;
         Object allLinks;
         Object allDomainLinks;
-        Integer wordCountMin;
-        Integer wordCountMax;
-        Integer page;
-        Integer pageSize;
+        Object wordCountMin;
+        Object wordCountMax;
+        Object page;
+        Object pageSize;
         String clusteringVariable;
-        Boolean clusteringEnabled;
-        Double clusteringThreshold;
+        Object clusteringEnabled;
+        Object clusteringThreshold;
         Boolean includeNlpData;
         Boolean hasNlp;
         String theme;
@@ -364,10 +364,10 @@ public class LatestHeadlinesApiGenerated {
         
         /**
          * Set byParseDate
-         * @param byParseDate  (optional, default to false)
+         * @param byParseDate  (optional)
          * @return LatestHeadlinesApi.GetRequestBuilder
          */
-        public LatestHeadlinesApi.GetRequestBuilder byParseDate(Boolean byParseDate) {
+        public LatestHeadlinesApi.GetRequestBuilder byParseDate(Object byParseDate) {
             this.byParseDate = byParseDate;
             return (LatestHeadlinesApi.GetRequestBuilder) this;
         }
@@ -477,7 +477,7 @@ public class LatestHeadlinesApiGenerated {
          * @param isHeadline  (optional)
          * @return LatestHeadlinesApi.GetRequestBuilder
          */
-        public LatestHeadlinesApi.GetRequestBuilder isHeadline(Boolean isHeadline) {
+        public LatestHeadlinesApi.GetRequestBuilder isHeadline(Object isHeadline) {
             this.isHeadline = isHeadline;
             return (LatestHeadlinesApi.GetRequestBuilder) this;
         }
@@ -487,7 +487,7 @@ public class LatestHeadlinesApiGenerated {
          * @param isOpinion  (optional)
          * @return LatestHeadlinesApi.GetRequestBuilder
          */
-        public LatestHeadlinesApi.GetRequestBuilder isOpinion(Boolean isOpinion) {
+        public LatestHeadlinesApi.GetRequestBuilder isOpinion(Object isOpinion) {
             this.isOpinion = isOpinion;
             return (LatestHeadlinesApi.GetRequestBuilder) this;
         }
@@ -497,7 +497,7 @@ public class LatestHeadlinesApiGenerated {
          * @param isPaidContent  (optional)
          * @return LatestHeadlinesApi.GetRequestBuilder
          */
-        public LatestHeadlinesApi.GetRequestBuilder isPaidContent(Boolean isPaidContent) {
+        public LatestHeadlinesApi.GetRequestBuilder isPaidContent(Object isPaidContent) {
             this.isPaidContent = isPaidContent;
             return (LatestHeadlinesApi.GetRequestBuilder) this;
         }
@@ -537,7 +537,7 @@ public class LatestHeadlinesApiGenerated {
          * @param wordCountMin  (optional)
          * @return LatestHeadlinesApi.GetRequestBuilder
          */
-        public LatestHeadlinesApi.GetRequestBuilder wordCountMin(Integer wordCountMin) {
+        public LatestHeadlinesApi.GetRequestBuilder wordCountMin(Object wordCountMin) {
             this.wordCountMin = wordCountMin;
             return (LatestHeadlinesApi.GetRequestBuilder) this;
         }
@@ -547,27 +547,27 @@ public class LatestHeadlinesApiGenerated {
          * @param wordCountMax  (optional)
          * @return LatestHeadlinesApi.GetRequestBuilder
          */
-        public LatestHeadlinesApi.GetRequestBuilder wordCountMax(Integer wordCountMax) {
+        public LatestHeadlinesApi.GetRequestBuilder wordCountMax(Object wordCountMax) {
             this.wordCountMax = wordCountMax;
             return (LatestHeadlinesApi.GetRequestBuilder) this;
         }
         
         /**
          * Set page
-         * @param page  (optional, default to 1)
+         * @param page  (optional)
          * @return LatestHeadlinesApi.GetRequestBuilder
          */
-        public LatestHeadlinesApi.GetRequestBuilder page(Integer page) {
+        public LatestHeadlinesApi.GetRequestBuilder page(Object page) {
             this.page = page;
             return (LatestHeadlinesApi.GetRequestBuilder) this;
         }
         
         /**
          * Set pageSize
-         * @param pageSize  (optional, default to 100)
+         * @param pageSize  (optional)
          * @return LatestHeadlinesApi.GetRequestBuilder
          */
-        public LatestHeadlinesApi.GetRequestBuilder pageSize(Integer pageSize) {
+        public LatestHeadlinesApi.GetRequestBuilder pageSize(Object pageSize) {
             this.pageSize = pageSize;
             return (LatestHeadlinesApi.GetRequestBuilder) this;
         }
@@ -587,7 +587,7 @@ public class LatestHeadlinesApiGenerated {
          * @param clusteringEnabled  (optional)
          * @return LatestHeadlinesApi.GetRequestBuilder
          */
-        public LatestHeadlinesApi.GetRequestBuilder clusteringEnabled(Boolean clusteringEnabled) {
+        public LatestHeadlinesApi.GetRequestBuilder clusteringEnabled(Object clusteringEnabled) {
             this.clusteringEnabled = clusteringEnabled;
             return (LatestHeadlinesApi.GetRequestBuilder) this;
         }
@@ -597,7 +597,7 @@ public class LatestHeadlinesApiGenerated {
          * @param clusteringThreshold  (optional)
          * @return LatestHeadlinesApi.GetRequestBuilder
          */
-        public LatestHeadlinesApi.GetRequestBuilder clusteringThreshold(Double clusteringThreshold) {
+        public LatestHeadlinesApi.GetRequestBuilder clusteringThreshold(Object clusteringThreshold) {
             this.clusteringThreshold = clusteringThreshold;
             return (LatestHeadlinesApi.GetRequestBuilder) this;
         }
@@ -909,7 +909,7 @@ public class LatestHeadlinesApiGenerated {
 
     public abstract class PostRequestBuilderGenerated {
         String when;
-        Boolean byParseDate;
+        Object byParseDate;
         String sortBy;
         Object lang;
         Object notLang;
@@ -920,19 +920,19 @@ public class LatestHeadlinesApiGenerated {
         Object notSources;
         Object notAuthorName;
         Object rankedOnly;
-        Boolean isHeadline;
-        Boolean isOpinion;
-        Boolean isPaidContent;
+        Object isHeadline;
+        Object isOpinion;
+        Object isPaidContent;
         Object parentUrl;
         Object allLinks;
         Object allDomainLinks;
-        Integer wordCountMin;
-        Integer wordCountMax;
-        Integer page;
-        Integer pageSize;
+        Object wordCountMin;
+        Object wordCountMax;
+        Object page;
+        Object pageSize;
         String clusteringVariable;
-        Boolean clusteringEnabled;
-        Double clusteringThreshold;
+        Object clusteringEnabled;
+        Object clusteringThreshold;
         Boolean includeNlpData;
         Boolean hasNlp;
         String theme;
@@ -965,10 +965,10 @@ public class LatestHeadlinesApiGenerated {
         
         /**
          * Set byParseDate
-         * @param byParseDate  (optional, default to false)
+         * @param byParseDate  (optional)
          * @return LatestHeadlinesApi.PostRequestBuilder
          */
-        public LatestHeadlinesApi.PostRequestBuilder byParseDate(Boolean byParseDate) {
+        public LatestHeadlinesApi.PostRequestBuilder byParseDate(Object byParseDate) {
             this.byParseDate = byParseDate;
             return (LatestHeadlinesApi.PostRequestBuilder) this;
         }
@@ -1078,7 +1078,7 @@ public class LatestHeadlinesApiGenerated {
          * @param isHeadline  (optional)
          * @return LatestHeadlinesApi.PostRequestBuilder
          */
-        public LatestHeadlinesApi.PostRequestBuilder isHeadline(Boolean isHeadline) {
+        public LatestHeadlinesApi.PostRequestBuilder isHeadline(Object isHeadline) {
             this.isHeadline = isHeadline;
             return (LatestHeadlinesApi.PostRequestBuilder) this;
         }
@@ -1088,7 +1088,7 @@ public class LatestHeadlinesApiGenerated {
          * @param isOpinion  (optional)
          * @return LatestHeadlinesApi.PostRequestBuilder
          */
-        public LatestHeadlinesApi.PostRequestBuilder isOpinion(Boolean isOpinion) {
+        public LatestHeadlinesApi.PostRequestBuilder isOpinion(Object isOpinion) {
             this.isOpinion = isOpinion;
             return (LatestHeadlinesApi.PostRequestBuilder) this;
         }
@@ -1098,7 +1098,7 @@ public class LatestHeadlinesApiGenerated {
          * @param isPaidContent  (optional)
          * @return LatestHeadlinesApi.PostRequestBuilder
          */
-        public LatestHeadlinesApi.PostRequestBuilder isPaidContent(Boolean isPaidContent) {
+        public LatestHeadlinesApi.PostRequestBuilder isPaidContent(Object isPaidContent) {
             this.isPaidContent = isPaidContent;
             return (LatestHeadlinesApi.PostRequestBuilder) this;
         }
@@ -1138,7 +1138,7 @@ public class LatestHeadlinesApiGenerated {
          * @param wordCountMin  (optional)
          * @return LatestHeadlinesApi.PostRequestBuilder
          */
-        public LatestHeadlinesApi.PostRequestBuilder wordCountMin(Integer wordCountMin) {
+        public LatestHeadlinesApi.PostRequestBuilder wordCountMin(Object wordCountMin) {
             this.wordCountMin = wordCountMin;
             return (LatestHeadlinesApi.PostRequestBuilder) this;
         }
@@ -1148,27 +1148,27 @@ public class LatestHeadlinesApiGenerated {
          * @param wordCountMax  (optional)
          * @return LatestHeadlinesApi.PostRequestBuilder
          */
-        public LatestHeadlinesApi.PostRequestBuilder wordCountMax(Integer wordCountMax) {
+        public LatestHeadlinesApi.PostRequestBuilder wordCountMax(Object wordCountMax) {
             this.wordCountMax = wordCountMax;
             return (LatestHeadlinesApi.PostRequestBuilder) this;
         }
         
         /**
          * Set page
-         * @param page  (optional, default to 1)
+         * @param page  (optional)
          * @return LatestHeadlinesApi.PostRequestBuilder
          */
-        public LatestHeadlinesApi.PostRequestBuilder page(Integer page) {
+        public LatestHeadlinesApi.PostRequestBuilder page(Object page) {
             this.page = page;
             return (LatestHeadlinesApi.PostRequestBuilder) this;
         }
         
         /**
          * Set pageSize
-         * @param pageSize  (optional, default to 100)
+         * @param pageSize  (optional)
          * @return LatestHeadlinesApi.PostRequestBuilder
          */
-        public LatestHeadlinesApi.PostRequestBuilder pageSize(Integer pageSize) {
+        public LatestHeadlinesApi.PostRequestBuilder pageSize(Object pageSize) {
             this.pageSize = pageSize;
             return (LatestHeadlinesApi.PostRequestBuilder) this;
         }
@@ -1188,7 +1188,7 @@ public class LatestHeadlinesApiGenerated {
          * @param clusteringEnabled  (optional)
          * @return LatestHeadlinesApi.PostRequestBuilder
          */
-        public LatestHeadlinesApi.PostRequestBuilder clusteringEnabled(Boolean clusteringEnabled) {
+        public LatestHeadlinesApi.PostRequestBuilder clusteringEnabled(Object clusteringEnabled) {
             this.clusteringEnabled = clusteringEnabled;
             return (LatestHeadlinesApi.PostRequestBuilder) this;
         }
@@ -1198,7 +1198,7 @@ public class LatestHeadlinesApiGenerated {
          * @param clusteringThreshold  (optional)
          * @return LatestHeadlinesApi.PostRequestBuilder
          */
-        public LatestHeadlinesApi.PostRequestBuilder clusteringThreshold(Double clusteringThreshold) {
+        public LatestHeadlinesApi.PostRequestBuilder clusteringThreshold(Object clusteringThreshold) {
             this.clusteringThreshold = clusteringThreshold;
             return (LatestHeadlinesApi.PostRequestBuilder) this;
         }

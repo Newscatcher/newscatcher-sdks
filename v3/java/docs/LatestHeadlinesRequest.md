@@ -9,7 +9,7 @@ Latest headlines request DTO.
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**when** | **String** |  |  [optional] |
-|**byParseDate** | **Boolean** |  |  [optional] |
+|**byParseDate** | **Object** |  |  [optional] |
 |**sortBy** | **String** |  |  [optional] |
 |**lang** | **Object** |  |  [optional] |
 |**notLang** | **Object** |  |  [optional] |
@@ -20,19 +20,19 @@ Latest headlines request DTO.
 |**notSources** | **Object** |  |  [optional] |
 |**notAuthorName** | **Object** |  |  [optional] |
 |**rankedOnly** | **Object** |  |  [optional] |
-|**isHeadline** | **Boolean** |  |  [optional] |
-|**isOpinion** | **Boolean** |  |  [optional] |
-|**isPaidContent** | **Boolean** |  |  [optional] |
+|**isHeadline** | **Object** |  |  [optional] |
+|**isOpinion** | **Object** |  |  [optional] |
+|**isPaidContent** | **Object** |  |  [optional] |
 |**parentUrl** | **Object** |  |  [optional] |
 |**allLinks** | **Object** |  |  [optional] |
 |**allDomainLinks** | **Object** |  |  [optional] |
-|**wordCountMin** | **Integer** |  |  [optional] |
-|**wordCountMax** | **Integer** |  |  [optional] |
-|**page** | **Integer** |  |  [optional] |
-|**pageSize** | **Integer** |  |  [optional] |
+|**wordCountMin** | **Object** |  |  [optional] |
+|**wordCountMax** | **Object** |  |  [optional] |
+|**page** | **Object** |  |  [optional] |
+|**pageSize** | **Object** |  |  [optional] |
 |**clusteringVariable** | **String** |  |  [optional] |
-|**clusteringEnabled** | **Boolean** |  |  [optional] |
-|**clusteringThreshold** | **Double** |  |  [optional] |
+|**clusteringEnabled** | **Object** |  |  [optional] |
+|**clusteringThreshold** | **Object** |  |  [optional] |
 |**includeNlpData** | **Boolean** |  |  [optional] |
 |**hasNlp** | **Boolean** |  |  [optional] |
 |**theme** | **String** |  |  [optional] |

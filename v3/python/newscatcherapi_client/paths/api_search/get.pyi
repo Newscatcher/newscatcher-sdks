@@ -133,7 +133,45 @@ class ToSchema(
             **kwargs,
         )
 PublishedDatePrecisionSchema = schemas.StrSchema
-ByParseDateSchema = schemas.BoolSchema
+
+
+class ByParseDateSchema(
+    schemas.ComposedSchema,
+):
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.BoolSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'ByParseDateSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
 SortBySchema = schemas.StrSchema
 
 
@@ -174,42 +212,478 @@ class RankedOnlySchema(
             _configuration=_configuration,
             **kwargs,
         )
-FromRankSchema = schemas.IntSchema
-ToRankSchema = schemas.IntSchema
-IsHeadlineSchema = schemas.BoolSchema
-IsOpinionSchema = schemas.BoolSchema
-IsPaidContentSchema = schemas.BoolSchema
+
+
+class FromRankSchema(
+    schemas.ComposedSchema,
+):
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.IntSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'FromRankSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
+
+
+class ToRankSchema(
+    schemas.ComposedSchema,
+):
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.IntSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'ToRankSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
+
+
+class IsHeadlineSchema(
+    schemas.ComposedSchema,
+):
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.BoolSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'IsHeadlineSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
+
+
+class IsOpinionSchema(
+    schemas.ComposedSchema,
+):
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.BoolSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'IsOpinionSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
+
+
+class IsPaidContentSchema(
+    schemas.ComposedSchema,
+):
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.BoolSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'IsPaidContentSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
 ParentUrlSchema = schemas.AnyTypeSchema
 AllLinksSchema = schemas.AnyTypeSchema
 AllDomainLinksSchema = schemas.AnyTypeSchema
 
 
 class WordCountMinSchema(
-    schemas.IntSchema
+    schemas.ComposedSchema,
 ):
-    pass
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.IntSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'WordCountMinSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
 
 
 class WordCountMaxSchema(
-    schemas.IntSchema
+    schemas.ComposedSchema,
 ):
-    pass
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.IntSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'WordCountMaxSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
 
 
 class PageSchema(
-    schemas.IntSchema
+    schemas.ComposedSchema,
 ):
-    pass
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.IntSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'PageSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
 
 
 class PageSizeSchema(
-    schemas.IntSchema
+    schemas.ComposedSchema,
 ):
-    pass
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.IntSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'PageSizeSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
 ClusteringVariableSchema = schemas.StrSchema
-ClusteringEnabledSchema = schemas.BoolSchema
-ClusteringThresholdSchema = schemas.NumberSchema
-IncludeNlpDataSchema = schemas.BoolSchema
+
+
+class ClusteringEnabledSchema(
+    schemas.ComposedSchema,
+):
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.BoolSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'ClusteringEnabledSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
+
+
+class ClusteringThresholdSchema(
+    schemas.ComposedSchema,
+):
+
+
+    class MetaOapg:
+        any_of_0 = schemas.NumberSchema
+        any_of_1 = schemas.StrSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.any_of_0,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'ClusteringThresholdSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
+
+
+class IncludeNlpDataSchema(
+    schemas.ComposedSchema,
+):
+
+
+    class MetaOapg:
+        items = schemas.StrSchema
+        any_of_1 = schemas.BoolSchema
+        
+        @classmethod
+        @functools.lru_cache()
+        def any_of(cls):
+            # we need this here to make our import statements work
+            # we must store _composed_schemas in here so the code is only run
+            # when we invoke this method. If we kept this at the class
+            # level we would get an error because the class level
+            # code would be run when this module is imported, and these composed
+            # classes don't exist yet because their module has not finished
+            # loading
+            return [
+                cls.items,
+                cls.any_of_1,
+            ]
+
+
+    def __new__(
+        cls,
+        *args: typing.Union[dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        _configuration: typing.Optional[schemas.Configuration] = None,
+        **kwargs: typing.Union[schemas.AnyTypeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, None, list, tuple, bytes],
+    ) -> 'IncludeNlpDataSchema':
+        return super().__new__(
+            cls,
+            *args,
+            _configuration=_configuration,
+            **kwargs,
+        )
 HasNlpSchema = schemas.BoolSchema
 ThemeSchema = schemas.StrSchema
 NotThemeSchema = schemas.StrSchema
@@ -252,25 +726,25 @@ RequestOptionalQueryParams = typing_extensions.TypedDict(
         'from_': typing.Union[ModelFromSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
         'to_': typing.Union[ToSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
         'published_date_precision': typing.Union[PublishedDatePrecisionSchema, str, ],
-        'by_parse_date': typing.Union[ByParseDateSchema, bool, ],
+        'by_parse_date': typing.Union[ByParseDateSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
         'sort_by': typing.Union[SortBySchema, str, ],
         'ranked_only': typing.Union[RankedOnlySchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
-        'from_rank': typing.Union[FromRankSchema, decimal.Decimal, int, ],
-        'to_rank': typing.Union[ToRankSchema, decimal.Decimal, int, ],
-        'is_headline': typing.Union[IsHeadlineSchema, bool, ],
-        'is_opinion': typing.Union[IsOpinionSchema, bool, ],
-        'is_paid_content': typing.Union[IsPaidContentSchema, bool, ],
+        'from_rank': typing.Union[FromRankSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        'to_rank': typing.Union[ToRankSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        'is_headline': typing.Union[IsHeadlineSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        'is_opinion': typing.Union[IsOpinionSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        'is_paid_content': typing.Union[IsPaidContentSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
         'parent_url': typing.Union[ParentUrlSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
         'all_links': typing.Union[AllLinksSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
         'all_domain_links': typing.Union[AllDomainLinksSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
-        'word_count_min': typing.Union[WordCountMinSchema, decimal.Decimal, int, ],
-        'word_count_max': typing.Union[WordCountMaxSchema, decimal.Decimal, int, ],
-        'page': typing.Union[PageSchema, decimal.Decimal, int, ],
-        'page_size': typing.Union[PageSizeSchema, decimal.Decimal, int, ],
+        'word_count_min': typing.Union[WordCountMinSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        'word_count_max': typing.Union[WordCountMaxSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        'page': typing.Union[PageSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        'page_size': typing.Union[PageSizeSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
         'clustering_variable': typing.Union[ClusteringVariableSchema, str, ],
-        'clustering_enabled': typing.Union[ClusteringEnabledSchema, bool, ],
-        'clustering_threshold': typing.Union[ClusteringThresholdSchema, decimal.Decimal, int, float, ],
-        'include_nlp_data': typing.Union[IncludeNlpDataSchema, bool, ],
+        'clustering_enabled': typing.Union[ClusteringEnabledSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        'clustering_threshold': typing.Union[ClusteringThresholdSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
+        'include_nlp_data': typing.Union[IncludeNlpDataSchema, dict, frozendict.frozendict, str, date, datetime, uuid.UUID, int, float, decimal.Decimal, bool, None, list, tuple, bytes, io.FileIO, io.BufferedReader, ],
         'has_nlp': typing.Union[HasNlpSchema, bool, ],
         'theme': typing.Union[ThemeSchema, str, ],
         'not_theme': typing.Union[NotThemeSchema, str, ],
@@ -684,25 +1158,25 @@ class BaseApi(api_client.Api):
         from_: typing.Optional[typing.Union[str, datetime]] = None,
         to_: typing.Optional[typing.Union[str, datetime]] = None,
         published_date_precision: typing.Optional[str] = None,
-        by_parse_date: typing.Optional[bool] = None,
+        by_parse_date: typing.Optional[typing.Union[str, bool]] = None,
         sort_by: typing.Optional[str] = None,
         ranked_only: typing.Optional[typing.Union[str, bool]] = None,
-        from_rank: typing.Optional[int] = None,
-        to_rank: typing.Optional[int] = None,
-        is_headline: typing.Optional[bool] = None,
-        is_opinion: typing.Optional[bool] = None,
-        is_paid_content: typing.Optional[bool] = None,
+        from_rank: typing.Optional[typing.Union[str, int]] = None,
+        to_rank: typing.Optional[typing.Union[str, int]] = None,
+        is_headline: typing.Optional[typing.Union[str, bool]] = None,
+        is_opinion: typing.Optional[typing.Union[str, bool]] = None,
+        is_paid_content: typing.Optional[typing.Union[str, bool]] = None,
         parent_url: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_domain_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
-        word_count_min: typing.Optional[int] = None,
-        word_count_max: typing.Optional[int] = None,
-        page: typing.Optional[int] = None,
-        page_size: typing.Optional[int] = None,
+        word_count_min: typing.Optional[typing.Union[str, int]] = None,
+        word_count_max: typing.Optional[typing.Union[str, int]] = None,
+        page: typing.Optional[typing.Union[str, int]] = None,
+        page_size: typing.Optional[typing.Union[str, int]] = None,
         clustering_variable: typing.Optional[str] = None,
-        clustering_enabled: typing.Optional[bool] = None,
-        clustering_threshold: typing.Optional[typing.Union[int, float]] = None,
-        include_nlp_data: typing.Optional[bool] = None,
+        clustering_enabled: typing.Optional[typing.Union[str, bool]] = None,
+        clustering_threshold: typing.Optional[typing.Union[typing.Union[int, float], str]] = None,
+        include_nlp_data: typing.Optional[typing.Union[str, bool]] = None,
         has_nlp: typing.Optional[bool] = None,
         theme: typing.Optional[str] = None,
         not_theme: typing.Optional[str] = None,
@@ -1153,25 +1627,25 @@ class GetRaw(BaseApi):
         from_: typing.Optional[typing.Union[str, datetime]] = None,
         to_: typing.Optional[typing.Union[str, datetime]] = None,
         published_date_precision: typing.Optional[str] = None,
-        by_parse_date: typing.Optional[bool] = None,
+        by_parse_date: typing.Optional[typing.Union[str, bool]] = None,
         sort_by: typing.Optional[str] = None,
         ranked_only: typing.Optional[typing.Union[str, bool]] = None,
-        from_rank: typing.Optional[int] = None,
-        to_rank: typing.Optional[int] = None,
-        is_headline: typing.Optional[bool] = None,
-        is_opinion: typing.Optional[bool] = None,
-        is_paid_content: typing.Optional[bool] = None,
+        from_rank: typing.Optional[typing.Union[str, int]] = None,
+        to_rank: typing.Optional[typing.Union[str, int]] = None,
+        is_headline: typing.Optional[typing.Union[str, bool]] = None,
+        is_opinion: typing.Optional[typing.Union[str, bool]] = None,
+        is_paid_content: typing.Optional[typing.Union[str, bool]] = None,
         parent_url: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_domain_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
-        word_count_min: typing.Optional[int] = None,
-        word_count_max: typing.Optional[int] = None,
-        page: typing.Optional[int] = None,
-        page_size: typing.Optional[int] = None,
+        word_count_min: typing.Optional[typing.Union[str, int]] = None,
+        word_count_max: typing.Optional[typing.Union[str, int]] = None,
+        page: typing.Optional[typing.Union[str, int]] = None,
+        page_size: typing.Optional[typing.Union[str, int]] = None,
         clustering_variable: typing.Optional[str] = None,
-        clustering_enabled: typing.Optional[bool] = None,
-        clustering_threshold: typing.Optional[typing.Union[int, float]] = None,
-        include_nlp_data: typing.Optional[bool] = None,
+        clustering_enabled: typing.Optional[typing.Union[str, bool]] = None,
+        clustering_threshold: typing.Optional[typing.Union[typing.Union[int, float], str]] = None,
+        include_nlp_data: typing.Optional[typing.Union[str, bool]] = None,
         has_nlp: typing.Optional[bool] = None,
         theme: typing.Optional[str] = None,
         not_theme: typing.Optional[str] = None,
@@ -1274,25 +1748,25 @@ class GetRaw(BaseApi):
         from_: typing.Optional[typing.Union[str, datetime]] = None,
         to_: typing.Optional[typing.Union[str, datetime]] = None,
         published_date_precision: typing.Optional[str] = None,
-        by_parse_date: typing.Optional[bool] = None,
+        by_parse_date: typing.Optional[typing.Union[str, bool]] = None,
         sort_by: typing.Optional[str] = None,
         ranked_only: typing.Optional[typing.Union[str, bool]] = None,
-        from_rank: typing.Optional[int] = None,
-        to_rank: typing.Optional[int] = None,
-        is_headline: typing.Optional[bool] = None,
-        is_opinion: typing.Optional[bool] = None,
-        is_paid_content: typing.Optional[bool] = None,
+        from_rank: typing.Optional[typing.Union[str, int]] = None,
+        to_rank: typing.Optional[typing.Union[str, int]] = None,
+        is_headline: typing.Optional[typing.Union[str, bool]] = None,
+        is_opinion: typing.Optional[typing.Union[str, bool]] = None,
+        is_paid_content: typing.Optional[typing.Union[str, bool]] = None,
         parent_url: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_domain_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
-        word_count_min: typing.Optional[int] = None,
-        word_count_max: typing.Optional[int] = None,
-        page: typing.Optional[int] = None,
-        page_size: typing.Optional[int] = None,
+        word_count_min: typing.Optional[typing.Union[str, int]] = None,
+        word_count_max: typing.Optional[typing.Union[str, int]] = None,
+        page: typing.Optional[typing.Union[str, int]] = None,
+        page_size: typing.Optional[typing.Union[str, int]] = None,
         clustering_variable: typing.Optional[str] = None,
-        clustering_enabled: typing.Optional[bool] = None,
-        clustering_threshold: typing.Optional[typing.Union[int, float]] = None,
-        include_nlp_data: typing.Optional[bool] = None,
+        clustering_enabled: typing.Optional[typing.Union[str, bool]] = None,
+        clustering_threshold: typing.Optional[typing.Union[typing.Union[int, float], str]] = None,
+        include_nlp_data: typing.Optional[typing.Union[str, bool]] = None,
         has_nlp: typing.Optional[bool] = None,
         theme: typing.Optional[str] = None,
         not_theme: typing.Optional[str] = None,
@@ -1395,25 +1869,25 @@ class Get(BaseApi):
         from_: typing.Optional[typing.Union[str, datetime]] = None,
         to_: typing.Optional[typing.Union[str, datetime]] = None,
         published_date_precision: typing.Optional[str] = None,
-        by_parse_date: typing.Optional[bool] = None,
+        by_parse_date: typing.Optional[typing.Union[str, bool]] = None,
         sort_by: typing.Optional[str] = None,
         ranked_only: typing.Optional[typing.Union[str, bool]] = None,
-        from_rank: typing.Optional[int] = None,
-        to_rank: typing.Optional[int] = None,
-        is_headline: typing.Optional[bool] = None,
-        is_opinion: typing.Optional[bool] = None,
-        is_paid_content: typing.Optional[bool] = None,
+        from_rank: typing.Optional[typing.Union[str, int]] = None,
+        to_rank: typing.Optional[typing.Union[str, int]] = None,
+        is_headline: typing.Optional[typing.Union[str, bool]] = None,
+        is_opinion: typing.Optional[typing.Union[str, bool]] = None,
+        is_paid_content: typing.Optional[typing.Union[str, bool]] = None,
         parent_url: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_domain_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
-        word_count_min: typing.Optional[int] = None,
-        word_count_max: typing.Optional[int] = None,
-        page: typing.Optional[int] = None,
-        page_size: typing.Optional[int] = None,
+        word_count_min: typing.Optional[typing.Union[str, int]] = None,
+        word_count_max: typing.Optional[typing.Union[str, int]] = None,
+        page: typing.Optional[typing.Union[str, int]] = None,
+        page_size: typing.Optional[typing.Union[str, int]] = None,
         clustering_variable: typing.Optional[str] = None,
-        clustering_enabled: typing.Optional[bool] = None,
-        clustering_threshold: typing.Optional[typing.Union[int, float]] = None,
-        include_nlp_data: typing.Optional[bool] = None,
+        clustering_enabled: typing.Optional[typing.Union[str, bool]] = None,
+        clustering_threshold: typing.Optional[typing.Union[typing.Union[int, float], str]] = None,
+        include_nlp_data: typing.Optional[typing.Union[str, bool]] = None,
         has_nlp: typing.Optional[bool] = None,
         theme: typing.Optional[str] = None,
         not_theme: typing.Optional[str] = None,
@@ -1514,25 +1988,25 @@ class Get(BaseApi):
         from_: typing.Optional[typing.Union[str, datetime]] = None,
         to_: typing.Optional[typing.Union[str, datetime]] = None,
         published_date_precision: typing.Optional[str] = None,
-        by_parse_date: typing.Optional[bool] = None,
+        by_parse_date: typing.Optional[typing.Union[str, bool]] = None,
         sort_by: typing.Optional[str] = None,
         ranked_only: typing.Optional[typing.Union[str, bool]] = None,
-        from_rank: typing.Optional[int] = None,
-        to_rank: typing.Optional[int] = None,
-        is_headline: typing.Optional[bool] = None,
-        is_opinion: typing.Optional[bool] = None,
-        is_paid_content: typing.Optional[bool] = None,
+        from_rank: typing.Optional[typing.Union[str, int]] = None,
+        to_rank: typing.Optional[typing.Union[str, int]] = None,
+        is_headline: typing.Optional[typing.Union[str, bool]] = None,
+        is_opinion: typing.Optional[typing.Union[str, bool]] = None,
+        is_paid_content: typing.Optional[typing.Union[str, bool]] = None,
         parent_url: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_domain_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
-        word_count_min: typing.Optional[int] = None,
-        word_count_max: typing.Optional[int] = None,
-        page: typing.Optional[int] = None,
-        page_size: typing.Optional[int] = None,
+        word_count_min: typing.Optional[typing.Union[str, int]] = None,
+        word_count_max: typing.Optional[typing.Union[str, int]] = None,
+        page: typing.Optional[typing.Union[str, int]] = None,
+        page_size: typing.Optional[typing.Union[str, int]] = None,
         clustering_variable: typing.Optional[str] = None,
-        clustering_enabled: typing.Optional[bool] = None,
-        clustering_threshold: typing.Optional[typing.Union[int, float]] = None,
-        include_nlp_data: typing.Optional[bool] = None,
+        clustering_enabled: typing.Optional[typing.Union[str, bool]] = None,
+        clustering_threshold: typing.Optional[typing.Union[typing.Union[int, float], str]] = None,
+        include_nlp_data: typing.Optional[typing.Union[str, bool]] = None,
         has_nlp: typing.Optional[bool] = None,
         theme: typing.Optional[str] = None,
         not_theme: typing.Optional[str] = None,
@@ -1634,25 +2108,25 @@ class ApiForget(BaseApi):
         from_: typing.Optional[typing.Union[str, datetime]] = None,
         to_: typing.Optional[typing.Union[str, datetime]] = None,
         published_date_precision: typing.Optional[str] = None,
-        by_parse_date: typing.Optional[bool] = None,
+        by_parse_date: typing.Optional[typing.Union[str, bool]] = None,
         sort_by: typing.Optional[str] = None,
         ranked_only: typing.Optional[typing.Union[str, bool]] = None,
-        from_rank: typing.Optional[int] = None,
-        to_rank: typing.Optional[int] = None,
-        is_headline: typing.Optional[bool] = None,
-        is_opinion: typing.Optional[bool] = None,
-        is_paid_content: typing.Optional[bool] = None,
+        from_rank: typing.Optional[typing.Union[str, int]] = None,
+        to_rank: typing.Optional[typing.Union[str, int]] = None,
+        is_headline: typing.Optional[typing.Union[str, bool]] = None,
+        is_opinion: typing.Optional[typing.Union[str, bool]] = None,
+        is_paid_content: typing.Optional[typing.Union[str, bool]] = None,
         parent_url: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_domain_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
-        word_count_min: typing.Optional[int] = None,
-        word_count_max: typing.Optional[int] = None,
-        page: typing.Optional[int] = None,
-        page_size: typing.Optional[int] = None,
+        word_count_min: typing.Optional[typing.Union[str, int]] = None,
+        word_count_max: typing.Optional[typing.Union[str, int]] = None,
+        page: typing.Optional[typing.Union[str, int]] = None,
+        page_size: typing.Optional[typing.Union[str, int]] = None,
         clustering_variable: typing.Optional[str] = None,
-        clustering_enabled: typing.Optional[bool] = None,
-        clustering_threshold: typing.Optional[typing.Union[int, float]] = None,
-        include_nlp_data: typing.Optional[bool] = None,
+        clustering_enabled: typing.Optional[typing.Union[str, bool]] = None,
+        clustering_threshold: typing.Optional[typing.Union[typing.Union[int, float], str]] = None,
+        include_nlp_data: typing.Optional[typing.Union[str, bool]] = None,
         has_nlp: typing.Optional[bool] = None,
         theme: typing.Optional[str] = None,
         not_theme: typing.Optional[str] = None,
@@ -1755,25 +2229,25 @@ class ApiForget(BaseApi):
         from_: typing.Optional[typing.Union[str, datetime]] = None,
         to_: typing.Optional[typing.Union[str, datetime]] = None,
         published_date_precision: typing.Optional[str] = None,
-        by_parse_date: typing.Optional[bool] = None,
+        by_parse_date: typing.Optional[typing.Union[str, bool]] = None,
         sort_by: typing.Optional[str] = None,
         ranked_only: typing.Optional[typing.Union[str, bool]] = None,
-        from_rank: typing.Optional[int] = None,
-        to_rank: typing.Optional[int] = None,
-        is_headline: typing.Optional[bool] = None,
-        is_opinion: typing.Optional[bool] = None,
-        is_paid_content: typing.Optional[bool] = None,
+        from_rank: typing.Optional[typing.Union[str, int]] = None,
+        to_rank: typing.Optional[typing.Union[str, int]] = None,
+        is_headline: typing.Optional[typing.Union[str, bool]] = None,
+        is_opinion: typing.Optional[typing.Union[str, bool]] = None,
+        is_paid_content: typing.Optional[typing.Union[str, bool]] = None,
         parent_url: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
         all_domain_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = None,
-        word_count_min: typing.Optional[int] = None,
-        word_count_max: typing.Optional[int] = None,
-        page: typing.Optional[int] = None,
-        page_size: typing.Optional[int] = None,
+        word_count_min: typing.Optional[typing.Union[str, int]] = None,
+        word_count_max: typing.Optional[typing.Union[str, int]] = None,
+        page: typing.Optional[typing.Union[str, int]] = None,
+        page_size: typing.Optional[typing.Union[str, int]] = None,
         clustering_variable: typing.Optional[str] = None,
-        clustering_enabled: typing.Optional[bool] = None,
-        clustering_threshold: typing.Optional[typing.Union[int, float]] = None,
-        include_nlp_data: typing.Optional[bool] = None,
+        clustering_enabled: typing.Optional[typing.Union[str, bool]] = None,
+        clustering_threshold: typing.Optional[typing.Union[typing.Union[int, float], str]] = None,
+        include_nlp_data: typing.Optional[typing.Union[str, bool]] = None,
         has_nlp: typing.Optional[bool] = None,
         theme: typing.Optional[str] = None,
         not_theme: typing.Optional[str] = None,

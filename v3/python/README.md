@@ -555,7 +555,7 @@ This endpoint allows you to get latest headlines. You need to specify since when
 ```python
 get_response = newscatcher.latest_headlines.get(
     when="7d",
-    by_parse_date=False,
+    by_parse_date="string_example",
     sort_by="relevancy",
     lang=None,
     not_lang=None,
@@ -566,18 +566,18 @@ get_response = newscatcher.latest_headlines.get(
     not_sources=None,
     not_author_name=None,
     ranked_only="string_example",
-    is_headline=True,
-    is_opinion=True,
-    is_paid_content=True,
+    is_headline="string_example",
+    is_opinion="string_example",
+    is_paid_content="string_example",
     parent_url=None,
     all_links=None,
     all_domain_links=None,
-    word_count_min=0,
-    word_count_max=0,
-    page=1,
-    page_size=100,
+    word_count_min="string_example",
+    word_count_max="string_example",
+    page="string_example",
+    page_size="string_example",
     clustering_variable="string_example",
-    clustering_enabled=True,
+    clustering_enabled="string_example",
     clustering_threshold=3.14,
     include_nlp_data=True,
     has_nlp=True,
@@ -602,7 +602,8 @@ get_response = newscatcher.latest_headlines.get(
 
 ##### when: `str`<a id="when-str"></a>
 
-##### by_parse_date: `bool`<a id="by_parse_date-bool"></a>
+##### by_parse_date: Union[`str`, `bool`]<a id="by_parse_date-unionstr-bool"></a>
+
 
 ##### sort_by: `str`<a id="sort_by-str"></a>
 
@@ -625,11 +626,14 @@ get_response = newscatcher.latest_headlines.get(
 ##### ranked_only: Union[`str`, `bool`]<a id="ranked_only-unionstr-bool"></a>
 
 
-##### is_headline: `bool`<a id="is_headline-bool"></a>
+##### is_headline: Union[`str`, `bool`]<a id="is_headline-unionstr-bool"></a>
 
-##### is_opinion: `bool`<a id="is_opinion-bool"></a>
 
-##### is_paid_content: `bool`<a id="is_paid_content-bool"></a>
+##### is_opinion: Union[`str`, `bool`]<a id="is_opinion-unionstr-bool"></a>
+
+
+##### is_paid_content: Union[`str`, `bool`]<a id="is_paid_content-unionstr-bool"></a>
+
 
 ##### parent_url: [`Union[bool, date, datetime, dict, float, int, list, str, None]`](./newscatcherapi_client/type/.py)<a id="parent_url-unionbool-date-datetime-dict-float-int-list-str-nonenewscatcherapi_clienttypepy"></a>
 
@@ -637,19 +641,25 @@ get_response = newscatcher.latest_headlines.get(
 
 ##### all_domain_links: [`Union[bool, date, datetime, dict, float, int, list, str, None]`](./newscatcherapi_client/type/.py)<a id="all_domain_links-unionbool-date-datetime-dict-float-int-list-str-nonenewscatcherapi_clienttypepy"></a>
 
-##### word_count_min: `int`<a id="word_count_min-int"></a>
+##### word_count_min: Union[`str`, `int`]<a id="word_count_min-unionstr-int"></a>
 
-##### word_count_max: `int`<a id="word_count_max-int"></a>
 
-##### page: `int`<a id="page-int"></a>
+##### word_count_max: Union[`str`, `int`]<a id="word_count_max-unionstr-int"></a>
 
-##### page_size: `int`<a id="page_size-int"></a>
+
+##### page: Union[`str`, `int`]<a id="page-unionstr-int"></a>
+
+
+##### page_size: Union[`str`, `int`]<a id="page_size-unionstr-int"></a>
+
 
 ##### clustering_variable: `str`<a id="clustering_variable-str"></a>
 
-##### clustering_enabled: `bool`<a id="clustering_enabled-bool"></a>
+##### clustering_enabled: Union[`str`, `bool`]<a id="clustering_enabled-unionstr-bool"></a>
 
-##### clustering_threshold: `Union[int, float]`<a id="clustering_threshold-unionint-float"></a>
+
+##### clustering_threshold: Union[`Union[int, float]`, `str`]<a id="clustering_threshold-unionunionint-float-str"></a>
+
 
 ##### include_nlp_data: `bool`<a id="include_nlp_data-bool"></a>
 
@@ -704,7 +714,7 @@ This endpoint allows you to get latest headlines. You need to specify since when
 ```python
 post_response = newscatcher.latest_headlines.post(
     when="7d",
-    by_parse_date=False,
+    by_parse_date="string_example",
     sort_by="relevancy",
     lang=None,
     not_lang=None,
@@ -715,18 +725,18 @@ post_response = newscatcher.latest_headlines.post(
     not_sources=None,
     not_author_name=None,
     ranked_only="string_example",
-    is_headline=True,
-    is_opinion=True,
-    is_paid_content=True,
+    is_headline="string_example",
+    is_opinion="string_example",
+    is_paid_content="string_example",
     parent_url=None,
     all_links=None,
     all_domain_links=None,
-    word_count_min=0,
-    word_count_max=0,
-    page=1,
-    page_size=100,
+    word_count_min="string_example",
+    word_count_max="string_example",
+    page="string_example",
+    page_size="string_example",
     clustering_variable="string_example",
-    clustering_enabled=True,
+    clustering_enabled="string_example",
     clustering_threshold=3.14,
     include_nlp_data=True,
     has_nlp=True,
@@ -751,7 +761,8 @@ post_response = newscatcher.latest_headlines.post(
 
 ##### when: `str`<a id="when-str"></a>
 
-##### by_parse_date: `bool`<a id="by_parse_date-bool"></a>
+##### by_parse_date: Union[`str`, `bool`]<a id="by_parse_date-unionstr-bool"></a>
+
 
 ##### sort_by: `str`<a id="sort_by-str"></a>
 
@@ -774,11 +785,14 @@ post_response = newscatcher.latest_headlines.post(
 ##### ranked_only: Union[`str`, `bool`]<a id="ranked_only-unionstr-bool"></a>
 
 
-##### is_headline: `bool`<a id="is_headline-bool"></a>
+##### is_headline: Union[`str`, `bool`]<a id="is_headline-unionstr-bool"></a>
 
-##### is_opinion: `bool`<a id="is_opinion-bool"></a>
 
-##### is_paid_content: `bool`<a id="is_paid_content-bool"></a>
+##### is_opinion: Union[`str`, `bool`]<a id="is_opinion-unionstr-bool"></a>
+
+
+##### is_paid_content: Union[`str`, `bool`]<a id="is_paid_content-unionstr-bool"></a>
+
 
 ##### parent_url: [`Union[bool, date, datetime, dict, float, int, list, str, None]`](./newscatcherapi_client/type/typing_union_bool_date_datetime_dict_float_int_list_str_none.py)<a id="parent_url-unionbool-date-datetime-dict-float-int-list-str-nonenewscatcherapi_clienttypetyping_union_bool_date_datetime_dict_float_int_list_str_nonepy"></a>
 
@@ -786,19 +800,25 @@ post_response = newscatcher.latest_headlines.post(
 
 ##### all_domain_links: [`Union[bool, date, datetime, dict, float, int, list, str, None]`](./newscatcherapi_client/type/typing_union_bool_date_datetime_dict_float_int_list_str_none.py)<a id="all_domain_links-unionbool-date-datetime-dict-float-int-list-str-nonenewscatcherapi_clienttypetyping_union_bool_date_datetime_dict_float_int_list_str_nonepy"></a>
 
-##### word_count_min: `int`<a id="word_count_min-int"></a>
+##### word_count_min: Union[`str`, `int`]<a id="word_count_min-unionstr-int"></a>
 
-##### word_count_max: `int`<a id="word_count_max-int"></a>
 
-##### page: `int`<a id="page-int"></a>
+##### word_count_max: Union[`str`, `int`]<a id="word_count_max-unionstr-int"></a>
 
-##### page_size: `int`<a id="page_size-int"></a>
+
+##### page: Union[`str`, `int`]<a id="page-unionstr-int"></a>
+
+
+##### page_size: Union[`str`, `int`]<a id="page_size-unionstr-int"></a>
+
 
 ##### clustering_variable: `str`<a id="clustering_variable-str"></a>
 
-##### clustering_enabled: `bool`<a id="clustering_enabled-bool"></a>
+##### clustering_enabled: Union[`str`, `bool`]<a id="clustering_enabled-unionstr-bool"></a>
 
-##### clustering_threshold: `Union[int, float]`<a id="clustering_threshold-unionint-float"></a>
+
+##### clustering_threshold: Union[`Union[int, float]`, `str`]<a id="clustering_threshold-unionunionint-float-str"></a>
+
 
 ##### include_nlp_data: `bool`<a id="include_nlp_data-bool"></a>
 
@@ -868,25 +888,25 @@ get_response = newscatcher.search.get(
     from_="string_example",
     to_="string_example",
     published_date_precision="string_example",
-    by_parse_date=False,
+    by_parse_date="string_example",
     sort_by="relevancy",
     ranked_only="string_example",
-    from_rank=1,
-    to_rank=1,
-    is_headline=True,
-    is_opinion=True,
-    is_paid_content=True,
+    from_rank="string_example",
+    to_rank="string_example",
+    is_headline="string_example",
+    is_opinion="string_example",
+    is_paid_content="string_example",
     parent_url=None,
     all_links=None,
     all_domain_links=None,
-    word_count_min=0,
-    word_count_max=0,
-    page=1,
-    page_size=100,
+    word_count_min="string_example",
+    word_count_max="string_example",
+    page="string_example",
+    page_size="string_example",
     clustering_variable="string_example",
-    clustering_enabled=True,
+    clustering_enabled="string_example",
     clustering_threshold=3.14,
-    include_nlp_data=True,
+    include_nlp_data="string_example",
     has_nlp=True,
     theme="string_example",
     not_theme="string_example",
@@ -941,22 +961,28 @@ get_response = newscatcher.search.get(
 
 ##### published_date_precision: `str`<a id="published_date_precision-str"></a>
 
-##### by_parse_date: `bool`<a id="by_parse_date-bool"></a>
+##### by_parse_date: Union[`str`, `bool`]<a id="by_parse_date-unionstr-bool"></a>
+
 
 ##### sort_by: `str`<a id="sort_by-str"></a>
 
 ##### ranked_only: Union[`str`, `bool`]<a id="ranked_only-unionstr-bool"></a>
 
 
-##### from_rank: `int`<a id="from_rank-int"></a>
+##### from_rank: Union[`str`, `int`]<a id="from_rank-unionstr-int"></a>
 
-##### to_rank: `int`<a id="to_rank-int"></a>
 
-##### is_headline: `bool`<a id="is_headline-bool"></a>
+##### to_rank: Union[`str`, `int`]<a id="to_rank-unionstr-int"></a>
 
-##### is_opinion: `bool`<a id="is_opinion-bool"></a>
 
-##### is_paid_content: `bool`<a id="is_paid_content-bool"></a>
+##### is_headline: Union[`str`, `bool`]<a id="is_headline-unionstr-bool"></a>
+
+
+##### is_opinion: Union[`str`, `bool`]<a id="is_opinion-unionstr-bool"></a>
+
+
+##### is_paid_content: Union[`str`, `bool`]<a id="is_paid_content-unionstr-bool"></a>
+
 
 ##### parent_url: [`Union[bool, date, datetime, dict, float, int, list, str, None]`](./newscatcherapi_client/type/.py)<a id="parent_url-unionbool-date-datetime-dict-float-int-list-str-nonenewscatcherapi_clienttypepy"></a>
 
@@ -964,21 +990,28 @@ get_response = newscatcher.search.get(
 
 ##### all_domain_links: [`Union[bool, date, datetime, dict, float, int, list, str, None]`](./newscatcherapi_client/type/.py)<a id="all_domain_links-unionbool-date-datetime-dict-float-int-list-str-nonenewscatcherapi_clienttypepy"></a>
 
-##### word_count_min: `int`<a id="word_count_min-int"></a>
+##### word_count_min: Union[`str`, `int`]<a id="word_count_min-unionstr-int"></a>
 
-##### word_count_max: `int`<a id="word_count_max-int"></a>
 
-##### page: `int`<a id="page-int"></a>
+##### word_count_max: Union[`str`, `int`]<a id="word_count_max-unionstr-int"></a>
 
-##### page_size: `int`<a id="page_size-int"></a>
+
+##### page: Union[`str`, `int`]<a id="page-unionstr-int"></a>
+
+
+##### page_size: Union[`str`, `int`]<a id="page_size-unionstr-int"></a>
+
 
 ##### clustering_variable: `str`<a id="clustering_variable-str"></a>
 
-##### clustering_enabled: `bool`<a id="clustering_enabled-bool"></a>
+##### clustering_enabled: Union[`str`, `bool`]<a id="clustering_enabled-unionstr-bool"></a>
 
-##### clustering_threshold: `Union[int, float]`<a id="clustering_threshold-unionint-float"></a>
 
-##### include_nlp_data: `bool`<a id="include_nlp_data-bool"></a>
+##### clustering_threshold: Union[`Union[int, float]`, `str`]<a id="clustering_threshold-unionunionint-float-str"></a>
+
+
+##### include_nlp_data: Union[`str`, `bool`]<a id="include_nlp_data-unionstr-bool"></a>
+
 
 ##### has_nlp: `bool`<a id="has_nlp-bool"></a>
 
@@ -1055,25 +1088,25 @@ post_response = newscatcher.search.post(
     from_="string_example",
     to_="string_example",
     published_date_precision="string_example",
-    by_parse_date=False,
+    by_parse_date="string_example",
     sort_by="relevancy",
     ranked_only="string_example",
-    from_rank=1,
-    to_rank=1,
-    is_headline=True,
-    is_opinion=True,
-    is_paid_content=True,
+    from_rank="string_example",
+    to_rank="string_example",
+    is_headline="string_example",
+    is_opinion="string_example",
+    is_paid_content="string_example",
     parent_url=None,
     all_links=None,
     all_domain_links=None,
-    word_count_min=0,
-    word_count_max=0,
-    page=1,
-    page_size=100,
+    word_count_min="string_example",
+    word_count_max="string_example",
+    page="string_example",
+    page_size="string_example",
     clustering_variable="string_example",
-    clustering_enabled=True,
+    clustering_enabled="string_example",
     clustering_threshold=3.14,
-    include_nlp_data=True,
+    include_nlp_data="string_example",
     has_nlp=True,
     theme="string_example",
     not_theme="string_example",
@@ -1128,22 +1161,28 @@ post_response = newscatcher.search.post(
 
 ##### published_date_precision: `str`<a id="published_date_precision-str"></a>
 
-##### by_parse_date: `bool`<a id="by_parse_date-bool"></a>
+##### by_parse_date: Union[`str`, `bool`]<a id="by_parse_date-unionstr-bool"></a>
+
 
 ##### sort_by: `str`<a id="sort_by-str"></a>
 
 ##### ranked_only: Union[`str`, `bool`]<a id="ranked_only-unionstr-bool"></a>
 
 
-##### from_rank: `int`<a id="from_rank-int"></a>
+##### from_rank: Union[`str`, `int`]<a id="from_rank-unionstr-int"></a>
 
-##### to_rank: `int`<a id="to_rank-int"></a>
 
-##### is_headline: `bool`<a id="is_headline-bool"></a>
+##### to_rank: Union[`str`, `int`]<a id="to_rank-unionstr-int"></a>
 
-##### is_opinion: `bool`<a id="is_opinion-bool"></a>
 
-##### is_paid_content: `bool`<a id="is_paid_content-bool"></a>
+##### is_headline: Union[`str`, `bool`]<a id="is_headline-unionstr-bool"></a>
+
+
+##### is_opinion: Union[`str`, `bool`]<a id="is_opinion-unionstr-bool"></a>
+
+
+##### is_paid_content: Union[`str`, `bool`]<a id="is_paid_content-unionstr-bool"></a>
+
 
 ##### parent_url: [`Union[bool, date, datetime, dict, float, int, list, str, None]`](./newscatcherapi_client/type/typing_union_bool_date_datetime_dict_float_int_list_str_none.py)<a id="parent_url-unionbool-date-datetime-dict-float-int-list-str-nonenewscatcherapi_clienttypetyping_union_bool_date_datetime_dict_float_int_list_str_nonepy"></a>
 
@@ -1151,21 +1190,28 @@ post_response = newscatcher.search.post(
 
 ##### all_domain_links: [`Union[bool, date, datetime, dict, float, int, list, str, None]`](./newscatcherapi_client/type/typing_union_bool_date_datetime_dict_float_int_list_str_none.py)<a id="all_domain_links-unionbool-date-datetime-dict-float-int-list-str-nonenewscatcherapi_clienttypetyping_union_bool_date_datetime_dict_float_int_list_str_nonepy"></a>
 
-##### word_count_min: `int`<a id="word_count_min-int"></a>
+##### word_count_min: Union[`str`, `int`]<a id="word_count_min-unionstr-int"></a>
 
-##### word_count_max: `int`<a id="word_count_max-int"></a>
 
-##### page: `int`<a id="page-int"></a>
+##### word_count_max: Union[`str`, `int`]<a id="word_count_max-unionstr-int"></a>
 
-##### page_size: `int`<a id="page_size-int"></a>
+
+##### page: Union[`str`, `int`]<a id="page-unionstr-int"></a>
+
+
+##### page_size: Union[`str`, `int`]<a id="page_size-unionstr-int"></a>
+
 
 ##### clustering_variable: `str`<a id="clustering_variable-str"></a>
 
-##### clustering_enabled: `bool`<a id="clustering_enabled-bool"></a>
+##### clustering_enabled: Union[`str`, `bool`]<a id="clustering_enabled-unionstr-bool"></a>
 
-##### clustering_threshold: `Union[int, float]`<a id="clustering_threshold-unionint-float"></a>
 
-##### include_nlp_data: `bool`<a id="include_nlp_data-bool"></a>
+##### clustering_threshold: Union[`Union[int, float]`, `str`]<a id="clustering_threshold-unionunionint-float-str"></a>
+
+
+##### include_nlp_data: Union[`str`, `bool`]<a id="include_nlp_data-unionstr-bool"></a>
+
 
 ##### has_nlp: `bool`<a id="has_nlp-bool"></a>
 

@@ -19,9 +19,29 @@ import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObj
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
 // @ts-ignore
+import { ByParseDate } from '../models';
+// @ts-ignore
+import { ClusteringEnabled } from '../models';
+// @ts-ignore
+import { ClusteringThreshold } from '../models';
+// @ts-ignore
 import { From } from '../models';
 // @ts-ignore
+import { FromRank } from '../models';
+// @ts-ignore
 import { HTTPValidationError } from '../models';
+// @ts-ignore
+import { IncludeNlpData } from '../models';
+// @ts-ignore
+import { IsHeadline } from '../models';
+// @ts-ignore
+import { IsOpinion } from '../models';
+// @ts-ignore
+import { IsPaidContent } from '../models';
+// @ts-ignore
+import { Page } from '../models';
+// @ts-ignore
+import { PageSize } from '../models';
 // @ts-ignore
 import { RankedOnly } from '../models';
 // @ts-ignore
@@ -32,6 +52,12 @@ import { SearchPostResponse } from '../models';
 import { SearchRequest } from '../models';
 // @ts-ignore
 import { To } from '../models';
+// @ts-ignore
+import { ToRank } from '../models';
+// @ts-ignore
+import { WordCountMax } from '../models';
+// @ts-ignore
+import { WordCountMin } from '../models';
 import { paginate } from "../pagination/paginate";
 import type * as buffer from "buffer"
 import { requestBeforeHook } from '../requestBeforeHook';
@@ -57,25 +83,25 @@ export const SearchApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {From} [from] 
          * @param {To} [to] 
          * @param {string} [publishedDatePrecision] 
-         * @param {boolean} [byParseDate] 
+         * @param {ByParseDate} [byParseDate] 
          * @param {string} [sortBy] 
          * @param {RankedOnly} [rankedOnly] 
-         * @param {number} [fromRank] 
-         * @param {number} [toRank] 
-         * @param {boolean} [isHeadline] 
-         * @param {boolean} [isOpinion] 
-         * @param {boolean} [isPaidContent] 
+         * @param {FromRank} [fromRank] 
+         * @param {ToRank} [toRank] 
+         * @param {IsHeadline} [isHeadline] 
+         * @param {IsOpinion} [isOpinion] 
+         * @param {IsPaidContent} [isPaidContent] 
          * @param {any} [parentUrl] 
          * @param {any} [allLinks] 
          * @param {any} [allDomainLinks] 
-         * @param {number} [wordCountMin] 
-         * @param {number} [wordCountMax] 
-         * @param {number} [page] 
-         * @param {number} [pageSize] 
+         * @param {WordCountMin} [wordCountMin] 
+         * @param {WordCountMax} [wordCountMax] 
+         * @param {Page} [page] 
+         * @param {PageSize} [pageSize] 
          * @param {string} [clusteringVariable] 
-         * @param {boolean} [clusteringEnabled] 
-         * @param {number} [clusteringThreshold] 
-         * @param {boolean} [includeNlpData] 
+         * @param {ClusteringEnabled} [clusteringEnabled] 
+         * @param {ClusteringThreshold} [clusteringThreshold] 
+         * @param {IncludeNlpData} [includeNlpData] 
          * @param {boolean} [hasNlp] 
          * @param {string} [theme] 
          * @param {string} [notTheme] 
@@ -100,7 +126,7 @@ export const SearchApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        get: async (q: string, searchIn?: string, predefinedSources?: any, sources?: any, notSources?: any, lang?: any, notLang?: any, countries?: any, notCountries?: any, notAuthorName?: any, from?: From, to?: To, publishedDatePrecision?: string, byParseDate?: boolean, sortBy?: string, rankedOnly?: RankedOnly, fromRank?: number, toRank?: number, isHeadline?: boolean, isOpinion?: boolean, isPaidContent?: boolean, parentUrl?: any, allLinks?: any, allDomainLinks?: any, wordCountMin?: number, wordCountMax?: number, page?: number, pageSize?: number, clusteringVariable?: string, clusteringEnabled?: boolean, clusteringThreshold?: number, includeNlpData?: boolean, hasNlp?: boolean, theme?: string, notTheme?: string, orgEntityName?: string, perEntityName?: string, locEntityName?: string, miscEntityName?: string, titleSentimentMin?: number, titleSentimentMax?: number, contentSentimentMin?: number, contentSentimentMax?: number, iptcTags?: any, notIptcTags?: any, sourceName?: any, iabTags?: any, notIabTags?: any, excludeDuplicates?: boolean, additionalDomainInfo?: boolean, isNewsDomain?: boolean, newsDomainType?: any, newsType?: any, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        get: async (q: string, searchIn?: string, predefinedSources?: any, sources?: any, notSources?: any, lang?: any, notLang?: any, countries?: any, notCountries?: any, notAuthorName?: any, from?: From, to?: To, publishedDatePrecision?: string, byParseDate?: ByParseDate, sortBy?: string, rankedOnly?: RankedOnly, fromRank?: FromRank, toRank?: ToRank, isHeadline?: IsHeadline, isOpinion?: IsOpinion, isPaidContent?: IsPaidContent, parentUrl?: any, allLinks?: any, allDomainLinks?: any, wordCountMin?: WordCountMin, wordCountMax?: WordCountMax, page?: Page, pageSize?: PageSize, clusteringVariable?: string, clusteringEnabled?: ClusteringEnabled, clusteringThreshold?: ClusteringThreshold, includeNlpData?: IncludeNlpData, hasNlp?: boolean, theme?: string, notTheme?: string, orgEntityName?: string, perEntityName?: string, locEntityName?: string, miscEntityName?: string, titleSentimentMin?: number, titleSentimentMax?: number, contentSentimentMin?: number, contentSentimentMax?: number, iptcTags?: any, notIptcTags?: any, sourceName?: any, iabTags?: any, notIabTags?: any, excludeDuplicates?: boolean, additionalDomainInfo?: boolean, isNewsDomain?: boolean, newsDomainType?: any, newsType?: any, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'q' is not null or undefined
             assertParamExists('get', 'q', q)
             const localVarPath = `/api/search`;
@@ -616,10 +642,10 @@ export type SearchApiGetRequest = {
     
     /**
     * 
-    * @type {boolean}
+    * @type {ByParseDate}
     * @memberof SearchApiGet
     */
-    readonly byParseDate?: boolean
+    readonly byParseDate?: ByParseDate
     
     /**
     * 
@@ -637,38 +663,38 @@ export type SearchApiGetRequest = {
     
     /**
     * 
-    * @type {number}
+    * @type {FromRank}
     * @memberof SearchApiGet
     */
-    readonly fromRank?: number
+    readonly fromRank?: FromRank
     
     /**
     * 
-    * @type {number}
+    * @type {ToRank}
     * @memberof SearchApiGet
     */
-    readonly toRank?: number
+    readonly toRank?: ToRank
     
     /**
     * 
-    * @type {boolean}
+    * @type {IsHeadline}
     * @memberof SearchApiGet
     */
-    readonly isHeadline?: boolean
+    readonly isHeadline?: IsHeadline
     
     /**
     * 
-    * @type {boolean}
+    * @type {IsOpinion}
     * @memberof SearchApiGet
     */
-    readonly isOpinion?: boolean
+    readonly isOpinion?: IsOpinion
     
     /**
     * 
-    * @type {boolean}
+    * @type {IsPaidContent}
     * @memberof SearchApiGet
     */
-    readonly isPaidContent?: boolean
+    readonly isPaidContent?: IsPaidContent
     
     /**
     * 
@@ -693,31 +719,31 @@ export type SearchApiGetRequest = {
     
     /**
     * 
-    * @type {number}
+    * @type {WordCountMin}
     * @memberof SearchApiGet
     */
-    readonly wordCountMin?: number
+    readonly wordCountMin?: WordCountMin
     
     /**
     * 
-    * @type {number}
+    * @type {WordCountMax}
     * @memberof SearchApiGet
     */
-    readonly wordCountMax?: number
+    readonly wordCountMax?: WordCountMax
     
     /**
     * 
-    * @type {number}
+    * @type {Page}
     * @memberof SearchApiGet
     */
-    readonly page?: number
+    readonly page?: Page
     
     /**
     * 
-    * @type {number}
+    * @type {PageSize}
     * @memberof SearchApiGet
     */
-    readonly pageSize?: number
+    readonly pageSize?: PageSize
     
     /**
     * 
@@ -728,24 +754,24 @@ export type SearchApiGetRequest = {
     
     /**
     * 
-    * @type {boolean}
+    * @type {ClusteringEnabled}
     * @memberof SearchApiGet
     */
-    readonly clusteringEnabled?: boolean
+    readonly clusteringEnabled?: ClusteringEnabled
     
     /**
     * 
-    * @type {number}
+    * @type {ClusteringThreshold}
     * @memberof SearchApiGet
     */
-    readonly clusteringThreshold?: number
+    readonly clusteringThreshold?: ClusteringThreshold
     
     /**
     * 
-    * @type {boolean}
+    * @type {IncludeNlpData}
     * @memberof SearchApiGet
     */
-    readonly includeNlpData?: boolean
+    readonly includeNlpData?: IncludeNlpData
     
     /**
     * 

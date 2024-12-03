@@ -313,10 +313,7 @@ This endpoint allows you to get latest headlines. You need to specify since when
 ```typescript
 const getResponse = await newscatcher.latestHeadlines.get({
   when: "7d",
-  byParseDate: false,
   sortBy: "relevancy",
-  page: 1,
-  pageSize: 100,
 });
 ```
 
@@ -324,7 +321,7 @@ const getResponse = await newscatcher.latestHeadlines.get({
 
 ##### when: `string`<a id="when-string"></a>
 
-##### byParseDate: `boolean`<a id="byparsedate-boolean"></a>
+##### byParseDate: [`ByParseDate`](./models/by-parse-date.ts)<a id="byparsedate-byparsedatemodelsby-parse-datets"></a>
 
 ##### sortBy: `string`<a id="sortby-string"></a>
 
@@ -346,11 +343,11 @@ const getResponse = await newscatcher.latestHeadlines.get({
 
 ##### rankedOnly: [`RankedOnly`](./models/ranked-only.ts)<a id="rankedonly-rankedonlymodelsranked-onlyts"></a>
 
-##### isHeadline: `boolean`<a id="isheadline-boolean"></a>
+##### isHeadline: [`IsHeadline`](./models/is-headline.ts)<a id="isheadline-isheadlinemodelsis-headlinets"></a>
 
-##### isOpinion: `boolean`<a id="isopinion-boolean"></a>
+##### isOpinion: [`IsOpinion`](./models/is-opinion.ts)<a id="isopinion-isopinionmodelsis-opinionts"></a>
 
-##### isPaidContent: `boolean`<a id="ispaidcontent-boolean"></a>
+##### isPaidContent: [`IsPaidContent`](./models/is-paid-content.ts)<a id="ispaidcontent-ispaidcontentmodelsis-paid-contentts"></a>
 
 ##### parentUrl: `any`<a id="parenturl-any"></a>
 
@@ -358,19 +355,19 @@ const getResponse = await newscatcher.latestHeadlines.get({
 
 ##### allDomainLinks: `any`<a id="alldomainlinks-any"></a>
 
-##### wordCountMin: `number`<a id="wordcountmin-number"></a>
+##### wordCountMin: [`WordCountMin`](./models/word-count-min.ts)<a id="wordcountmin-wordcountminmodelsword-count-mints"></a>
 
-##### wordCountMax: `number`<a id="wordcountmax-number"></a>
+##### wordCountMax: [`WordCountMax`](./models/word-count-max.ts)<a id="wordcountmax-wordcountmaxmodelsword-count-maxts"></a>
 
-##### page: `number`<a id="page-number"></a>
+##### page: [`Page`](./models/page.ts)<a id="page-pagemodelspagets"></a>
 
-##### pageSize: `number`<a id="pagesize-number"></a>
+##### pageSize: [`PageSize`](./models/page-size.ts)<a id="pagesize-pagesizemodelspage-sizets"></a>
 
 ##### clusteringVariable: `string`<a id="clusteringvariable-string"></a>
 
-##### clusteringEnabled: `boolean`<a id="clusteringenabled-boolean"></a>
+##### clusteringEnabled: [`ClusteringEnabled`](./models/clustering-enabled.ts)<a id="clusteringenabled-clusteringenabledmodelsclustering-enabledts"></a>
 
-##### clusteringThreshold: `number`<a id="clusteringthreshold-number"></a>
+##### clusteringThreshold: [`ClusteringThreshold`](./models/clustering-threshold.ts)<a id="clusteringthreshold-clusteringthresholdmodelsclustering-thresholdts"></a>
 
 ##### includeNlpData: `boolean`<a id="includenlpdata-boolean"></a>
 
@@ -426,10 +423,7 @@ This endpoint allows you to get latest headlines. You need to specify since when
 ```typescript
 const postResponse = await newscatcher.latestHeadlines.post({
   when: "7d",
-  by_parse_date: false,
   sort_by: "relevancy",
-  page: 1,
-  page_size: 100,
 });
 ```
 
@@ -437,7 +431,7 @@ const postResponse = await newscatcher.latestHeadlines.post({
 
 ##### when: `string`<a id="when-string"></a>
 
-##### by_parse_date: `boolean`<a id="by_parse_date-boolean"></a>
+##### by_parse_date: [`ByParseDate`](./models/by-parse-date.ts)<a id="by_parse_date-byparsedatemodelsby-parse-datets"></a>
 
 ##### sort_by: `string`<a id="sort_by-string"></a>
 
@@ -459,11 +453,11 @@ const postResponse = await newscatcher.latestHeadlines.post({
 
 ##### ranked_only: [`RankedOnly`](./models/ranked-only.ts)<a id="ranked_only-rankedonlymodelsranked-onlyts"></a>
 
-##### is_headline: `boolean`<a id="is_headline-boolean"></a>
+##### is_headline: [`IsHeadline`](./models/is-headline.ts)<a id="is_headline-isheadlinemodelsis-headlinets"></a>
 
-##### is_opinion: `boolean`<a id="is_opinion-boolean"></a>
+##### is_opinion: [`IsOpinion`](./models/is-opinion.ts)<a id="is_opinion-isopinionmodelsis-opinionts"></a>
 
-##### is_paid_content: `boolean`<a id="is_paid_content-boolean"></a>
+##### is_paid_content: [`IsPaidContent`](./models/is-paid-content.ts)<a id="is_paid_content-ispaidcontentmodelsis-paid-contentts"></a>
 
 ##### parent_url: `any`<a id="parent_url-any"></a>
 
@@ -471,19 +465,19 @@ const postResponse = await newscatcher.latestHeadlines.post({
 
 ##### all_domain_links: `any`<a id="all_domain_links-any"></a>
 
-##### word_count_min: `number`<a id="word_count_min-number"></a>
+##### word_count_min: [`WordCountMin`](./models/word-count-min.ts)<a id="word_count_min-wordcountminmodelsword-count-mints"></a>
 
-##### word_count_max: `number`<a id="word_count_max-number"></a>
+##### word_count_max: [`WordCountMax`](./models/word-count-max.ts)<a id="word_count_max-wordcountmaxmodelsword-count-maxts"></a>
 
-##### page: `number`<a id="page-number"></a>
+##### page: [`Page`](./models/page.ts)<a id="page-pagemodelspagets"></a>
 
-##### page_size: `number`<a id="page_size-number"></a>
+##### page_size: [`PageSize`](./models/page-size.ts)<a id="page_size-pagesizemodelspage-sizets"></a>
 
 ##### clustering_variable: `string`<a id="clustering_variable-string"></a>
 
-##### clustering_enabled: `boolean`<a id="clustering_enabled-boolean"></a>
+##### clustering_enabled: [`ClusteringEnabled`](./models/clustering-enabled.ts)<a id="clustering_enabled-clusteringenabledmodelsclustering-enabledts"></a>
 
-##### clustering_threshold: `number`<a id="clustering_threshold-number"></a>
+##### clustering_threshold: [`ClusteringThreshold`](./models/clustering-threshold.ts)<a id="clustering_threshold-clusteringthresholdmodelsclustering-thresholdts"></a>
 
 ##### include_nlp_data: `boolean`<a id="include_nlp_data-boolean"></a>
 
@@ -540,10 +534,7 @@ This endpoint allows you to search for articles. You can search for articles by 
 const getResponse = await newscatcher.search.get({
   q: "q_example",
   searchIn: "title_content",
-  byParseDate: false,
   sortBy: "relevancy",
-  page: 1,
-  pageSize: 100,
 });
 ```
 
@@ -575,21 +566,21 @@ const getResponse = await newscatcher.search.get({
 
 ##### publishedDatePrecision: `string`<a id="publisheddateprecision-string"></a>
 
-##### byParseDate: `boolean`<a id="byparsedate-boolean"></a>
+##### byParseDate: [`ByParseDate`](./models/by-parse-date.ts)<a id="byparsedate-byparsedatemodelsby-parse-datets"></a>
 
 ##### sortBy: `string`<a id="sortby-string"></a>
 
 ##### rankedOnly: [`RankedOnly`](./models/ranked-only.ts)<a id="rankedonly-rankedonlymodelsranked-onlyts"></a>
 
-##### fromRank: `number`<a id="fromrank-number"></a>
+##### fromRank: [`FromRank`](./models/from-rank.ts)<a id="fromrank-fromrankmodelsfrom-rankts"></a>
 
-##### toRank: `number`<a id="torank-number"></a>
+##### toRank: [`ToRank`](./models/to-rank.ts)<a id="torank-torankmodelsto-rankts"></a>
 
-##### isHeadline: `boolean`<a id="isheadline-boolean"></a>
+##### isHeadline: [`IsHeadline`](./models/is-headline.ts)<a id="isheadline-isheadlinemodelsis-headlinets"></a>
 
-##### isOpinion: `boolean`<a id="isopinion-boolean"></a>
+##### isOpinion: [`IsOpinion`](./models/is-opinion.ts)<a id="isopinion-isopinionmodelsis-opinionts"></a>
 
-##### isPaidContent: `boolean`<a id="ispaidcontent-boolean"></a>
+##### isPaidContent: [`IsPaidContent`](./models/is-paid-content.ts)<a id="ispaidcontent-ispaidcontentmodelsis-paid-contentts"></a>
 
 ##### parentUrl: `any`<a id="parenturl-any"></a>
 
@@ -597,21 +588,21 @@ const getResponse = await newscatcher.search.get({
 
 ##### allDomainLinks: `any`<a id="alldomainlinks-any"></a>
 
-##### wordCountMin: `number`<a id="wordcountmin-number"></a>
+##### wordCountMin: [`WordCountMin`](./models/word-count-min.ts)<a id="wordcountmin-wordcountminmodelsword-count-mints"></a>
 
-##### wordCountMax: `number`<a id="wordcountmax-number"></a>
+##### wordCountMax: [`WordCountMax`](./models/word-count-max.ts)<a id="wordcountmax-wordcountmaxmodelsword-count-maxts"></a>
 
-##### page: `number`<a id="page-number"></a>
+##### page: [`Page`](./models/page.ts)<a id="page-pagemodelspagets"></a>
 
-##### pageSize: `number`<a id="pagesize-number"></a>
+##### pageSize: [`PageSize`](./models/page-size.ts)<a id="pagesize-pagesizemodelspage-sizets"></a>
 
 ##### clusteringVariable: `string`<a id="clusteringvariable-string"></a>
 
-##### clusteringEnabled: `boolean`<a id="clusteringenabled-boolean"></a>
+##### clusteringEnabled: [`ClusteringEnabled`](./models/clustering-enabled.ts)<a id="clusteringenabled-clusteringenabledmodelsclustering-enabledts"></a>
 
-##### clusteringThreshold: `number`<a id="clusteringthreshold-number"></a>
+##### clusteringThreshold: [`ClusteringThreshold`](./models/clustering-threshold.ts)<a id="clusteringthreshold-clusteringthresholdmodelsclustering-thresholdts"></a>
 
-##### includeNlpData: `boolean`<a id="includenlpdata-boolean"></a>
+##### includeNlpData: [`IncludeNlpData`](./models/include-nlp-data.ts)<a id="includenlpdata-includenlpdatamodelsinclude-nlp-datats"></a>
 
 ##### hasNlp: `boolean`<a id="hasnlp-boolean"></a>
 
@@ -678,10 +669,7 @@ This endpoint allows you to search for articles. You can search for articles by 
 const postResponse = await newscatcher.search.post({
   q: "q_example",
   search_in: "title_content",
-  by_parse_date: false,
   sort_by: "relevancy",
-  page: 1,
-  page_size: 100,
 });
 ```
 
@@ -713,21 +701,21 @@ const postResponse = await newscatcher.search.post({
 
 ##### published_date_precision: `string`<a id="published_date_precision-string"></a>
 
-##### by_parse_date: `boolean`<a id="by_parse_date-boolean"></a>
+##### by_parse_date: [`ByParseDate`](./models/by-parse-date.ts)<a id="by_parse_date-byparsedatemodelsby-parse-datets"></a>
 
 ##### sort_by: `string`<a id="sort_by-string"></a>
 
 ##### ranked_only: [`RankedOnly`](./models/ranked-only.ts)<a id="ranked_only-rankedonlymodelsranked-onlyts"></a>
 
-##### from_rank: `number`<a id="from_rank-number"></a>
+##### from_rank: [`FromRank`](./models/from-rank.ts)<a id="from_rank-fromrankmodelsfrom-rankts"></a>
 
-##### to_rank: `number`<a id="to_rank-number"></a>
+##### to_rank: [`ToRank`](./models/to-rank.ts)<a id="to_rank-torankmodelsto-rankts"></a>
 
-##### is_headline: `boolean`<a id="is_headline-boolean"></a>
+##### is_headline: [`IsHeadline`](./models/is-headline.ts)<a id="is_headline-isheadlinemodelsis-headlinets"></a>
 
-##### is_opinion: `boolean`<a id="is_opinion-boolean"></a>
+##### is_opinion: [`IsOpinion`](./models/is-opinion.ts)<a id="is_opinion-isopinionmodelsis-opinionts"></a>
 
-##### is_paid_content: `boolean`<a id="is_paid_content-boolean"></a>
+##### is_paid_content: [`IsPaidContent`](./models/is-paid-content.ts)<a id="is_paid_content-ispaidcontentmodelsis-paid-contentts"></a>
 
 ##### parent_url: `any`<a id="parent_url-any"></a>
 
@@ -735,21 +723,21 @@ const postResponse = await newscatcher.search.post({
 
 ##### all_domain_links: `any`<a id="all_domain_links-any"></a>
 
-##### word_count_min: `number`<a id="word_count_min-number"></a>
+##### word_count_min: [`WordCountMin`](./models/word-count-min.ts)<a id="word_count_min-wordcountminmodelsword-count-mints"></a>
 
-##### word_count_max: `number`<a id="word_count_max-number"></a>
+##### word_count_max: [`WordCountMax`](./models/word-count-max.ts)<a id="word_count_max-wordcountmaxmodelsword-count-maxts"></a>
 
-##### page: `number`<a id="page-number"></a>
+##### page: [`Page`](./models/page.ts)<a id="page-pagemodelspagets"></a>
 
-##### page_size: `number`<a id="page_size-number"></a>
+##### page_size: [`PageSize`](./models/page-size.ts)<a id="page_size-pagesizemodelspage-sizets"></a>
 
 ##### clustering_variable: `string`<a id="clustering_variable-string"></a>
 
-##### clustering_enabled: `boolean`<a id="clustering_enabled-boolean"></a>
+##### clustering_enabled: [`ClusteringEnabled`](./models/clustering-enabled.ts)<a id="clustering_enabled-clusteringenabledmodelsclustering-enabledts"></a>
 
-##### clustering_threshold: `number`<a id="clustering_threshold-number"></a>
+##### clustering_threshold: [`ClusteringThreshold`](./models/clustering-threshold.ts)<a id="clustering_threshold-clusteringthresholdmodelsclustering-thresholdts"></a>
 
-##### include_nlp_data: `boolean`<a id="include_nlp_data-boolean"></a>
+##### include_nlp_data: [`IncludeNlpData`](./models/include-nlp-data.ts)<a id="include_nlp_data-includenlpdatamodelsinclude-nlp-datats"></a>
 
 ##### has_nlp: `boolean`<a id="has_nlp-boolean"></a>
 
