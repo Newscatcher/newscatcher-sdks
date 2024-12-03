@@ -150,7 +150,14 @@
             "required": false,
             "schema": {
               "title": "By Parse Date",
-              "type": "boolean",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ],
               "default": false
             },
             "name": "by_parse_date",
@@ -186,7 +193,14 @@
             "required": false,
             "schema": {
               "title": "From Rank",
-              "type": "integer"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
             },
             "name": "from_rank",
             "in": "query"
@@ -195,7 +209,14 @@
             "required": false,
             "schema": {
               "title": "To Rank",
-              "type": "integer"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
             },
             "name": "to_rank",
             "in": "query"
@@ -204,7 +225,14 @@
             "required": false,
             "schema": {
               "title": "Is Headline",
-              "type": "boolean"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "name": "is_headline",
             "in": "query"
@@ -213,7 +241,14 @@
             "required": false,
             "schema": {
               "title": "Is Opinion",
-              "type": "boolean"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "name": "is_opinion",
             "in": "query"
@@ -222,7 +257,14 @@
             "required": false,
             "schema": {
               "title": "Is Paid Content",
-              "type": "boolean"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "name": "is_paid_content",
             "in": "query"
@@ -255,8 +297,14 @@
             "required": false,
             "schema": {
               "title": "Word Count Min",
-              "minimum": 0,
-              "type": "integer"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
             },
             "name": "word_count_min",
             "in": "query"
@@ -265,8 +313,14 @@
             "required": false,
             "schema": {
               "title": "Word Count Max",
-              "minimum": 0,
-              "type": "integer"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
             },
             "name": "word_count_max",
             "in": "query"
@@ -275,8 +329,14 @@
             "required": false,
             "schema": {
               "title": "Page",
-              "minimum": 0,
-              "type": "integer",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ],
               "default": 1
             },
             "name": "page",
@@ -286,8 +346,14 @@
             "required": false,
             "schema": {
               "title": "Page Size",
-              "minimum": 0,
-              "type": "integer",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ],
               "default": 100
             },
             "name": "page_size",
@@ -306,7 +372,14 @@
             "required": false,
             "schema": {
               "title": "Clustering Enabled",
-              "type": "boolean"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "name": "clustering_enabled",
             "in": "query"
@@ -315,7 +388,14 @@
             "required": false,
             "schema": {
               "title": "Clustering Threshold",
-              "type": "number"
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ]
             },
             "name": "clustering_threshold",
             "in": "query"
@@ -324,7 +404,14 @@
             "required": false,
             "schema": {
               "title": "Include Nlp Data",
-              "type": "boolean"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "name": "include_nlp_data",
             "in": "query"
@@ -635,7 +722,14 @@
             "required": false,
             "schema": {
               "title": "By Parse Date",
-              "type": "boolean",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ],
               "default": false
             },
             "name": "by_parse_date",
@@ -735,7 +829,14 @@
             "required": false,
             "schema": {
               "title": "Is Headline",
-              "type": "boolean"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "name": "is_headline",
             "in": "query"
@@ -744,7 +845,14 @@
             "required": false,
             "schema": {
               "title": "Is Opinion",
-              "type": "boolean"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "name": "is_opinion",
             "in": "query"
@@ -753,7 +861,14 @@
             "required": false,
             "schema": {
               "title": "Is Paid Content",
-              "type": "boolean"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "name": "is_paid_content",
             "in": "query"
@@ -786,8 +901,14 @@
             "required": false,
             "schema": {
               "title": "Word Count Min",
-              "minimum": 0,
-              "type": "integer"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
             },
             "name": "word_count_min",
             "in": "query"
@@ -796,8 +917,14 @@
             "required": false,
             "schema": {
               "title": "Word Count Max",
-              "minimum": 0,
-              "type": "integer"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
             },
             "name": "word_count_max",
             "in": "query"
@@ -806,8 +933,14 @@
             "required": false,
             "schema": {
               "title": "Page",
-              "minimum": 0,
-              "type": "integer",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ],
               "default": 1
             },
             "name": "page",
@@ -817,8 +950,14 @@
             "required": false,
             "schema": {
               "title": "Page Size",
-              "minimum": 0,
-              "type": "integer",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ],
               "default": 100
             },
             "name": "page_size",
@@ -837,7 +976,14 @@
             "required": false,
             "schema": {
               "title": "Clustering Enabled",
-              "type": "boolean"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "name": "clustering_enabled",
             "in": "query"
@@ -846,7 +992,14 @@
             "required": false,
             "schema": {
               "title": "Clustering Threshold",
-              "type": "number"
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ]
             },
             "name": "clustering_threshold",
             "in": "query"
@@ -2822,7 +2975,14 @@
           },
           "by_parse_date": {
             "title": "By Parse Date",
-            "type": "boolean",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ],
             "default": false
           },
           "sort_by": {
@@ -2867,15 +3027,36 @@
           },
           "is_headline": {
             "title": "Is Headline",
-            "type": "boolean"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
           },
           "is_opinion": {
             "title": "Is Opinion",
-            "type": "boolean"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
           },
           "is_paid_content": {
             "title": "Is Paid Content",
-            "type": "boolean"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
           },
           "parent_url": {
             "title": "Parent Url"
@@ -2888,24 +3069,48 @@
           },
           "word_count_min": {
             "title": "Word Count Min",
-            "minimum": 0,
-            "type": "integer"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
           },
           "word_count_max": {
             "title": "Word Count Max",
-            "minimum": 0,
-            "type": "integer"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
           },
           "page": {
             "title": "Page",
-            "minimum": 0,
-            "type": "integer",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
             "default": 1
           },
           "page_size": {
             "title": "Page Size",
-            "minimum": 0,
-            "type": "integer",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
             "default": 100
           },
           "clustering_variable": {
@@ -2914,11 +3119,25 @@
           },
           "clustering_enabled": {
             "title": "Clustering Enabled",
-            "type": "boolean"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
           },
           "clustering_threshold": {
             "title": "Clustering Threshold",
-            "type": "number"
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ]
           },
           "include_nlp_data": {
             "title": "Include Nlp Data",
@@ -3294,7 +3513,14 @@
           },
           "by_parse_date": {
             "title": "By Parse Date",
-            "type": "boolean",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ],
             "default": false
           },
           "sort_by": {
@@ -3315,23 +3541,58 @@
           },
           "from_rank": {
             "title": "From Rank",
-            "type": "integer"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
           },
           "to_rank": {
             "title": "To Rank",
-            "type": "integer"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
           },
           "is_headline": {
             "title": "Is Headline",
-            "type": "boolean"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
           },
           "is_opinion": {
             "title": "Is Opinion",
-            "type": "boolean"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
           },
           "is_paid_content": {
             "title": "Is Paid Content",
-            "type": "boolean"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
           },
           "parent_url": {
             "title": "Parent Url"
@@ -3344,24 +3605,48 @@
           },
           "word_count_min": {
             "title": "Word Count Min",
-            "minimum": 0,
-            "type": "integer"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
           },
           "word_count_max": {
             "title": "Word Count Max",
-            "minimum": 0,
-            "type": "integer"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
           },
           "page": {
             "title": "Page",
-            "minimum": 0,
-            "type": "integer",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
             "default": 1
           },
           "page_size": {
             "title": "Page Size",
-            "minimum": 0,
-            "type": "integer",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
             "default": 100
           },
           "clustering_variable": {
@@ -3370,15 +3655,36 @@
           },
           "clustering_enabled": {
             "title": "Clustering Enabled",
-            "type": "boolean"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
           },
           "clustering_threshold": {
             "title": "Clustering Threshold",
-            "type": "number"
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ]
           },
           "include_nlp_data": {
             "title": "Include Nlp Data",
-            "type": "boolean"
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ]
           },
           "has_nlp": {
             "title": "Has Nlp",
