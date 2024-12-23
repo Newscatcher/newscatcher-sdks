@@ -45,21 +45,21 @@ class OptionalSearchRequest(TypedDict, total=False):
 
     published_date_precision: str
 
-    by_parse_date: bool
+    by_parse_date: typing.Union[str, bool]
 
     sort_by: str
 
     ranked_only: typing.Union[str, bool]
 
-    from_rank: int
+    from_rank: typing.Union[str, int]
 
-    to_rank: int
+    to_rank: typing.Union[str, int]
 
-    is_headline: bool
+    is_headline: typing.Union[str, bool]
 
-    is_opinion: bool
+    is_opinion: typing.Union[str, bool]
 
-    is_paid_content: bool
+    is_paid_content: typing.Union[str, bool]
 
     parent_url: typing.Union[bool, date, datetime, dict, float, int, list, str, None]
 
@@ -67,21 +67,21 @@ class OptionalSearchRequest(TypedDict, total=False):
 
     all_domain_links: typing.Union[bool, date, datetime, dict, float, int, list, str, None]
 
-    word_count_min: int
+    word_count_min: typing.Union[str, int]
 
-    word_count_max: int
+    word_count_max: typing.Union[str, int]
 
-    page: int
+    page: typing.Union[str, int]
 
-    page_size: int
+    page_size: typing.Union[str, int]
 
     clustering_variable: str
 
-    clustering_enabled: bool
+    clustering_enabled: typing.Union[str, bool]
 
-    clustering_threshold: typing.Union[int, float]
+    clustering_threshold: typing.Union[typing.Union[int, float], str]
 
-    include_nlp_data: bool
+    include_nlp_data: typing.Union[str, bool]
 
     has_nlp: bool
 

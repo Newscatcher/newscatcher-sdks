@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newscatcherapi.Net", "src\Newscatcherapi.Net\Newscatcherapi.Net.csproj", "{6242F3CF-A909-4971-8789-652435FCE776}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newscatcherapi.Net", "src\Newscatcherapi.Net\Newscatcherapi.Net.csproj", "{9D925234-0901-4E2F-9CC0-D7F82CAB44D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newscatcherapi.Net.Test", "src\Newscatcherapi.Net.Test\Newscatcherapi.Net.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6242F3CF-A909-4971-8789-652435FCE776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6242F3CF-A909-4971-8789-652435FCE776}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6242F3CF-A909-4971-8789-652435FCE776}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6242F3CF-A909-4971-8789-652435FCE776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D925234-0901-4E2F-9CC0-D7F82CAB44D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D925234-0901-4E2F-9CC0-D7F82CAB44D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D925234-0901-4E2F-9CC0-D7F82CAB44D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D925234-0901-4E2F-9CC0-D7F82CAB44D9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU

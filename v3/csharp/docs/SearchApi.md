@@ -53,28 +53,28 @@ namespace Example
             var from = new From(DateTime.Now);
             var to = new To(DateTime.Now);
             var publishedDatePrecision = "publishedDatePrecision_example";
-            var byParseDate = false;
+            var byParseDate = new ByParseDate("example");
             var sortBy = "relevancy";
             var rankedOnly = new RankedOnly("example");
-            var fromRank = 56;
-            var toRank = 56;
-            var isHeadline = true;
-            var isOpinion = true;
-            var isPaidContent = true;
+            var fromRank = new FromRank("example");
+            var toRank = new ToRank("example");
+            var isHeadline = new IsHeadline("example");
+            var isOpinion = new IsOpinion("example");
+            var isPaidContent = new IsPaidContent("example");
             var parentUrl = new Object(
             );
             var allLinks = new Object(
             );
             var allDomainLinks = new Object(
             );
-            var wordCountMin = 56;
-            var wordCountMax = 56;
-            var page = 1;
-            var pageSize = 100;
+            var wordCountMin = new WordCountMin("example");
+            var wordCountMax = new WordCountMax("example");
+            var page = new Page("example");
+            var pageSize = new PageSize("example");
             var clusteringVariable = "clusteringVariable_example";
-            var clusteringEnabled = true;
-            var clusteringThreshold = 8.14D;
-            var includeNlpData = true;
+            var clusteringEnabled = new ClusteringEnabled("example");
+            var clusteringThreshold = new ClusteringThreshold(100);
+            var includeNlpData = new IncludeNlpData("example");
             var hasNlp = true;
             var theme = "theme_example";
             var notTheme = "notTheme_example";
@@ -164,25 +164,25 @@ catch (ApiException e)
 | **from** | [**From**](From.md) |  | [optional]  |
 | **to** | [**To**](To.md) |  | [optional]  |
 | **publishedDatePrecision** | **string** |  | [optional]  |
-| **byParseDate** | **bool?** |  | [optional] [default to false] |
+| **byParseDate** | [**ByParseDate**](ByParseDate.md) |  | [optional]  |
 | **sortBy** | **string** |  | [optional] [default to &quot;relevancy&quot;] |
 | **rankedOnly** | [**RankedOnly**](RankedOnly.md) |  | [optional]  |
-| **fromRank** | **int?** |  | [optional]  |
-| **toRank** | **int?** |  | [optional]  |
-| **isHeadline** | **bool?** |  | [optional]  |
-| **isOpinion** | **bool?** |  | [optional]  |
-| **isPaidContent** | **bool?** |  | [optional]  |
+| **fromRank** | [**FromRank**](FromRank.md) |  | [optional]  |
+| **toRank** | [**ToRank**](ToRank.md) |  | [optional]  |
+| **isHeadline** | [**IsHeadline**](IsHeadline.md) |  | [optional]  |
+| **isOpinion** | [**IsOpinion**](IsOpinion.md) |  | [optional]  |
+| **isPaidContent** | [**IsPaidContent**](IsPaidContent.md) |  | [optional]  |
 | **parentUrl** | [**Object**](Object.md) |  | [optional]  |
 | **allLinks** | [**Object**](Object.md) |  | [optional]  |
 | **allDomainLinks** | [**Object**](Object.md) |  | [optional]  |
-| **wordCountMin** | **int?** |  | [optional]  |
-| **wordCountMax** | **int?** |  | [optional]  |
-| **page** | **int?** |  | [optional] [default to 1] |
-| **pageSize** | **int?** |  | [optional] [default to 100] |
+| **wordCountMin** | [**WordCountMin**](WordCountMin.md) |  | [optional]  |
+| **wordCountMax** | [**WordCountMax**](WordCountMax.md) |  | [optional]  |
+| **page** | [**Page**](Page.md) |  | [optional]  |
+| **pageSize** | [**PageSize**](PageSize.md) |  | [optional]  |
 | **clusteringVariable** | **string** |  | [optional]  |
-| **clusteringEnabled** | **bool?** |  | [optional]  |
-| **clusteringThreshold** | **double?** |  | [optional]  |
-| **includeNlpData** | **bool?** |  | [optional]  |
+| **clusteringEnabled** | [**ClusteringEnabled**](ClusteringEnabled.md) |  | [optional]  |
+| **clusteringThreshold** | [**ClusteringThreshold**](ClusteringThreshold.md) |  | [optional]  |
+| **includeNlpData** | [**IncludeNlpData**](IncludeNlpData.md) |  | [optional]  |
 | **hasNlp** | **bool?** |  | [optional]  |
 | **theme** | **string** |  | [optional]  |
 | **notTheme** | **string** |  | [optional]  |
@@ -256,25 +256,25 @@ namespace Example
             var from = new From(DateTime.Now);
             var to = new To(DateTime.Now);
             var publishedDatePrecision = "publishedDatePrecision_example";
-            var byParseDate = false;
+            var byParseDate = new ByParseDate("example");
             var sortBy = "relevancy";
             var rankedOnly = new RankedOnly("example");
-            var fromRank = default(int);
-            var toRank = default(int);
-            var isHeadline = false;
-            var isOpinion = false;
-            var isPaidContent = false;
+            var fromRank = new FromRank("example");
+            var toRank = new ToRank("example");
+            var isHeadline = new IsHeadline("example");
+            var isOpinion = new IsOpinion("example");
+            var isPaidContent = new IsPaidContent("example");
             var parentUrl = "parentUrl_example";
             var allLinks = "allLinks_example";
             var allDomainLinks = "allDomainLinks_example";
-            var wordCountMin = default(int);
-            var wordCountMax = default(int);
-            var page = 1;
-            var pageSize = 100;
+            var wordCountMin = new WordCountMin("example");
+            var wordCountMax = new WordCountMax("example");
+            var page = new Page("example");
+            var pageSize = new PageSize("example");
             var clusteringVariable = "clusteringVariable_example";
-            var clusteringEnabled = false;
-            var clusteringThreshold = default(double);
-            var includeNlpData = false;
+            var clusteringEnabled = new ClusteringEnabled("example");
+            var clusteringThreshold = new ClusteringThreshold(100);
+            var includeNlpData = new IncludeNlpData("example");
             var hasNlp = false;
             var theme = "theme_example";
             var notTheme = "notTheme_example";

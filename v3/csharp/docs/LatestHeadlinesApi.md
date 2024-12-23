@@ -33,7 +33,7 @@ namespace Example
             client.SetApiKey("YOUR_API_KEY");
 
             var when = "7d";
-            var byParseDate = false;
+            var byParseDate = new ByParseDate("example");
             var sortBy = "relevancy";
             var lang = new Object(
             );
@@ -52,22 +52,22 @@ namespace Example
             var notAuthorName = new Object(
             );
             var rankedOnly = new RankedOnly("example");
-            var isHeadline = true;
-            var isOpinion = true;
-            var isPaidContent = true;
+            var isHeadline = new IsHeadline("example");
+            var isOpinion = new IsOpinion("example");
+            var isPaidContent = new IsPaidContent("example");
             var parentUrl = new Object(
             );
             var allLinks = new Object(
             );
             var allDomainLinks = new Object(
             );
-            var wordCountMin = 56;
-            var wordCountMax = 56;
-            var page = 1;
-            var pageSize = 100;
+            var wordCountMin = new WordCountMin("example");
+            var wordCountMax = new WordCountMax("example");
+            var page = new Page("example");
+            var pageSize = new PageSize("example");
             var clusteringVariable = "clusteringVariable_example";
-            var clusteringEnabled = true;
-            var clusteringThreshold = 8.14D;
+            var clusteringEnabled = new ClusteringEnabled("example");
+            var clusteringThreshold = new ClusteringThreshold(100);
             var includeNlpData = true;
             var hasNlp = true;
             var theme = "theme_example";
@@ -137,7 +137,7 @@ catch (ApiException e)
 | Name | Type | Description | Notes |
 |------|------|-------------|-------|
 | **when** | **string** |  | [optional] [default to &quot;7d&quot;] |
-| **byParseDate** | **bool?** |  | [optional] [default to false] |
+| **byParseDate** | [**ByParseDate**](ByParseDate.md) |  | [optional]  |
 | **sortBy** | **string** |  | [optional] [default to &quot;relevancy&quot;] |
 | **lang** | [**Object**](Object.md) |  | [optional]  |
 | **notLang** | [**Object**](Object.md) |  | [optional]  |
@@ -148,19 +148,19 @@ catch (ApiException e)
 | **notSources** | [**Object**](Object.md) |  | [optional]  |
 | **notAuthorName** | [**Object**](Object.md) |  | [optional]  |
 | **rankedOnly** | [**RankedOnly**](RankedOnly.md) |  | [optional]  |
-| **isHeadline** | **bool?** |  | [optional]  |
-| **isOpinion** | **bool?** |  | [optional]  |
-| **isPaidContent** | **bool?** |  | [optional]  |
+| **isHeadline** | [**IsHeadline**](IsHeadline.md) |  | [optional]  |
+| **isOpinion** | [**IsOpinion**](IsOpinion.md) |  | [optional]  |
+| **isPaidContent** | [**IsPaidContent**](IsPaidContent.md) |  | [optional]  |
 | **parentUrl** | [**Object**](Object.md) |  | [optional]  |
 | **allLinks** | [**Object**](Object.md) |  | [optional]  |
 | **allDomainLinks** | [**Object**](Object.md) |  | [optional]  |
-| **wordCountMin** | **int?** |  | [optional]  |
-| **wordCountMax** | **int?** |  | [optional]  |
-| **page** | **int?** |  | [optional] [default to 1] |
-| **pageSize** | **int?** |  | [optional] [default to 100] |
+| **wordCountMin** | [**WordCountMin**](WordCountMin.md) |  | [optional]  |
+| **wordCountMax** | [**WordCountMax**](WordCountMax.md) |  | [optional]  |
+| **page** | [**Page**](Page.md) |  | [optional]  |
+| **pageSize** | [**PageSize**](PageSize.md) |  | [optional]  |
 | **clusteringVariable** | **string** |  | [optional]  |
-| **clusteringEnabled** | **bool?** |  | [optional]  |
-| **clusteringThreshold** | **double?** |  | [optional]  |
+| **clusteringEnabled** | [**ClusteringEnabled**](ClusteringEnabled.md) |  | [optional]  |
+| **clusteringThreshold** | [**ClusteringThreshold**](ClusteringThreshold.md) |  | [optional]  |
 | **includeNlpData** | **bool?** |  | [optional]  |
 | **hasNlp** | **bool?** |  | [optional]  |
 | **theme** | **string** |  | [optional]  |
@@ -217,7 +217,7 @@ namespace Example
             client.SetApiKey("YOUR_API_KEY");
 
             var when = "7d";
-            var byParseDate = false;
+            var byParseDate = new ByParseDate("example");
             var sortBy = "relevancy";
             var lang = "lang_example";
             var notLang = "notLang_example";
@@ -228,19 +228,19 @@ namespace Example
             var notSources = "notSources_example";
             var notAuthorName = "notAuthorName_example";
             var rankedOnly = new RankedOnly("example");
-            var isHeadline = false;
-            var isOpinion = false;
-            var isPaidContent = false;
+            var isHeadline = new IsHeadline("example");
+            var isOpinion = new IsOpinion("example");
+            var isPaidContent = new IsPaidContent("example");
             var parentUrl = "parentUrl_example";
             var allLinks = "allLinks_example";
             var allDomainLinks = "allDomainLinks_example";
-            var wordCountMin = default(int);
-            var wordCountMax = default(int);
-            var page = 1;
-            var pageSize = 100;
+            var wordCountMin = new WordCountMin("example");
+            var wordCountMax = new WordCountMax("example");
+            var page = new Page("example");
+            var pageSize = new PageSize("example");
             var clusteringVariable = "clusteringVariable_example";
-            var clusteringEnabled = false;
-            var clusteringThreshold = default(double);
+            var clusteringEnabled = new ClusteringEnabled("example");
+            var clusteringThreshold = new ClusteringThreshold(100);
             var includeNlpData = false;
             var hasNlp = false;
             var theme = "theme_example";

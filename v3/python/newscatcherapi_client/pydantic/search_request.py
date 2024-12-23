@@ -44,21 +44,21 @@ class SearchRequest(BaseModel):
 
     published_date_precision: typing.Optional[str] = Field(None, alias='published_date_precision')
 
-    by_parse_date: typing.Optional[bool] = Field(None, alias='by_parse_date')
+    by_parse_date: typing.Optional[typing.Union[str, bool]] = Field(None, alias='by_parse_date')
 
     sort_by: typing.Optional[str] = Field(None, alias='sort_by')
 
     ranked_only: typing.Optional[typing.Union[str, bool]] = Field(None, alias='ranked_only')
 
-    from_rank: typing.Optional[int] = Field(None, alias='from_rank')
+    from_rank: typing.Optional[typing.Union[str, int]] = Field(None, alias='from_rank')
 
-    to_rank: typing.Optional[int] = Field(None, alias='to_rank')
+    to_rank: typing.Optional[typing.Union[str, int]] = Field(None, alias='to_rank')
 
-    is_headline: typing.Optional[bool] = Field(None, alias='is_headline')
+    is_headline: typing.Optional[typing.Union[str, bool]] = Field(None, alias='is_headline')
 
-    is_opinion: typing.Optional[bool] = Field(None, alias='is_opinion')
+    is_opinion: typing.Optional[typing.Union[str, bool]] = Field(None, alias='is_opinion')
 
-    is_paid_content: typing.Optional[bool] = Field(None, alias='is_paid_content')
+    is_paid_content: typing.Optional[typing.Union[str, bool]] = Field(None, alias='is_paid_content')
 
     parent_url: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = Field(None, alias='parent_url')
 
@@ -66,21 +66,21 @@ class SearchRequest(BaseModel):
 
     all_domain_links: typing.Optional[typing.Union[bool, date, datetime, dict, float, int, list, str, None]] = Field(None, alias='all_domain_links')
 
-    word_count_min: typing.Optional[int] = Field(None, alias='word_count_min')
+    word_count_min: typing.Optional[typing.Union[str, int]] = Field(None, alias='word_count_min')
 
-    word_count_max: typing.Optional[int] = Field(None, alias='word_count_max')
+    word_count_max: typing.Optional[typing.Union[str, int]] = Field(None, alias='word_count_max')
 
-    page: typing.Optional[int] = Field(None, alias='page')
+    page: typing.Optional[typing.Union[str, int]] = Field(None, alias='page')
 
-    page_size: typing.Optional[int] = Field(None, alias='page_size')
+    page_size: typing.Optional[typing.Union[str, int]] = Field(None, alias='page_size')
 
     clustering_variable: typing.Optional[str] = Field(None, alias='clustering_variable')
 
-    clustering_enabled: typing.Optional[bool] = Field(None, alias='clustering_enabled')
+    clustering_enabled: typing.Optional[typing.Union[str, bool]] = Field(None, alias='clustering_enabled')
 
-    clustering_threshold: typing.Optional[typing.Union[int, float]] = Field(None, alias='clustering_threshold')
+    clustering_threshold: typing.Optional[typing.Union[typing.Union[int, float], str]] = Field(None, alias='clustering_threshold')
 
-    include_nlp_data: typing.Optional[bool] = Field(None, alias='include_nlp_data')
+    include_nlp_data: typing.Optional[typing.Union[str, bool]] = Field(None, alias='include_nlp_data')
 
     has_nlp: typing.Optional[bool] = Field(None, alias='has_nlp')
 

@@ -655,7 +655,7 @@ CSLHResponse result = client
 
 ##### when: `String`<a id="when-string"></a>
 
-##### byParseDate: `Boolean`<a id="byparsedate-boolean"></a>
+##### byParseDate: `Object`<a id="byparsedate-object"></a>
 
 ##### sortBy: `String`<a id="sortby-string"></a>
 
@@ -677,11 +677,11 @@ CSLHResponse result = client
 
 ##### rankedOnly: `Object`<a id="rankedonly-object"></a>
 
-##### isHeadline: `Boolean`<a id="isheadline-boolean"></a>
+##### isHeadline: `Object`<a id="isheadline-object"></a>
 
-##### isOpinion: `Boolean`<a id="isopinion-boolean"></a>
+##### isOpinion: `Object`<a id="isopinion-object"></a>
 
-##### isPaidContent: `Boolean`<a id="ispaidcontent-boolean"></a>
+##### isPaidContent: `Object`<a id="ispaidcontent-object"></a>
 
 ##### parentUrl: `Object`<a id="parenturl-object"></a>
 
@@ -689,19 +689,19 @@ CSLHResponse result = client
 
 ##### allDomainLinks: `Object`<a id="alldomainlinks-object"></a>
 
-##### wordCountMin: `Integer`<a id="wordcountmin-integer"></a>
+##### wordCountMin: `Object`<a id="wordcountmin-object"></a>
 
-##### wordCountMax: `Integer`<a id="wordcountmax-integer"></a>
+##### wordCountMax: `Object`<a id="wordcountmax-object"></a>
 
-##### page: `Integer`<a id="page-integer"></a>
+##### page: `Object`<a id="page-object"></a>
 
-##### pageSize: `Integer`<a id="pagesize-integer"></a>
+##### pageSize: `Object`<a id="pagesize-object"></a>
 
 ##### clusteringVariable: `String`<a id="clusteringvariable-string"></a>
 
-##### clusteringEnabled: `Boolean`<a id="clusteringenabled-boolean"></a>
+##### clusteringEnabled: `Object`<a id="clusteringenabled-object"></a>
 
-##### clusteringThreshold: `Double`<a id="clusteringthreshold-double"></a>
+##### clusteringThreshold: `Object`<a id="clusteringthreshold-object"></a>
 
 ##### includeNlpData: `Boolean`<a id="includenlpdata-boolean"></a>
 
@@ -806,7 +806,7 @@ CSLHResponse1 result = client
 
 ##### when: `String`<a id="when-string"></a>
 
-##### by_parse_date: `Boolean`<a id="by_parse_date-boolean"></a>
+##### by_parse_date: `Object`<a id="by_parse_date-object"></a>
 
 ##### sort_by: `String`<a id="sort_by-string"></a>
 
@@ -828,11 +828,11 @@ CSLHResponse1 result = client
 
 ##### ranked_only: `Object`<a id="ranked_only-object"></a>
 
-##### is_headline: `Boolean`<a id="is_headline-boolean"></a>
+##### is_headline: `Object`<a id="is_headline-object"></a>
 
-##### is_opinion: `Boolean`<a id="is_opinion-boolean"></a>
+##### is_opinion: `Object`<a id="is_opinion-object"></a>
 
-##### is_paid_content: `Boolean`<a id="is_paid_content-boolean"></a>
+##### is_paid_content: `Object`<a id="is_paid_content-object"></a>
 
 ##### parent_url: `Object`<a id="parent_url-object"></a>
 
@@ -840,19 +840,19 @@ CSLHResponse1 result = client
 
 ##### all_domain_links: `Object`<a id="all_domain_links-object"></a>
 
-##### word_count_min: `Integer`<a id="word_count_min-integer"></a>
+##### word_count_min: `Object`<a id="word_count_min-object"></a>
 
-##### word_count_max: `Integer`<a id="word_count_max-integer"></a>
+##### word_count_max: `Object`<a id="word_count_max-object"></a>
 
-##### page: `Integer`<a id="page-integer"></a>
+##### page: `Object`<a id="page-object"></a>
 
-##### page_size: `Integer`<a id="page_size-integer"></a>
+##### page_size: `Object`<a id="page_size-object"></a>
 
 ##### clustering_variable: `String`<a id="clustering_variable-string"></a>
 
-##### clustering_enabled: `Boolean`<a id="clustering_enabled-boolean"></a>
+##### clustering_enabled: `Object`<a id="clustering_enabled-object"></a>
 
-##### clustering_threshold: `Double`<a id="clustering_threshold-double"></a>
+##### clustering_threshold: `Object`<a id="clustering_threshold-object"></a>
 
 ##### include_nlp_data: `Boolean`<a id="include_nlp_data-boolean"></a>
 
@@ -992,21 +992,21 @@ CSearchResponse result = client
 
 ##### publishedDatePrecision: `String`<a id="publisheddateprecision-string"></a>
 
-##### byParseDate: `Boolean`<a id="byparsedate-boolean"></a>
+##### byParseDate: `Object`<a id="byparsedate-object"></a>
 
 ##### sortBy: `String`<a id="sortby-string"></a>
 
 ##### rankedOnly: `Object`<a id="rankedonly-object"></a>
 
-##### fromRank: `Integer`<a id="fromrank-integer"></a>
+##### fromRank: `Object`<a id="fromrank-object"></a>
 
-##### toRank: `Integer`<a id="torank-integer"></a>
+##### toRank: `Object`<a id="torank-object"></a>
 
-##### isHeadline: `Boolean`<a id="isheadline-boolean"></a>
+##### isHeadline: `Object`<a id="isheadline-object"></a>
 
-##### isOpinion: `Boolean`<a id="isopinion-boolean"></a>
+##### isOpinion: `Object`<a id="isopinion-object"></a>
 
-##### isPaidContent: `Boolean`<a id="ispaidcontent-boolean"></a>
+##### isPaidContent: `Object`<a id="ispaidcontent-object"></a>
 
 ##### parentUrl: `Object`<a id="parenturl-object"></a>
 
@@ -1014,21 +1014,21 @@ CSearchResponse result = client
 
 ##### allDomainLinks: `Object`<a id="alldomainlinks-object"></a>
 
-##### wordCountMin: `Integer`<a id="wordcountmin-integer"></a>
+##### wordCountMin: `Object`<a id="wordcountmin-object"></a>
 
-##### wordCountMax: `Integer`<a id="wordcountmax-integer"></a>
+##### wordCountMax: `Object`<a id="wordcountmax-object"></a>
 
-##### page: `Integer`<a id="page-integer"></a>
+##### page: `Object`<a id="page-object"></a>
 
-##### pageSize: `Integer`<a id="pagesize-integer"></a>
+##### pageSize: `Object`<a id="pagesize-object"></a>
 
 ##### clusteringVariable: `String`<a id="clusteringvariable-string"></a>
 
-##### clusteringEnabled: `Boolean`<a id="clusteringenabled-boolean"></a>
+##### clusteringEnabled: `Object`<a id="clusteringenabled-object"></a>
 
-##### clusteringThreshold: `Double`<a id="clusteringthreshold-double"></a>
+##### clusteringThreshold: `Object`<a id="clusteringthreshold-object"></a>
 
-##### includeNlpData: `Boolean`<a id="includenlpdata-boolean"></a>
+##### includeNlpData: `Object`<a id="includenlpdata-object"></a>
 
 ##### hasNlp: `Boolean`<a id="hasnlp-boolean"></a>
 
@@ -1178,21 +1178,21 @@ CSearchResponse1 result = client
 
 ##### published_date_precision: `String`<a id="published_date_precision-string"></a>
 
-##### by_parse_date: `Boolean`<a id="by_parse_date-boolean"></a>
+##### by_parse_date: `Object`<a id="by_parse_date-object"></a>
 
 ##### sort_by: `String`<a id="sort_by-string"></a>
 
 ##### ranked_only: `Object`<a id="ranked_only-object"></a>
 
-##### from_rank: `Integer`<a id="from_rank-integer"></a>
+##### from_rank: `Object`<a id="from_rank-object"></a>
 
-##### to_rank: `Integer`<a id="to_rank-integer"></a>
+##### to_rank: `Object`<a id="to_rank-object"></a>
 
-##### is_headline: `Boolean`<a id="is_headline-boolean"></a>
+##### is_headline: `Object`<a id="is_headline-object"></a>
 
-##### is_opinion: `Boolean`<a id="is_opinion-boolean"></a>
+##### is_opinion: `Object`<a id="is_opinion-object"></a>
 
-##### is_paid_content: `Boolean`<a id="is_paid_content-boolean"></a>
+##### is_paid_content: `Object`<a id="is_paid_content-object"></a>
 
 ##### parent_url: `Object`<a id="parent_url-object"></a>
 
@@ -1200,21 +1200,21 @@ CSearchResponse1 result = client
 
 ##### all_domain_links: `Object`<a id="all_domain_links-object"></a>
 
-##### word_count_min: `Integer`<a id="word_count_min-integer"></a>
+##### word_count_min: `Object`<a id="word_count_min-object"></a>
 
-##### word_count_max: `Integer`<a id="word_count_max-integer"></a>
+##### word_count_max: `Object`<a id="word_count_max-object"></a>
 
-##### page: `Integer`<a id="page-integer"></a>
+##### page: `Object`<a id="page-object"></a>
 
-##### page_size: `Integer`<a id="page_size-integer"></a>
+##### page_size: `Object`<a id="page_size-object"></a>
 
 ##### clustering_variable: `String`<a id="clustering_variable-string"></a>
 
-##### clustering_enabled: `Boolean`<a id="clustering_enabled-boolean"></a>
+##### clustering_enabled: `Object`<a id="clustering_enabled-object"></a>
 
-##### clustering_threshold: `Double`<a id="clustering_threshold-double"></a>
+##### clustering_threshold: `Object`<a id="clustering_threshold-object"></a>
 
-##### include_nlp_data: `Boolean`<a id="include_nlp_data-boolean"></a>
+##### include_nlp_data: `Object`<a id="include_nlp_data-object"></a>
 
 ##### has_nlp: `Boolean`<a id="has_nlp-boolean"></a>
 

@@ -51,7 +51,7 @@ namespace Newscatcherapi.Net.Test.Api
         public void GetTest()
         {
             var when = "7d";
-            var byParseDate = false;
+            var byParseDate = new ByParseDate("example");
             var sortBy = "relevancy";
             var lang = new Object(
             );
@@ -70,22 +70,22 @@ namespace Newscatcherapi.Net.Test.Api
             var notAuthorName = new Object(
             );
             var rankedOnly = new RankedOnly("example");
-            var isHeadline = true;
-            var isOpinion = true;
-            var isPaidContent = true;
+            var isHeadline = new IsHeadline("example");
+            var isOpinion = new IsOpinion("example");
+            var isPaidContent = new IsPaidContent("example");
             var parentUrl = new Object(
             );
             var allLinks = new Object(
             );
             var allDomainLinks = new Object(
             );
-            var wordCountMin = 56;
-            var wordCountMax = 56;
-            var page = 1;
-            var pageSize = 100;
+            var wordCountMin = new WordCountMin("example");
+            var wordCountMax = new WordCountMax("example");
+            var page = new Page("example");
+            var pageSize = new PageSize("example");
             var clusteringVariable = "clusteringVariable_example";
-            var clusteringEnabled = true;
-            var clusteringThreshold = 8.14D;
+            var clusteringEnabled = new ClusteringEnabled("example");
+            var clusteringThreshold = new ClusteringThreshold(100);
             var includeNlpData = true;
             var hasNlp = true;
             var theme = "theme_example";
@@ -134,7 +134,7 @@ namespace Newscatcherapi.Net.Test.Api
         public void PostTest()
         {
             var when = "7d";
-            var byParseDate = false;
+            var byParseDate = new ByParseDate("example");
             var sortBy = "relevancy";
             var lang = "lang_example";
             var notLang = "notLang_example";
@@ -145,19 +145,19 @@ namespace Newscatcherapi.Net.Test.Api
             var notSources = "notSources_example";
             var notAuthorName = "notAuthorName_example";
             var rankedOnly = new RankedOnly("example");
-            var isHeadline = false;
-            var isOpinion = false;
-            var isPaidContent = false;
+            var isHeadline = new IsHeadline("example");
+            var isOpinion = new IsOpinion("example");
+            var isPaidContent = new IsPaidContent("example");
             var parentUrl = "parentUrl_example";
             var allLinks = "allLinks_example";
             var allDomainLinks = "allDomainLinks_example";
-            var wordCountMin = default(int);
-            var wordCountMax = default(int);
-            var page = 1;
-            var pageSize = 100;
+            var wordCountMin = new WordCountMin("example");
+            var wordCountMax = new WordCountMax("example");
+            var page = new Page("example");
+            var pageSize = new PageSize("example");
             var clusteringVariable = "clusteringVariable_example";
-            var clusteringEnabled = false;
-            var clusteringThreshold = default(double);
+            var clusteringEnabled = new ClusteringEnabled("example");
+            var clusteringThreshold = new ClusteringThreshold(100);
             var includeNlpData = false;
             var hasNlp = false;
             var theme = "theme_example";

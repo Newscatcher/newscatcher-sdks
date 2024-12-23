@@ -53,7 +53,7 @@ public class LatestHeadlinesApiTest {
     @Test
     public void getTest() throws ApiException {
         String when = null;
-        Boolean byParseDate = null;
+        Object byParseDate = null;
         String sortBy = null;
         Object lang = null;
         Object notLang = null;
@@ -64,19 +64,19 @@ public class LatestHeadlinesApiTest {
         Object notSources = null;
         Object notAuthorName = null;
         Object rankedOnly = null;
-        Boolean isHeadline = null;
-        Boolean isOpinion = null;
-        Boolean isPaidContent = null;
+        Object isHeadline = null;
+        Object isOpinion = null;
+        Object isPaidContent = null;
         Object parentUrl = null;
         Object allLinks = null;
         Object allDomainLinks = null;
-        Integer wordCountMin = null;
-        Integer wordCountMax = null;
-        Integer page = null;
-        Integer pageSize = null;
+        Object wordCountMin = null;
+        Object wordCountMax = null;
+        Object page = null;
+        Object pageSize = null;
         String clusteringVariable = null;
-        Boolean clusteringEnabled = null;
-        Double clusteringThreshold = null;
+        Object clusteringEnabled = null;
+        Object clusteringThreshold = null;
         Boolean includeNlpData = null;
         Boolean hasNlp = null;
         String theme = null;
@@ -149,7 +149,7 @@ public class LatestHeadlinesApiTest {
     @Test
     public void postTest() throws ApiException {
         String when = null;
-        Boolean byParseDate = null;
+        Object byParseDate = null;
         String sortBy = null;
         Object lang = null;
         Object notLang = null;
@@ -160,19 +160,19 @@ public class LatestHeadlinesApiTest {
         Object notSources = null;
         Object notAuthorName = null;
         Object rankedOnly = null;
-        Boolean isHeadline = null;
-        Boolean isOpinion = null;
-        Boolean isPaidContent = null;
+        Object isHeadline = null;
+        Object isOpinion = null;
+        Object isPaidContent = null;
         Object parentUrl = null;
         Object allLinks = null;
         Object allDomainLinks = null;
-        Integer wordCountMin = null;
-        Integer wordCountMax = null;
-        Integer page = null;
-        Integer pageSize = null;
+        Object wordCountMin = null;
+        Object wordCountMax = null;
+        Object page = null;
+        Object pageSize = null;
         String clusteringVariable = null;
-        Boolean clusteringEnabled = null;
-        Double clusteringThreshold = null;
+        Object clusteringEnabled = null;
+        Object clusteringThreshold = null;
         Boolean includeNlpData = null;
         Boolean hasNlp = null;
         String theme = null;

@@ -19,7 +19,19 @@ import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObj
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
 // @ts-ignore
+import { ByParseDate } from '../models';
+// @ts-ignore
+import { ClusteringEnabled } from '../models';
+// @ts-ignore
+import { ClusteringThreshold } from '../models';
+// @ts-ignore
 import { HTTPValidationError } from '../models';
+// @ts-ignore
+import { IsHeadline } from '../models';
+// @ts-ignore
+import { IsOpinion } from '../models';
+// @ts-ignore
+import { IsPaidContent } from '../models';
 // @ts-ignore
 import { LatestHeadlinesGetResponse } from '../models';
 // @ts-ignore
@@ -27,7 +39,15 @@ import { LatestHeadlinesPostResponse } from '../models';
 // @ts-ignore
 import { LatestHeadlinesRequest } from '../models';
 // @ts-ignore
+import { Page } from '../models';
+// @ts-ignore
+import { PageSize } from '../models';
+// @ts-ignore
 import { RankedOnly } from '../models';
+// @ts-ignore
+import { WordCountMax } from '../models';
+// @ts-ignore
+import { WordCountMin } from '../models';
 import { paginate } from "../pagination/paginate";
 import type * as buffer from "buffer"
 import { requestBeforeHook } from '../requestBeforeHook';
@@ -41,7 +61,7 @@ export const LatestHeadlinesApiAxiosParamCreator = function (configuration?: Con
          * This endpoint allows you to get latest headlines. You need to specify since when you want to get the latest headlines. You can also filter by language, country, source, and more.
          * @summary [Get] Search For Latest Headlines Request
          * @param {string} [when] 
-         * @param {boolean} [byParseDate] 
+         * @param {ByParseDate} [byParseDate] 
          * @param {string} [sortBy] 
          * @param {any} [lang] 
          * @param {any} [notLang] 
@@ -52,19 +72,19 @@ export const LatestHeadlinesApiAxiosParamCreator = function (configuration?: Con
          * @param {any} [notSources] 
          * @param {any} [notAuthorName] 
          * @param {RankedOnly} [rankedOnly] 
-         * @param {boolean} [isHeadline] 
-         * @param {boolean} [isOpinion] 
-         * @param {boolean} [isPaidContent] 
+         * @param {IsHeadline} [isHeadline] 
+         * @param {IsOpinion} [isOpinion] 
+         * @param {IsPaidContent} [isPaidContent] 
          * @param {any} [parentUrl] 
          * @param {any} [allLinks] 
          * @param {any} [allDomainLinks] 
-         * @param {number} [wordCountMin] 
-         * @param {number} [wordCountMax] 
-         * @param {number} [page] 
-         * @param {number} [pageSize] 
+         * @param {WordCountMin} [wordCountMin] 
+         * @param {WordCountMax} [wordCountMax] 
+         * @param {Page} [page] 
+         * @param {PageSize} [pageSize] 
          * @param {string} [clusteringVariable] 
-         * @param {boolean} [clusteringEnabled] 
-         * @param {number} [clusteringThreshold] 
+         * @param {ClusteringEnabled} [clusteringEnabled] 
+         * @param {ClusteringThreshold} [clusteringThreshold] 
          * @param {boolean} [includeNlpData] 
          * @param {boolean} [hasNlp] 
          * @param {string} [theme] 
@@ -84,7 +104,7 @@ export const LatestHeadlinesApiAxiosParamCreator = function (configuration?: Con
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        get: async (when?: string, byParseDate?: boolean, sortBy?: string, lang?: any, notLang?: any, countries?: any, notCountries?: any, sources?: any, predefinedSources?: any, notSources?: any, notAuthorName?: any, rankedOnly?: RankedOnly, isHeadline?: boolean, isOpinion?: boolean, isPaidContent?: boolean, parentUrl?: any, allLinks?: any, allDomainLinks?: any, wordCountMin?: number, wordCountMax?: number, page?: number, pageSize?: number, clusteringVariable?: string, clusteringEnabled?: boolean, clusteringThreshold?: number, includeNlpData?: boolean, hasNlp?: boolean, theme?: string, notTheme?: string, orgEntityName?: string, perEntityName?: string, locEntityName?: string, miscEntityName?: string, titleSentimentMin?: number, titleSentimentMax?: number, contentSentimentMin?: number, contentSentimentMax?: number, iptcTags?: any, notIptcTags?: any, iabTags?: any, notIabTags?: any, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        get: async (when?: string, byParseDate?: ByParseDate, sortBy?: string, lang?: any, notLang?: any, countries?: any, notCountries?: any, sources?: any, predefinedSources?: any, notSources?: any, notAuthorName?: any, rankedOnly?: RankedOnly, isHeadline?: IsHeadline, isOpinion?: IsOpinion, isPaidContent?: IsPaidContent, parentUrl?: any, allLinks?: any, allDomainLinks?: any, wordCountMin?: WordCountMin, wordCountMax?: WordCountMax, page?: Page, pageSize?: PageSize, clusteringVariable?: string, clusteringEnabled?: ClusteringEnabled, clusteringThreshold?: ClusteringThreshold, includeNlpData?: boolean, hasNlp?: boolean, theme?: string, notTheme?: string, orgEntityName?: string, perEntityName?: string, locEntityName?: string, miscEntityName?: string, titleSentimentMin?: number, titleSentimentMax?: number, contentSentimentMin?: number, contentSentimentMax?: number, iptcTags?: any, notIptcTags?: any, iabTags?: any, notIabTags?: any, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/api/latest_headlines`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -454,10 +474,10 @@ export type LatestHeadlinesApiGetRequest = {
     
     /**
     * 
-    * @type {boolean}
+    * @type {ByParseDate}
     * @memberof LatestHeadlinesApiGet
     */
-    readonly byParseDate?: boolean
+    readonly byParseDate?: ByParseDate
     
     /**
     * 
@@ -531,24 +551,24 @@ export type LatestHeadlinesApiGetRequest = {
     
     /**
     * 
-    * @type {boolean}
+    * @type {IsHeadline}
     * @memberof LatestHeadlinesApiGet
     */
-    readonly isHeadline?: boolean
+    readonly isHeadline?: IsHeadline
     
     /**
     * 
-    * @type {boolean}
+    * @type {IsOpinion}
     * @memberof LatestHeadlinesApiGet
     */
-    readonly isOpinion?: boolean
+    readonly isOpinion?: IsOpinion
     
     /**
     * 
-    * @type {boolean}
+    * @type {IsPaidContent}
     * @memberof LatestHeadlinesApiGet
     */
-    readonly isPaidContent?: boolean
+    readonly isPaidContent?: IsPaidContent
     
     /**
     * 
@@ -573,31 +593,31 @@ export type LatestHeadlinesApiGetRequest = {
     
     /**
     * 
-    * @type {number}
+    * @type {WordCountMin}
     * @memberof LatestHeadlinesApiGet
     */
-    readonly wordCountMin?: number
+    readonly wordCountMin?: WordCountMin
     
     /**
     * 
-    * @type {number}
+    * @type {WordCountMax}
     * @memberof LatestHeadlinesApiGet
     */
-    readonly wordCountMax?: number
+    readonly wordCountMax?: WordCountMax
     
     /**
     * 
-    * @type {number}
+    * @type {Page}
     * @memberof LatestHeadlinesApiGet
     */
-    readonly page?: number
+    readonly page?: Page
     
     /**
     * 
-    * @type {number}
+    * @type {PageSize}
     * @memberof LatestHeadlinesApiGet
     */
-    readonly pageSize?: number
+    readonly pageSize?: PageSize
     
     /**
     * 
@@ -608,17 +628,17 @@ export type LatestHeadlinesApiGetRequest = {
     
     /**
     * 
-    * @type {boolean}
+    * @type {ClusteringEnabled}
     * @memberof LatestHeadlinesApiGet
     */
-    readonly clusteringEnabled?: boolean
+    readonly clusteringEnabled?: ClusteringEnabled
     
     /**
     * 
-    * @type {number}
+    * @type {ClusteringThreshold}
     * @memberof LatestHeadlinesApiGet
     */
-    readonly clusteringThreshold?: number
+    readonly clusteringThreshold?: ClusteringThreshold
     
     /**
     * 

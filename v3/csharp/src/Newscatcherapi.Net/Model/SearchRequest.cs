@@ -53,7 +53,7 @@ namespace Newscatcherapi.Net.Model
         /// <param name="from">from.</param>
         /// <param name="to">to.</param>
         /// <param name="publishedDatePrecision">publishedDatePrecision.</param>
-        /// <param name="byParseDate">byParseDate (default to false).</param>
+        /// <param name="byParseDate">byParseDate.</param>
         /// <param name="sortBy">sortBy (default to &quot;relevancy&quot;).</param>
         /// <param name="rankedOnly">rankedOnly.</param>
         /// <param name="fromRank">fromRank.</param>
@@ -66,8 +66,8 @@ namespace Newscatcherapi.Net.Model
         /// <param name="allDomainLinks">allDomainLinks.</param>
         /// <param name="wordCountMin">wordCountMin.</param>
         /// <param name="wordCountMax">wordCountMax.</param>
-        /// <param name="page">page (default to 1).</param>
-        /// <param name="pageSize">pageSize (default to 100).</param>
+        /// <param name="page">page.</param>
+        /// <param name="pageSize">pageSize.</param>
         /// <param name="clusteringVariable">clusteringVariable.</param>
         /// <param name="clusteringEnabled">clusteringEnabled.</param>
         /// <param name="clusteringThreshold">clusteringThreshold.</param>
@@ -93,7 +93,7 @@ namespace Newscatcherapi.Net.Model
         /// <param name="isNewsDomain">isNewsDomain.</param>
         /// <param name="newsDomainType">newsDomainType.</param>
         /// <param name="newsType">newsType.</param>
-        public SearchRequest(string q = default(string), string searchIn = "title_content", Object predefinedSources = default(Object), Object sources = default(Object), Object notSources = default(Object), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object notAuthorName = default(Object), From from = default(From), To to = default(To), string publishedDatePrecision = default(string), bool byParseDate = false, string sortBy = "relevancy", RankedOnly rankedOnly = default(RankedOnly), int fromRank = default(int), int toRank = default(int), bool isHeadline = default(bool), bool isOpinion = default(bool), bool isPaidContent = default(bool), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), int wordCountMin = default(int), int wordCountMax = default(int), int page = 1, int pageSize = 100, string clusteringVariable = default(string), bool clusteringEnabled = default(bool), double clusteringThreshold = default(double), bool includeNlpData = default(bool), bool hasNlp = default(bool), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double titleSentimentMin = default(double), double titleSentimentMax = default(double), double contentSentimentMin = default(double), double contentSentimentMax = default(double), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object sourceName = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), bool excludeDuplicates = default(bool), bool additionalDomainInfo = default(bool), bool isNewsDomain = default(bool), Object newsDomainType = default(Object), Object newsType = default(Object))
+        public SearchRequest(string q = default(string), string searchIn = "title_content", Object predefinedSources = default(Object), Object sources = default(Object), Object notSources = default(Object), Object lang = default(Object), Object notLang = default(Object), Object countries = default(Object), Object notCountries = default(Object), Object notAuthorName = default(Object), From from = default(From), To to = default(To), string publishedDatePrecision = default(string), ByParseDate byParseDate = default(ByParseDate), string sortBy = "relevancy", RankedOnly rankedOnly = default(RankedOnly), FromRank fromRank = default(FromRank), ToRank toRank = default(ToRank), IsHeadline isHeadline = default(IsHeadline), IsOpinion isOpinion = default(IsOpinion), IsPaidContent isPaidContent = default(IsPaidContent), Object parentUrl = default(Object), Object allLinks = default(Object), Object allDomainLinks = default(Object), WordCountMin wordCountMin = default(WordCountMin), WordCountMax wordCountMax = default(WordCountMax), Page page = default(Page), PageSize pageSize = default(PageSize), string clusteringVariable = default(string), ClusteringEnabled clusteringEnabled = default(ClusteringEnabled), ClusteringThreshold clusteringThreshold = default(ClusteringThreshold), IncludeNlpData includeNlpData = default(IncludeNlpData), bool hasNlp = default(bool), string theme = default(string), string notTheme = default(string), string oRGEntityName = default(string), string pEREntityName = default(string), string lOCEntityName = default(string), string mISCEntityName = default(string), double titleSentimentMin = default(double), double titleSentimentMax = default(double), double contentSentimentMin = default(double), double contentSentimentMax = default(double), Object iptcTags = default(Object), Object notIptcTags = default(Object), Object sourceName = default(Object), Object iabTags = default(Object), Object notIabTags = default(Object), bool excludeDuplicates = default(bool), bool additionalDomainInfo = default(bool), bool isNewsDomain = default(bool), Object newsDomainType = default(Object), Object newsType = default(Object))
         {
             // to ensure "q" is required (not null)
             if (q == null)
@@ -238,8 +238,8 @@ namespace Newscatcherapi.Net.Model
         /// <summary>
         /// Gets or Sets ByParseDate
         /// </summary>
-        [DataMember(Name = "by_parse_date", EmitDefaultValue = true)]
-        public bool ByParseDate { get; set; }
+        [DataMember(Name = "by_parse_date", EmitDefaultValue = false)]
+        public ByParseDate ByParseDate { get; set; }
 
         /// <summary>
         /// Gets or Sets SortBy
@@ -257,31 +257,31 @@ namespace Newscatcherapi.Net.Model
         /// Gets or Sets FromRank
         /// </summary>
         [DataMember(Name = "from_rank", EmitDefaultValue = false)]
-        public int FromRank { get; set; }
+        public FromRank FromRank { get; set; }
 
         /// <summary>
         /// Gets or Sets ToRank
         /// </summary>
         [DataMember(Name = "to_rank", EmitDefaultValue = false)]
-        public int ToRank { get; set; }
+        public ToRank ToRank { get; set; }
 
         /// <summary>
         /// Gets or Sets IsHeadline
         /// </summary>
-        [DataMember(Name = "is_headline", EmitDefaultValue = true)]
-        public bool IsHeadline { get; set; }
+        [DataMember(Name = "is_headline", EmitDefaultValue = false)]
+        public IsHeadline IsHeadline { get; set; }
 
         /// <summary>
         /// Gets or Sets IsOpinion
         /// </summary>
-        [DataMember(Name = "is_opinion", EmitDefaultValue = true)]
-        public bool IsOpinion { get; set; }
+        [DataMember(Name = "is_opinion", EmitDefaultValue = false)]
+        public IsOpinion IsOpinion { get; set; }
 
         /// <summary>
         /// Gets or Sets IsPaidContent
         /// </summary>
-        [DataMember(Name = "is_paid_content", EmitDefaultValue = true)]
-        public bool IsPaidContent { get; set; }
+        [DataMember(Name = "is_paid_content", EmitDefaultValue = false)]
+        public IsPaidContent IsPaidContent { get; set; }
 
         /// <summary>
         /// Gets or Sets ParentUrl
@@ -305,25 +305,25 @@ namespace Newscatcherapi.Net.Model
         /// Gets or Sets WordCountMin
         /// </summary>
         [DataMember(Name = "word_count_min", EmitDefaultValue = false)]
-        public int WordCountMin { get; set; }
+        public WordCountMin WordCountMin { get; set; }
 
         /// <summary>
         /// Gets or Sets WordCountMax
         /// </summary>
         [DataMember(Name = "word_count_max", EmitDefaultValue = false)]
-        public int WordCountMax { get; set; }
+        public WordCountMax WordCountMax { get; set; }
 
         /// <summary>
         /// Gets or Sets Page
         /// </summary>
         [DataMember(Name = "page", EmitDefaultValue = false)]
-        public int Page { get; set; }
+        public Page Page { get; set; }
 
         /// <summary>
         /// Gets or Sets PageSize
         /// </summary>
         [DataMember(Name = "page_size", EmitDefaultValue = false)]
-        public int PageSize { get; set; }
+        public PageSize PageSize { get; set; }
 
         /// <summary>
         /// Gets or Sets ClusteringVariable
@@ -334,20 +334,20 @@ namespace Newscatcherapi.Net.Model
         /// <summary>
         /// Gets or Sets ClusteringEnabled
         /// </summary>
-        [DataMember(Name = "clustering_enabled", EmitDefaultValue = true)]
-        public bool ClusteringEnabled { get; set; }
+        [DataMember(Name = "clustering_enabled", EmitDefaultValue = false)]
+        public ClusteringEnabled ClusteringEnabled { get; set; }
 
         /// <summary>
         /// Gets or Sets ClusteringThreshold
         /// </summary>
         [DataMember(Name = "clustering_threshold", EmitDefaultValue = false)]
-        public double ClusteringThreshold { get; set; }
+        public ClusteringThreshold ClusteringThreshold { get; set; }
 
         /// <summary>
         /// Gets or Sets IncludeNlpData
         /// </summary>
-        [DataMember(Name = "include_nlp_data", EmitDefaultValue = true)]
-        public bool IncludeNlpData { get; set; }
+        [DataMember(Name = "include_nlp_data", EmitDefaultValue = false)]
+        public IncludeNlpData IncludeNlpData { get; set; }
 
         /// <summary>
         /// Gets or Sets HasNlp
@@ -638,7 +638,8 @@ namespace Newscatcherapi.Net.Model
                 ) && 
                 (
                     this.ByParseDate == input.ByParseDate ||
-                    this.ByParseDate.Equals(input.ByParseDate)
+                    (this.ByParseDate != null &&
+                    this.ByParseDate.Equals(input.ByParseDate))
                 ) && 
                 (
                     this.SortBy == input.SortBy ||
@@ -652,23 +653,28 @@ namespace Newscatcherapi.Net.Model
                 ) && 
                 (
                     this.FromRank == input.FromRank ||
-                    this.FromRank.Equals(input.FromRank)
+                    (this.FromRank != null &&
+                    this.FromRank.Equals(input.FromRank))
                 ) && 
                 (
                     this.ToRank == input.ToRank ||
-                    this.ToRank.Equals(input.ToRank)
+                    (this.ToRank != null &&
+                    this.ToRank.Equals(input.ToRank))
                 ) && 
                 (
                     this.IsHeadline == input.IsHeadline ||
-                    this.IsHeadline.Equals(input.IsHeadline)
+                    (this.IsHeadline != null &&
+                    this.IsHeadline.Equals(input.IsHeadline))
                 ) && 
                 (
                     this.IsOpinion == input.IsOpinion ||
-                    this.IsOpinion.Equals(input.IsOpinion)
+                    (this.IsOpinion != null &&
+                    this.IsOpinion.Equals(input.IsOpinion))
                 ) && 
                 (
                     this.IsPaidContent == input.IsPaidContent ||
-                    this.IsPaidContent.Equals(input.IsPaidContent)
+                    (this.IsPaidContent != null &&
+                    this.IsPaidContent.Equals(input.IsPaidContent))
                 ) && 
                 (
                     this.ParentUrl == input.ParentUrl ||
@@ -687,19 +693,23 @@ namespace Newscatcherapi.Net.Model
                 ) && 
                 (
                     this.WordCountMin == input.WordCountMin ||
-                    this.WordCountMin.Equals(input.WordCountMin)
+                    (this.WordCountMin != null &&
+                    this.WordCountMin.Equals(input.WordCountMin))
                 ) && 
                 (
                     this.WordCountMax == input.WordCountMax ||
-                    this.WordCountMax.Equals(input.WordCountMax)
+                    (this.WordCountMax != null &&
+                    this.WordCountMax.Equals(input.WordCountMax))
                 ) && 
                 (
                     this.Page == input.Page ||
-                    this.Page.Equals(input.Page)
+                    (this.Page != null &&
+                    this.Page.Equals(input.Page))
                 ) && 
                 (
                     this.PageSize == input.PageSize ||
-                    this.PageSize.Equals(input.PageSize)
+                    (this.PageSize != null &&
+                    this.PageSize.Equals(input.PageSize))
                 ) && 
                 (
                     this.ClusteringVariable == input.ClusteringVariable ||
@@ -708,15 +718,18 @@ namespace Newscatcherapi.Net.Model
                 ) && 
                 (
                     this.ClusteringEnabled == input.ClusteringEnabled ||
-                    this.ClusteringEnabled.Equals(input.ClusteringEnabled)
+                    (this.ClusteringEnabled != null &&
+                    this.ClusteringEnabled.Equals(input.ClusteringEnabled))
                 ) && 
                 (
                     this.ClusteringThreshold == input.ClusteringThreshold ||
-                    this.ClusteringThreshold.Equals(input.ClusteringThreshold)
+                    (this.ClusteringThreshold != null &&
+                    this.ClusteringThreshold.Equals(input.ClusteringThreshold))
                 ) && 
                 (
                     this.IncludeNlpData == input.IncludeNlpData ||
-                    this.IncludeNlpData.Equals(input.IncludeNlpData)
+                    (this.IncludeNlpData != null &&
+                    this.IncludeNlpData.Equals(input.IncludeNlpData))
                 ) && 
                 (
                     this.HasNlp == input.HasNlp ||
@@ -878,7 +891,10 @@ namespace Newscatcherapi.Net.Model
                 {
                     hashCode = (hashCode * 59) + this.PublishedDatePrecision.GetHashCode();
                 }
-                hashCode = (hashCode * 59) + this.ByParseDate.GetHashCode();
+                if (this.ByParseDate != null)
+                {
+                    hashCode = (hashCode * 59) + this.ByParseDate.GetHashCode();
+                }
                 if (this.SortBy != null)
                 {
                     hashCode = (hashCode * 59) + this.SortBy.GetHashCode();
@@ -887,11 +903,26 @@ namespace Newscatcherapi.Net.Model
                 {
                     hashCode = (hashCode * 59) + this.RankedOnly.GetHashCode();
                 }
-                hashCode = (hashCode * 59) + this.FromRank.GetHashCode();
-                hashCode = (hashCode * 59) + this.ToRank.GetHashCode();
-                hashCode = (hashCode * 59) + this.IsHeadline.GetHashCode();
-                hashCode = (hashCode * 59) + this.IsOpinion.GetHashCode();
-                hashCode = (hashCode * 59) + this.IsPaidContent.GetHashCode();
+                if (this.FromRank != null)
+                {
+                    hashCode = (hashCode * 59) + this.FromRank.GetHashCode();
+                }
+                if (this.ToRank != null)
+                {
+                    hashCode = (hashCode * 59) + this.ToRank.GetHashCode();
+                }
+                if (this.IsHeadline != null)
+                {
+                    hashCode = (hashCode * 59) + this.IsHeadline.GetHashCode();
+                }
+                if (this.IsOpinion != null)
+                {
+                    hashCode = (hashCode * 59) + this.IsOpinion.GetHashCode();
+                }
+                if (this.IsPaidContent != null)
+                {
+                    hashCode = (hashCode * 59) + this.IsPaidContent.GetHashCode();
+                }
                 if (this.ParentUrl != null)
                 {
                     hashCode = (hashCode * 59) + this.ParentUrl.GetHashCode();
@@ -904,17 +935,38 @@ namespace Newscatcherapi.Net.Model
                 {
                     hashCode = (hashCode * 59) + this.AllDomainLinks.GetHashCode();
                 }
-                hashCode = (hashCode * 59) + this.WordCountMin.GetHashCode();
-                hashCode = (hashCode * 59) + this.WordCountMax.GetHashCode();
-                hashCode = (hashCode * 59) + this.Page.GetHashCode();
-                hashCode = (hashCode * 59) + this.PageSize.GetHashCode();
+                if (this.WordCountMin != null)
+                {
+                    hashCode = (hashCode * 59) + this.WordCountMin.GetHashCode();
+                }
+                if (this.WordCountMax != null)
+                {
+                    hashCode = (hashCode * 59) + this.WordCountMax.GetHashCode();
+                }
+                if (this.Page != null)
+                {
+                    hashCode = (hashCode * 59) + this.Page.GetHashCode();
+                }
+                if (this.PageSize != null)
+                {
+                    hashCode = (hashCode * 59) + this.PageSize.GetHashCode();
+                }
                 if (this.ClusteringVariable != null)
                 {
                     hashCode = (hashCode * 59) + this.ClusteringVariable.GetHashCode();
                 }
-                hashCode = (hashCode * 59) + this.ClusteringEnabled.GetHashCode();
-                hashCode = (hashCode * 59) + this.ClusteringThreshold.GetHashCode();
-                hashCode = (hashCode * 59) + this.IncludeNlpData.GetHashCode();
+                if (this.ClusteringEnabled != null)
+                {
+                    hashCode = (hashCode * 59) + this.ClusteringEnabled.GetHashCode();
+                }
+                if (this.ClusteringThreshold != null)
+                {
+                    hashCode = (hashCode * 59) + this.ClusteringThreshold.GetHashCode();
+                }
+                if (this.IncludeNlpData != null)
+                {
+                    hashCode = (hashCode * 59) + this.IncludeNlpData.GetHashCode();
+                }
                 hashCode = (hashCode * 59) + this.HasNlp.GetHashCode();
                 if (this.Theme != null)
                 {
@@ -986,30 +1038,6 @@ namespace Newscatcherapi.Net.Model
         /// <returns>Validation Result</returns>
         public IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> Validate(ValidationContext validationContext)
         {
-            // WordCountMin (int) minimum
-            if (this.WordCountMin < (int)0)
-            {
-                yield return new System.ComponentModel.DataAnnotations.ValidationResult("Invalid value for WordCountMin, must be a value greater than or equal to 0.", new [] { "WordCountMin" });
-            }
-
-            // WordCountMax (int) minimum
-            if (this.WordCountMax < (int)0)
-            {
-                yield return new System.ComponentModel.DataAnnotations.ValidationResult("Invalid value for WordCountMax, must be a value greater than or equal to 0.", new [] { "WordCountMax" });
-            }
-
-            // Page (int) minimum
-            if (this.Page < (int)0)
-            {
-                yield return new System.ComponentModel.DataAnnotations.ValidationResult("Invalid value for Page, must be a value greater than or equal to 0.", new [] { "Page" });
-            }
-
-            // PageSize (int) minimum
-            if (this.PageSize < (int)0)
-            {
-                yield return new System.ComponentModel.DataAnnotations.ValidationResult("Invalid value for PageSize, must be a value greater than or equal to 0.", new [] { "PageSize" });
-            }
-
             yield break;
         }
     }
